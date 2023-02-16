@@ -1,10 +1,8 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { Hero, Stats, Billing, Business, CardDeal, Testimonials, Clients, CTA, Apply, Offer, LinkBar } from '../components';
+import { Hero, Stats, Testimonials, Affliation, Offer, LinkBar } from '../components';
 import styles from "../style";
 
 const Home = () => {
-  const loc = useLocation();
   return (
     <div className='mt-24'>
       <LinkBar />
@@ -17,14 +15,9 @@ const Home = () => {
       <div className={`bg-primary-0 ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Stats />
-          <Apply />
           <Offer />
-          <Business />
-          <Billing />
-          <CardDeal />
+          <Affliation />
           <Testimonials />
-          <Clients />
-          <CTA />
         </div>
       </div>
     </div>

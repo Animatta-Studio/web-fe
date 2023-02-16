@@ -5,7 +5,7 @@ import GoToTop from './GoToTop';
 
 const Footer = () => {
   return (
-    <footer className='w-full bg-[#acddde]'>
+    <footer className='w-full bg-[#0087E0] shadow-lg z-[50]'>
       <div className='lg:w-4/5 w-11/12 m-auto p-6 flex justify-between'>
         <div className='flex flex-col space-y-2'>
           <h1 className='sm:text-xl text-[14px] font-bold'>Get in touch</h1>

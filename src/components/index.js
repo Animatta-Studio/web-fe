@@ -1,10 +1,4 @@
-import Billing from "./Billing";
-import Business from "./Business";
-import Button from "./Button";
-import CardDeal from "./CardDeal";
-import Clients from "./Clients";
 import CTA from "./CTA";
-import FeedbackCard from "./FeedbackCard";
 import Footer from "./Footer";
 import GetStarted from "./GetStarted";
 import Hero from "./Hero";
@@ -16,15 +10,11 @@ import Apply from './Apply';
 import Offer from './Offer';
 import LinkBar from './LinkBar';
 import Top from './Top';
+import ApplySidebar from './ApplySidebar';
+import Affliation from './Affliation';
 
 export {
-  Billing,
-  Business,
-  Button,
-  CardDeal,
-  Clients,
   CTA,
-  FeedbackCard,
   Footer,
   GetStarted,
   Hero,
@@ -33,7 +23,9 @@ export {
   Testimonials,
   GoToTop,
   Apply,
+  ApplySidebar,
   Offer,
   LinkBar,
   Top,
+  Affliation,
 };
