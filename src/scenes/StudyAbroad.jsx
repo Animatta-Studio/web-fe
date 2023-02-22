@@ -6,7 +6,7 @@ import { abroadHeader, affiliatedInstitutions, aboutJapan } from '../constants';
 const StudyAbroad = () => {
   const [selected, setSelected] = useState(0);
   return (
-    <div className='mt-20'>
+    <div className='mt-[100px]'>
       <Top image='https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg' text='Study Abroad' />
       <div className='font-poppins font-normal border border-gray-500 p-2 text-white sm:px-10 sm:text-[15px] text-[13px] sm:leading-[25px] leading-[24px] text-center'>
         {parse(aboutJapan)}

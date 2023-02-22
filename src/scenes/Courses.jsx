@@ -8,7 +8,7 @@ const Courses = () => {
   const [selected, setSelected] = useState('NAT');
 
   return (
-    <div className='mt-20'>
+    <div className='mt-[100px]'>
       <Top image='https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg' text='Courses' />
       <ul className='list-none flex justify-center items-center flex-1'>
         {Object.keys(courses).map((key, idx) => (

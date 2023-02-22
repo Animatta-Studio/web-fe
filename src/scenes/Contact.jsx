@@ -40,7 +40,7 @@ const Contact = () => {
     };
 
   return (
-    <section className="bg-black mt-20">
+    <section className="mt-[100px]">
         <Top image='https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg' text='Contact Us' />
         <div className='absolute z-[1] w-[80%] h-[42%] left-20 top-0 pink__gradient' />
         <div className='absolute z-[0] w-[40%] h-[30%] rounded-full bottom-40 white__gradient' />
@@ -89,12 +89,12 @@ const Contact = () => {
                     </Form>
                 </Formik>
             </div>
-            <div className='flex flex-1 mt-10 mb-10 m-2 justify-center flex-col'>
+            <div className='flex flex-1 mt-10 mb-10 m-2 justify-center flex-col z-[10]'>
                 <div className=' bg-[#0087E0] right-0 top-0 sm:w-96 w-[350px] h-5'></div>
                 <div className='flex flex-row'>
                     <div className='bg-[#0087E0] right-0 top-0 w-[60px] h-[250px]'></div>
                     {/* <Map location={location} zoomLevel={zoomLevel} /> */}
-                    <iframe defer className='z-[10] h-[450px] bg-[#0087E0] w-[600px] border-2' src="https://maps.google.com/maps?q=durga%20chowk,%20bhaniyawala,%20dehradun,%20uttarakhand,%20india&t=m&z=15&ie=UTF8&iwloc=&output=embed&mrt=kmlkmz" frameBorder="1" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+                    <iframe defer className='z-[10] h-[450px] bg-[#0087E0] w-full border-2' src="https://maps.google.com/maps?q=durga%20chowk,%20bhaniyawala,%20dehradun,%20uttarakhand,%20india&t=m&z=15&ie=UTF8&iwloc=&output=embed&mrt=kmlkmz" frameBorder="1" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                     <div className='flex flex-col-reverse'>
                         <div className='bg-[#0087E0] right-0 top-0 sm:w-[60px] w-[35px] h-[250px]'></div>
                     </div>

@@ -14,7 +14,7 @@ const Navbar = () => {
     document.documentElement.scrollTo(0, 0);
   }, [loc.pathname]);
   return (
-    <nav className='sm:h-24 h-[80px] fixed w-full flex items-center flex-wrap top-0 z-[50] bg-[#0087E0] shadow-lg select-none'>
+    <nav className='sm:h-[120px] h-[80px] fixed w-full flex items-center flex-wrap top-0 z-[50] bg-[#0087E0] shadow-lg select-none'>
       <Link to='/home' onClick={() => setSelected('home')}>
         <img id='logo' src={logo} alt="mirai" className='sm:w-[90px] w-[80px] sm:h-[90px] h[80px] sm:mr-10 mr-2 sm:ml-5 ml-2 cursor-pointer' />
       </Link> 
@@ -39,7 +39,7 @@ const Navbar = () => {
               onClick={() => setSelected(nav.path)}
             >
               <span
-                className={`text-xl font-bold cursor-pointer duration-500 z-[1] ${
+                className={`text-lg font-extrabold cursor-pointer duration-500 z-[1] ${
                   nav.path === selected && "-mt-2 text-white"
                 }`}
               >

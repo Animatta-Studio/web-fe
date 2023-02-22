@@ -4,7 +4,7 @@ import { Top } from '../components';
 
 const About = () => {
   return (
-    <div className='mt-20'>
+    <div className='mt-[100px]'>
       <Top image='https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg' text='About' />
       <div className='sm:p-10 p-5'>
         <p className='text-white font-poppins sm:text-[18px] text-[14px] sm:text-center text-start p-2'>
@@ -23,14 +23,14 @@ const About = () => {
       </div>
       <div className='absolute z-[1] w-[80%] h-[42%] left-20 top-0 pink__gradient' />
       <div className='absolute z-[0] w-[40%] h-[30%] rounded-full bottom-40 white__gradient' />
-      <div className='sm:flex hidden absolute z-[0] w-[50%] h-[40%] right-20 bottom-20 blue__gradient' />
-      <div className='flex flex-col flex-1 sm:pl-5 sm:pr-5 sm:ml-5 ml-1 sm:mr-5 mr-1 bg-white/10 '>
-        <div className='font-poppins font-extrabold text-gray-500 text-center text-[25px] pt-1'>FOUNDER</div>
-        <div className='flex sm:flex-row flex-col flex-1 justify-center items-center text-center sm:px-10 px-2 sm:py-10 py-5 rounded'>
-          <div className='flex rounded-full sm:w-1/3 justify-center'>
+      <div className='sm:flex hidden absolute z-[0] w-[50%] h-[40%] right-20 bottom-10 blue__gradient' />
+      <div className='flex flex-col flex-1 sm:pl-5 sm:pr-5 sm:ml-5 ml-1 sm:mr-5 mr-1 bg-white/10 z-10'>
+        <div className='font-poppins font-extrabold text-gray-500 text-center text-[25px] pt-1 z-10'>FOUNDER</div>
+        <div className='flex sm:flex-row flex-col flex-1 justify-center items-center text-center sm:px-10 px-2 sm:py-10 py-5 rounded z-10'>
+          <div className='flex rounded-full sm:w-1/3 justify-center z-10'>
               <img src={founder} alt='name' className='flex sm:w-[240px] w-[90px] sm:h-[240px] h-[90px]  justify-center bg-[#64C0FF] rounded-full p-1'/>
           </div>
-          <div className='flex flex-col sm:w-2/3'>
+          <div className='flex flex-col sm:w-2/3 z-[10]'>
             <h6 className="font-poppins font-semibold xs:text-[22px] text-[15px] xs:leading-[53px] leading-[40px] text-white">Naveen Chauhan</h6>
             <div className='flex justify-center'>
               <p className="font-poppins font-normal xs:text-[15px] text-[12px] xs:leading-[26px] leading-[21px] text-gradient text-start">

@@ -13,7 +13,7 @@ const Offer = () => {
         <div className='grid sm:grid-cols-3 grid-cols-1 gap-2 rounded group'>
             {
                 offerGrid.map((offer) => (
-                        <div key={offer.id} className='bg-white/10 flex flex-1 justify-center items-center text-center flex-col sm:px-10 px-2 sm:py-10 py-5 rounded duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100'>
+                        <div key={offer.id} className='bg-white/10 flex flex-1 justify-center items-center text-center flex-col sm:px-10 px-2 sm:py-10 py-5 rounded duration-500 hover:!blur-none group-hover:scale-[0.85] hover:!scale-100'>
                             <div className='bg-gray-400 rounded-full'>
                                 <img src={offer.img} alt='name' className='flex sm:w-[100px] w-[40px] sm:h-[100px] h-[40px] justify-center bg-[#64C0FF] rounded-full p-3'/>
                             </div>
