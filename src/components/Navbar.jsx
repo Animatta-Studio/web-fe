@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { navLinks } from '../constants';
 import { menu, close, logo } from '../assets';
@@ -7,6 +7,16 @@ const Navbar = () => {
   const loc = useLocation();
   const [toggle, setToggle] = useState(false);
   const [selected, setSelected] = useState('home');
+  const ref = useRef(null);
+  const handleEvent = (e) => {
+    if(ref.current && !ref.current.contains(e.target)) setToggle(false);
+  };
+  useEffect(() => {
+    document.addEventListener('click', handleEvent, true);
+    return () => {
+      document.removeEventListener('click', handleEvent, true);
+    };
+  }, []);
   useEffect(() => {
     let [path] = loc?.pathname?.split('/')?.filter(v => !!v) || [];
     if(!navLinks.map(nl => nl.path).includes(path)) path = 'home';
@@ -14,7 +24,7 @@ const Navbar = () => {
     document.documentElement.scrollTo(0, 0);
   }, [loc.pathname]);
   return (
-    <nav className='sm:h-[120px] h-[80px] fixed w-full flex items-center flex-wrap top-0 z-[50] bg-[#0087E0] shadow-lg select-none'>
+    <nav className='sm:h-[120px] h-[100px] fixed w-full flex items-center flex-wrap top-0 z-[50] bg-[#0087E0] shadow-lg select-none'>
       <Link to='/home' onClick={() => setSelected('home')}>
         <img id='logo' src={logo} alt="mirai" className='sm:w-[90px] w-[80px] sm:h-[90px] h[80px] sm:mr-10 mr-2 sm:ml-5 ml-2 cursor-pointer' />
       </Link> 
@@ -51,10 +61,10 @@ const Navbar = () => {
       </ul>
 
       <div className='msm:hidden flex justify-end'>
-        <img src={toggle ? close : menu} alt='menu' className={`${toggle ? 'w-[20px] h-[20px]' : 'w-[24px] h-[24px]'} object-contain mr-2`} onClick={() => setToggle((val) => !val)} />
+        <img src={toggle ? close : menu} alt='menu' className={`${toggle ? 'w-[20px] h-[20px] hidden' : 'w-[24px] h-[24px]'} object-contain mr-2 duration-500`} onClick={() => setToggle((val) => !val)} />
       </div>
 
-      <div className={`sm:hidden ${toggle ? 'flex' : '-translate-x-[520px] overflow-hidden ease-in-out'} z-[50] flex-col fixed left-0 top-0 w-[67%] h-full border-r border-r-gray-900 bg-primary-0 duration-500`}>
+      <div ref={ref} className={`sm:hidden ${toggle ? 'flex' : '-translate-x-[520px] overflow-hidden ease-in-out'} z-[50] flex-col fixed left-0 top-0 w-[67%] h-full border-r border-r-gray-900 bg-primary-0 duration-500`}>
         <div className='flex flex-row'>
           <img src={logo} alt="mirai" className='w-[80px] h-[80px] ml-2 mr-2'/>
           <div className='flex flex-1 items-center justify-center'>
