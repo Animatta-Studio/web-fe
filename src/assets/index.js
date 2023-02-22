@@ -4,8 +4,8 @@ import binance from "./binance.png";
 import card from "./card.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
-// import logo from "./logo.svg";
 import logo from "./logo.png";
+import heroImage from './heroImage.png';
 import quotes from "./quotes.svg";
 import japanesePeople from "./japanese-people.svg";
 import robot from "./robot.png";
@@ -30,6 +30,22 @@ import visa from './visa.svg';
 import students from './students.svg';
 import university from './university.svg';
 import years from './years.svg';
+import freeConsultation from './freeConsultation.png';
+import studyAndWorkAbroad from './studyAndWorkAbroad.png';
+import freeInterviewPrep from './freeInterviewPrep.png';
+import foreignLanguageClasses from './foreignLanguageClasses.png';
+import skillDevelopment from './skillDevelopment.png';
+import documentationAndTranslation from './documentationAndTranslation.png';
+import culturalProgram from './culturalProgram.png';
+import specialJapaneseClasses from './specialJapaneseClasses.png';
+import seminarsDirectlyFromJapan from './seminarsDirectlyFromJapan.png';
+import contact from './contact.png';
+import website from './website.png';
+import email from './email.png';
+import location from './location.png';
+import founder from './founder.png';
+import teacher from './teacher.png';
+import director from './director.png';
 
 export {
   airbnb,
@@ -63,4 +79,21 @@ export {
   university,
   students,
   years,
+  freeConsultation,
+  studyAndWorkAbroad,
+  freeInterviewPrep,
+  foreignLanguageClasses,
+  skillDevelopment,
+  documentationAndTranslation,
+  culturalProgram,
+  specialJapaneseClasses,
+  seminarsDirectlyFromJapan,
+  heroImage,
+  contact,
+  website,
+  email,
+  location,
+  founder,
+  teacher,
+  director,
 };

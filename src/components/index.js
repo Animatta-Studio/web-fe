@@ -12,6 +12,8 @@ import LinkBar from './LinkBar';
 import Top from './Top';
 import ApplySidebar from './ApplySidebar';
 import Affliation from './Affliation';
+import Map from './Map';
+import LocationPin from "./LocationPin";
 
 export {
   CTA,
@@ -28,4 +30,6 @@ export {
   LinkBar,
   Top,
   Affliation,
+  Map,
+  LocationPin,
 };

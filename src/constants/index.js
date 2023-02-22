@@ -1,4 +1,27 @@
-import { people01, people02, people03, people04, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, university, students, visa, years  } from "../assets";
+import {
+  people01, people02, people03, people04, facebook,
+  instagram, linkedin, twitter, send, shield, star, 
+  university,
+  students, visa, years,
+  freeConsultation,
+  studyAndWorkAbroad,
+  freeInterviewPrep,
+  foreignLanguageClasses,
+  skillDevelopment,
+  documentationAndTranslation,
+  culturalProgram,
+  specialJapaneseClasses,
+  seminarsDirectlyFromJapan,
+  contact,
+  website,
+  email,
+  location,
+} from "../assets";
+
+export const SERVICE_ID = 'service_tb837kj';
+export const QUERY_TEMPLATE_ID = 'template_wcv7rmr';
+export const FORM_TEMPLATE_ID = 'template_iq4w6qc';
+export const PUBLIC_KEY = 'ZRM5x28Rg5PJ-UNDq';
 
 export const navLinks = [
   {
@@ -37,11 +60,6 @@ export const navLinks = [
     icon: 'settings-outline',
   },
 ];
-
-export const SERVICE_ID = 'service_hvkusoh';
-export const QUERY_TEMPLATE_ID = 'template_5p52p65';
-export const FORM_TEMPLATE_ID = 'template_ugk6nuj';
-export const PUBLIC_KEY = '4uzTAnOmC_UWWaYB0';
 
 export const abroadHeader = [
   {
@@ -152,25 +170,25 @@ export const contacts = [
   {
     id: 'c-1',
     title: 'Location',
-    img: '',
+    img: location,
     data: 'Dehradun, Uttarakhand, India',
   },
   {
     id: 'c-2',
     title: 'Contact',
-    img: '',
+    img: contact,
     data: '+91-9999999999',
   },
   {
     id: 'c-3',
     title: 'Email',
-    img: '',
+    img: email,
     data: 'miraieducational@gmail.com',
   },
   {
     id: 'c-4',
     title: 'Website',
-    img: '',
+    img: website,
     data: 'www.miraiedu.in',
   },
 ];
@@ -266,7 +284,7 @@ export const stats = [
     id: "stats-1",
     title: "Years of Experience",
     img: years,
-    value: 7,
+    value: 6,
   },
   {
     id: "stats-2",
@@ -293,55 +311,55 @@ export const offerGrid = [
     id: 'offer-1',
     title: 'Free Consultation',
     text: "We provide optimal guidance and information for students' future studies and employment",
-    img: '',
+    img: freeConsultation,
   },
   {
     id: 'offer-2',
     title: 'Study and Work Abroad',
     text: 'We offer opportunities to higher education and work anywhere in the world',
-    img: '',
+    img: studyAndWorkAbroad,
   },
   {
     id: 'offer-3',
     title: 'Free Interview Preparation',
     text: 'We offer free entrance interview/employment interview preparation courses for foreign',
-    img: '',
+    img: freeInterviewPrep,
   },
   {
     id: 'offer-4',
     title: 'Foreign Language Classes',
     text: 'We provide Japanese, English, Korean, and German language classes',
-    img: '',
+    img: foreignLanguageClasses,
   },
   {
     id: 'offer-5',
     title: 'Skill Development',
     text: 'We offer the best advice for students going abroad for 3-5 years with a good salary package to develop their skills',
-    img: '',
+    img: skillDevelopment,
   },
   {
     id: 'offer-6',
     title: 'Documentation and Translation',
     text: 'We provide the best visa documentation and document translation service, especially for Japanese',
-    img: '',
+    img: documentationAndTranslation,
   },
   {
     id: 'offer-7',
     title: 'Cultural Program',
     text: 'We are holding cultural exchange programs between Japan and India in online/offline mode',
-    img: '',
+    img: culturalProgram,
   },
   {
     id: 'offer-8',
     title: 'Special Japanese Classes',
     text: 'We provide the best JLPT and NAT exam classes for everyone',
-    img: '',
+    img: specialJapaneseClasses,
   },
   {
     id: 'offer-9',
     title: 'Seminars directly from Japan',
     text: 'We provide seminars for student and job seekers',
-    img: '',
+    img: seminarsDirectlyFromJapan,
   },
 ]
 

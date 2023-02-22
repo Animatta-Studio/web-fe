@@ -8,7 +8,7 @@ const Testimonials = () => {
       <hr className='w-80 mx-auto h-1 bg-[#0087E0] mb-10' />
       <div className='flex sm:flex-row flex-col max-full justify-between sm:space-x-3 sm:space-y-0 space-y-3 group'>
         {feedbacks.map(feedback => (
-          <div key={feedback.id} className='sm: h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 pb-8 rounded-xl mix-blend-luminosity cursor-pointer'>
+          <div key={feedback.id} className='sm: h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 pb-8 rounded-xl cursor-pointer'>
             <div className='flex flex-1 flex-col h-1/5 items-center justify-center '>
               <img src={feedback.img} alt='' className='flex h-[100px] w-[100px] bg-cover justify-center mb-2 rounded-full border-none' />
               <h5 className='text-xl font-bold text-white opacity-70'>{feedback.name}</h5>

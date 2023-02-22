@@ -15,7 +15,7 @@ const Offer = () => {
                 offerGrid.map((offer) => (
                         <div key={offer.id} className='bg-white/10 flex flex-1 justify-center items-center text-center flex-col sm:px-10 px-2 sm:py-10 py-5 rounded duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100'>
                             <div className='bg-gray-400 rounded-full'>
-                                <img src={`../assets/${offer.svg}`} alt='name' className='flex sm:w-[100px] w-[40px] sm:h-[100px] h-[40px] justify-center'/>
+                                <img src={offer.img} alt='name' className='flex sm:w-[100px] w-[40px] sm:h-[100px] h-[40px] justify-center bg-[#64C0FF] rounded-full p-3'/>
                             </div>
                             <h6 className="font-poppins font-semibold xs:text-[20px] text-[15px] xs:leading-[53px] leading-[40px] text-white">{offer.title}</h6>
                             <p className="font-poppins font-normal xs:text-[16px] text-[10px] xs:leading-[26px] leading-[21px] text-gradient">{offer.text}</p>

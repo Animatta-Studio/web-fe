@@ -27,7 +27,7 @@ const GoToTop = () => {
 
   return (
     <div className='mt-5 mr-2 bg-primary-0 rounded-full border-r-0 first-letter:rounded cursor-pointer flex relative items-center justify-center h-10 text-4xl text-white w-10 z-[999]' onClick={goToBtn}>
-      <FaArrowUp className="h-5 w-5 animate-gototop" />
+      <FaArrowUp className="h-5 w-5 animate-gototop text-[#0087E0]" />
     </div>
   );
 };
