@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
@@ -6,6 +6,7 @@ import { SERVICE_ID, FORM_TEMPLATE_ID, PUBLIC_KEY } from '../constants';
 
 const Apply = () => {
     const form = useRef();
+    const [loading, setLoading] = useState(false);
 
     const defaultValues = {
         name: '',
@@ -33,9 +34,11 @@ const Apply = () => {
     });
 
     const sendEmail = (values, actions) => {
+        setLoading(true);
         emailjs.sendForm(SERVICE_ID, FORM_TEMPLATE_ID, form.current, PUBLIC_KEY)
         .then((result) => {
             console.log(result.text);
+            setLoading(false);
             alert("Application submitted successfully");
         }, (error) => {
             console.log(error.text);
@@ -169,7 +172,10 @@ const Apply = () => {
                         <Field as='textarea' id="message" name='message' rows="6" className="block p-2.5 w-full text-sm resize-none rounded-lg border bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500" placeholder="Additional Information or Query"/>
                     </div>
                     <div className='flex flex-1 items-center justify-center'>
-                        <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-600 hover:bg-primary-700 focus:ring-primary-800">APPLY NOW</button>
+                        <button type="submit" disabled={loading} className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-600 hover:bg-primary-700 focus:ring-primary-800">
+                            { loading && <span>Submitting...</span> }
+                            { !loading && <span>APPLY NOW</span> }
+                        </button>
                     </div>
                 </Form>
             </Formik>
@@ -177,5 +183,9 @@ const Apply = () => {
     </section>
   );
 }
+
+
+
+
 
 export default Apply

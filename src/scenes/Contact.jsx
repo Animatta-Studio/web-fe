@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
@@ -7,6 +7,7 @@ import { Top, Map } from '../components';
 
 const Contact = () => {
     const form = useRef();
+    const [loading, setLoading] = useState(false);
 
     const location = {
         address: 'Mirai International Education',
@@ -28,9 +29,11 @@ const Contact = () => {
     });
 
     const sendEmail = (values, actions) => {
+        setLoading(true);
         emailjs.sendForm(SERVICE_ID, QUERY_TEMPLATE_ID, form.current, PUBLIC_KEY)
         .then((result) => {
             console.log(result.text);
+            setLoading(false);
             alert("Email sent successfully");
         }, (error) => {
             console.log(error.text);
@@ -84,7 +87,10 @@ const Contact = () => {
                             <Field as='textarea' id="message" name='message' rows="6" className="block p-2.5 w-full text-sm resize-none text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Let us know how can we help you"/>
                         </div>
                         <div className='flex flex-1 sm:pb-0 pb-10'>
-                            <button type="submit" className="font-semibold py-4 text-lg text-center text-white rounded-lg bg-primary-700 w-full hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send Message</button>
+                            <button type="submit" disabled={loading} className="font-semibold py-4 text-lg text-center text-white rounded-lg bg-primary-700 w-full hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                { loading && <span>Sending...</span> }
+                                { !loading && <span>Send Message</span> }
+                            </button>
                         </div>
                     </Form>
                 </Formik>

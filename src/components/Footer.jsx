@@ -6,37 +6,28 @@ import GoToTop from './GoToTop';
 const Footer = () => {
   return (
     <footer className='w-full bg-[#0087E0] shadow-lg z-[50]'>
-      <div className='lg:w-4/5 w-11/12 m-auto p-6 flex justify-between'>
+      <div className='lg:w-3/5 w-11/12 m-auto p-6 flex justify-between'>
         <div className='flex flex-col space-y-2'>
           <h1 className='sm:text-xl text-[14px] font-bold'>Get in touch</h1>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">address line 1</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">address line 2</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">phone</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">email</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">India</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">address details</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">Japan</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">address details</a>
         </div>
         <div className='flex flex-col space-y-2'>
           <h1 className='sm:text-xl text-[14px] font-bold'>Connect</h1>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">social</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">media</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">icons</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">facebook</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">insta etc</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">Facebook</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">Instagram</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">LinkedIn</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">Youtube</a>
         </div>
         <div className='flex flex-col space-y-2'>
           <h1 className='sm:text-xl text-[14px] font-bold'>Services</h1>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">courses</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">that</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">they</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">can</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">provide</a>
-        </div>
-        <div className='flex flex-col space-y-2'>
-          <h1 className='sm:text-xl text-[14px] font-bold'>Ventures</h1>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">need</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">to</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">think</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">about</a>
-          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">this column</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">Study Abroad</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">Document Translation</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">Work in Japan</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">Free Consultation</a>
+          <a className='text-xs text-white font-bold hover:text-gray-700' href="/">Japanese Language Classes</a>
         </div>
       </div>
       <div className='flex'>

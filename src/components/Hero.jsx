@@ -2,6 +2,7 @@ import styles from '../style';
 import { discount, japanesePeople, heroImage } from '../assets';
 import { GetStarted } from '../components';
 import Typed from 'react-typed';
+import 'react-typed/dist/animatedCursor.css';
 
 const Hero = () => {
   return (

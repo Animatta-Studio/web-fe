@@ -284,25 +284,25 @@ export const stats = [
     id: "stats-1",
     title: "Years of Experience",
     img: years,
-    value: 6,
+    value: 10,
   },
   {
     id: "stats-2",
     title: "Reputed Institutions",
     img: university,
-    value: 15,
+    value: 5,
   },
   {
     id: "stats-3",
     title: "Satisfied Students",
     img: students,
-    value: 803,
+    value: 50,
   },
   {
     id: "stats-4",
     title: "Visa Granted",
     img: visa,
-    value: 673,
+    value: 40,
   }
 ];
 
