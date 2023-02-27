@@ -34,9 +34,10 @@ import teacher from './teacher.jpg';
 import director from './director.jpg';
 import jls2 from './jls2.png';
 import ikno from './ikno.png';
-import octb from './octb.jpeg';
+import octb from './octb.jpg';
 import indianOffice from './indianOffice.jpg';
 import japaneseOffice from './japaneseOffice.jpg';
+import blank from './blank.png';
 
 export {
   logo,
@@ -78,4 +79,5 @@ export {
   octb,
   indianOffice,
   japaneseOffice,
+  blank,
 };
