@@ -132,7 +132,7 @@ const Contact = () => {
         <div className='flex msm:flex-row flex-col ustify-between msm:space-x-3 msm:space-y-0 space-y-3 group msm:p-6 p-2 msm:mx-8'>
             <div className='h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 rounded-xl cursor-pointer'>
                 <div className='flex flex-1 flex-col h-1/4 items-center justify-center '>
-                    <img src={indianOffice} alt='' className='flex h-[200px] w-[200px] bg-cover justify-center mb-2 rounded-full border-none' />
+                    <img src={indianOffice} alt='' className='flex sm:h-[200px] h-[100px] sm:w-[200px] w-[100px] bg-cover justify-center mb-2 rounded-full border-none' />
                     <h5 className='text-xl font-bold text-white opacity-70'>Our Office In India</h5>
                     <h6 className='text-[15px] text-gray-500 xs:inline hidden'>Telephone- +91-7037972600, +91-8077063794</h6>
                     <h6 className='text-[15px] text-gray-500 xs:hidden inline'>Telephone- +91-8077063794</h6>
@@ -146,7 +146,7 @@ const Contact = () => {
             </div>
             <div className='h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 rounded-xl cursor-pointer'>
                 <div className='flex flex-1 flex-col h-1/4 items-center justify-center '>
-                    <img src={japaneseOffice} alt='' className='flex h-[200px] w-[200px] bg-cover justify-center mb-2 rounded-full border-none' />
+                    <img src={japaneseOffice} alt='' className='flex sm:h-[200px] h-[100px] sm:w-[200px] w-[100px] bg-cover justify-center mb-2 rounded-full border-none' />
                     <h5 className='text-xl font-bold text-white opacity-70'>Our Office In Japan</h5>
                     <h6 className='text-[15px] text-gray-500'>Telephone- +81-7084488810</h6>
                 </div>
