@@ -47,7 +47,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col flex-1 mt-10 sm:pl-5 sm:pr-5 sm:ml-5 ml-1 sm:mr-5 mr-1 bg-white/10 '>
+      <div className='flex flex-col flex-1 sm:my-10 my-5 sm:pl-5 sm:pr-5 sm:ml-5 ml-1 sm:mr-5 mr-1 bg-white/10 '>
         <div className='font-poppins font-extrabold text-gray-500 text-center text-[25px] pt-1'>DIRECTOR</div>
         <div className='flex sm:flex-row flex-col-reverse flex-1 justify-center items-center text-center sm:px-10 px-2 sm:py-10 py-5 rounded'>
           <div className='flex flex-col sm:w-2/3'>
@@ -74,7 +74,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col flex-1 mt-10 mb-10 sm:pl-5 sm:pr-5 sm:ml-5 ml-1 sm:mr-5 mr-1 bg-white/10'>
+      <div className='flex flex-col flex-1 sm:my-10 my-5 sm:pl-5 sm:pr-5 sm:ml-5 ml-1 sm:mr-5 mr-1 bg-white/10'>
         <div className='font-poppins font-extrabold text-gray-500 text-center text-[25px] pt-1'>LEAD EDUCATOR</div>
         <div className='flex sm:flex-row flex-col flex-1 justify-center items-center text-center sm:px-10 px-2 sm:py-10 py-5 rounded'>
           <div className='flex rounded-full justify-center sm:w-1/3'>
