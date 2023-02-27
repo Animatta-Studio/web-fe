@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Navbar, Footer, Apply } from './components';
+import { Navbar, Footer, Apply, GoToTop } from './components';
 import { Home, Contact, StudyAbroad, Courses, About } from './scenes';
 
 const App = () => {
@@ -18,6 +18,7 @@ const App = () => {
         <Route path='/apply' element={<Apply />} />
         <Route path="*" element={<Home />} />
       </Routes>
+      <GoToTop />
       <Footer />
     </div>
   )

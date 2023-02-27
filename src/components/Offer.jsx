@@ -6,8 +6,8 @@ const Offer = () => {
   return (
     <section className="bg-primary-0 rounded mt-10">
         <div className="pt-8 lg:pt-16 px-4 mx-auto max-w-screen-md">
-            <h2 className="font-poppins mb-4 text-4xl tracking-tight font-extrabold text-center text-white">We Offer You</h2>
-            <hr className='w-40 mx-auto h-1 bg-[#0087E0] mb-10 rounded' />
+            <h2 className="font-poppins sm:mb-4 mb-2 sm:text-4xl text-2xl tracking-tight font-extrabold text-center text-white">We Offer You</h2>
+            <hr className='w-40 mx-auto h-1 bg-[#0087E0] sm:mb-10 mb-4 rounded' />
             <p className="mb-4 lg:mb-8 font-bold text-center text-white sm:text-xl">We provide you quality service in very affordable fee</p>
         </div>
         <div className='grid sm:grid-cols-3 grid-cols-1 gap-2 rounded group select-none'>

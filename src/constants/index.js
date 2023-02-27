@@ -1,6 +1,6 @@
 import {
   people01, people02, people03, people04, facebook,
-  instagram, linkedin, twitter, send, shield, star, 
+  instagram, linkedin, twitter, 
   university,
   students, visa, years,
   freeConsultation,
@@ -16,6 +16,9 @@ import {
   website,
   email,
   location,
+  jls2,
+  ikno,
+  octb,
 } from "../assets";
 
 export const SERVICE_ID = 'service_tb837kj';
@@ -193,54 +196,34 @@ export const contacts = [
   },
 ];
 
-export const features = [
-  {
-    id: "feature-1",
-    icon: star,
-    title: "Rewards",
-    content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
-  },
-  {
-    id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
-    content:
-      "We take proactive steps make sure your information and transactions are secure.",
-  },
-  {
-    id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
-    content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
-  },
-];
-
 export const affiliatedInstitutions = [
   {
     id: 'inst-1',
-    logo: '',
+    logo: jls2,
     name: 'Osaka Tourism And Business Japanese Language School',
     details: '',
+    link: 'https://nihongo.octb.ac.jp/',
   },
   {
     id: 'inst-2',
-    logo: '',
+    logo: ikno,
     name: 'Osaka Tourism And Business Ikuno Kou',
     details: '',
+    link: 'https://www.octb-ikno.jp/',
   },
   {
     id: 'inst-3',
     logo: '',
     name: 'Nihon Digital College',
     details: '',
+    link: '',
   },
   {
     id: 'inst-4',
-    logo: '',
+    logo: octb,
     name: 'Osaka College Of Tourism And Business',
     details: '',
+    link: 'https://octb.ac.jp/',
   },
 ];
 
@@ -340,7 +323,7 @@ export const offerGrid = [
   {
     id: 'offer-6',
     title: 'Documentation and Translation',
-    text: 'We provide the best visa documentation and document translation service, especially for Japanese',
+    text: 'We provide the best visa documentation and document translation service, especially for Japanese language',
     img: documentationAndTranslation,
   },
   {
@@ -360,72 +343,6 @@ export const offerGrid = [
     title: 'Seminars directly from Japan',
     text: 'We provide seminars for student and job seekers',
     img: seminarsDirectlyFromJapan,
-  },
-]
-
-export const footerLinks = [
-  {
-    title: "Useful Links",
-    links: [
-      {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
-      },
-    ],
   },
 ];
 

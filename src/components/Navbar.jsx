@@ -30,7 +30,7 @@ const Navbar = () => {
       </Link> 
       <div className='flex flex-1 items-center justify-center'>
         <h1 className='flex-1 font-poppins font-semibold sm:text-[15px] text-[12px] text-white justify-center items-center'>
-          <span className='text-gradient sm:text-[40px] text-[25px] justify-center'>Mirai</span><br/>
+          <span className='sm:text-[40px] text-[25px] justify-center'>Mirai</span><br/>
           International Education<br/>
         </h1>
       </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
       </div>
 
       <div ref={ref} className={`sm:hidden ${toggle ? 'flex' : '-translate-x-[520px] overflow-hidden ease-in-out'} z-[50] flex-col fixed left-0 top-0 w-[67%] h-full border-r border-r-gray-900 bg-primary-0 duration-500`}>
-        <div className='flex flex-row'>
+        <div className='flex flex-row mt-2'>
           <img src={logo} alt="mirai" className='w-[80px] h-[80px] ml-2 mr-2'/>
           <div className='flex flex-1 items-center justify-center'>
             <h1 className='flex-1 font-poppins font-semibold sm:text-[17px] text-[12px] text-white justify-center items-center'>

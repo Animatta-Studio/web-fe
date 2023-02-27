@@ -3,7 +3,8 @@ import emailjs from '@emailjs/browser';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import { contacts, SERVICE_ID, QUERY_TEMPLATE_ID, PUBLIC_KEY } from '../constants';
-import { Top, Map } from '../components';
+import { Top, Map, ContactLinkBar } from '../components';
+import { indianOffice, japaneseOffice } from '../assets';
 
 const Contact = () => {
     const form = useRef();
@@ -45,6 +46,7 @@ const Contact = () => {
   return (
     <section className="mt-[100px]">
         <Top image='https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg' text='Contact Us' />
+       <ContactLinkBar />
         <div className='absolute z-[1] w-[80%] h-[42%] left-20 top-0 pink__gradient' />
         <div className='absolute z-[0] w-[40%] h-[30%] rounded-full bottom-40 white__gradient' />
         <div className='sm:flex hidden absolute z-[0] w-[50%] h-[40%] right-20 bottom-20 blue__gradient' />
@@ -110,7 +112,8 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        <div className='w-full sm:flex grid grid-cols-2 gap-1 rounded sm:pb-10'>
+        <hr className='text-blue h-1 bg-[#0087E0] mt-5' />
+        <div className='w-full sm:flex grid grid-cols-2 gap-1 rounded'>
             {contacts.map(contact => (
                 <div key={contact.id} className='flex flex-1 sm:flex-row flex-col justify-center items-center sm:px-5 px-5 sm:py-10 py-4 rounded'>
                     <div className='bg-[#0087E0] p-2 rounded-full mr-2'>
@@ -125,28 +128,31 @@ const Contact = () => {
                 </div>
             ))}
         </div>
-        <div className='flex sm:flex-row flex-col max-full justify-between sm:space-x-3 sm:space-y-0 space-y-3 group p-10'>
-            <div className='sm: h-[300px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 pb-8 rounded-xl cursor-pointer'>
-                <div className='flex flex-1 flex-col h-1/5 items-center justify-center '>
-                    <img src='' alt='' className='flex h-[100px] w-[100px] bg-cover justify-center mb-2 rounded-full border-none' />
+        <hr className='text-blue h-1 bg-[#0087E0] mt-5 sm:mb-10' />
+        <div className='flex sm:flex-row flex-col max-full justify-between sm:space-x-3 sm:space-y-0 space-y-3 group p-8 mx-8'>
+            <div className='h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 rounded-xl cursor-pointer'>
+                <div className='flex flex-1 flex-col h-1/4 items-center justify-center '>
+                    <img src={indianOffice} alt='' className='flex h-[200px] w-[200px] bg-cover justify-center mb-2 rounded-full border-none' />
                     <h5 className='text-xl font-bold text-white opacity-70'>Our Office In India</h5>
-                    <h6 className='text-[15px] text-gray-500'>Telephone- 9999999999</h6>
+                    <h6 className='text-[15px] text-gray-500'>Telephone- +91-7037972600, +91-8077063794</h6>
                 </div>
-                <div className='text-start h-2/5'>
-                    <p className='text-[12px] text-white leading-6 font-bold opacity-40 text-center'>
-                        Ranipokhari Donali, Dehradun, Uttarakhand INDIA – 248145
+                <div className='text-start h-1/4 mt-2'>
+                    <p className='text-[14px] text-white leading-[20px] font-bold opacity-40 text-center'>
+                        Ranipokhari-Donali, Dehradun,<br/>
+                        Uttarakhand INDIA – 248145
                     </p>
                 </div>
             </div>
-            <div className='sm: h-[300px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 pb-8 rounded-xl cursor-pointer'>
-                <div className='flex flex-1 flex-col h-1/5 items-center justify-center '>
-                    <img src='' alt='' className='flex h-[100px] w-[100px] bg-cover justify-center mb-2 rounded-full border-none' />
+            <div className='h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 rounded-xl cursor-pointer'>
+                <div className='flex flex-1 flex-col h-1/4 items-center justify-center '>
+                    <img src={japaneseOffice} alt='' className='flex h-[200px] w-[200px] bg-cover justify-center mb-2 rounded-full border-none' />
                     <h5 className='text-xl font-bold text-white opacity-70'>Our Office In Japan</h5>
-                    <h6 className='text-[15px] text-gray-500'>Telephone- 00817084488810</h6>
+                    <h6 className='text-[15px] text-gray-500'>Telephone- +81-7084488810</h6>
                 </div>
-                <div className='text-start h-2/5'>
-                    <p className='text-[12px] text-white leading-6 font-bold opacity-40 text-center'>
-                        Osaka Fu Osaka Shi Suminoe ku Nanko Nana 3-3
+                <div className='text-start h-1/4 mt-2'>
+                    <p className='text-[14px] text-white leading-[20px] font-bold opacity-40 text-center'>
+                        Osaka Fu Osaka Shi,<br/>
+                        Suminoe ku Nanko Nana 3-3, Japan
                     </p>
                 </div>
             </div>

@@ -1,12 +1,12 @@
 import styles from '../style';
-import { discount, japanesePeople, heroImage } from '../assets';
+import { discount, heroImage } from '../assets';
 import { GetStarted } from '../components';
 import Typed from 'react-typed';
 import 'react-typed/dist/animatedCursor.css';
 
 const Hero = () => {
   return (
-    <section id='home' className={`flex md:flex-row flex-col select-none sm:mt-[55px] mb-10`} >
+    <section id='home' className={`flex md:flex-row flex-col select-none sm:mt-[55px] mb-20`} >
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-14 px-6`}>
         <div className='flex flex-row items-center py-0 bg-discount-gradient rounded-[10px] mb-2'>
           {/* <img src={discount} alt='discount' className='w-[28px] h-[28px]'/>
@@ -19,8 +19,8 @@ const Hero = () => {
         <div className='flex flex-row justify-between items-center w-full'>
           <h1 className='flex-1 font-poppins font-semibold sm:text-[24px] text-[20px] text-white sm:leading-[40px] leading-[30px]'>
             <span className='italic'> Welcome to </span><br/>
-            <span className='text-gradient text-[50px] leading-[55px]'>Mirai</span><br/>
-            <span className='text-gradient text-[35px]'>International Education</span> {' '}
+            <span className='text-[#33bbcf] text-[60px] leading-[65px]'>Mirai</span><br/>
+            <span className='text-[#33bbcf] text-[35px]'>International Education</span> {' '}
           </h1>
 
           <div className='ss:flex hidden md:mr-4 mr-0'>
@@ -43,12 +43,9 @@ const Hero = () => {
         </div> 
 
         <p className={`${styles.paragraph} max-w-[600px] mt-5 font-poppins`}>
-          Our platform guides and supports the students to find the best school/institutes/colleges
-          or universities all around the world through our visual learning system and direct communication
-          with overseas people. We help to stimulate your interest in learning and help you
-          develop an interest in foreign culture, traditions, manners, and language. We will
-          walk you through the process by providing valuable information and guidance
-          and make sure that you transition to your new college seamlessly.
+          Our platform guides and supports the student to find the best school or college all around
+          the world. We will walk you through the process by providing valuable information and 
+          guidance, making sure that you transition to your new college seamlessly.
         </p>
       </div>
 

@@ -1,4 +1,3 @@
-import CTA from "./CTA";
 import Footer from "./Footer";
 import GetStarted from "./GetStarted";
 import Hero from "./Hero";
@@ -14,9 +13,9 @@ import ApplySidebar from './ApplySidebar';
 import Affliation from './Affliation';
 import Map from './Map';
 import LocationPin from "./LocationPin";
+import ContactLinkBar from './ContactLinkBar';
 
 export {
-  CTA,
   Footer,
   GetStarted,
   Hero,
@@ -32,4 +31,5 @@ export {
   Affliation,
   Map,
   LocationPin,
+  ContactLinkBar,
 };
