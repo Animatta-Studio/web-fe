@@ -8,7 +8,7 @@ const StudyAbroad = () => {
   return (
     <div className='mt-[100px]'>
       <Top image='https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg' text='Study Abroad' />
-      <div className='font-poppins font-normal border border-gray-500 p-2 text-white sm:px-10 sm:text-[15px] text-[13px] sm:leading-[25px] leading-[24px] text-center'>
+      {/* <div className='font-poppins font-normal border border-gray-500 p-2 text-white sm:px-10 sm:text-[15px] text-[13px] sm:leading-[25px] leading-[24px] text-center'>
         {parse(aboutJapan)}
       </div>
       <div className='flex flex-1 sm:flex-row flex-col'>
@@ -24,10 +24,10 @@ const StudyAbroad = () => {
           </div>
           <div className='font-poppins font-normal border border-gray-500 p-2 pt-8 pb-8 m-4 text-white sm:px-10 sm:text-[15px] text-[13px] sm:leading-[25px] leading-[24px]'>
               {parse(abroadHeader[selected].content)}
-          </div>
+          </div> 
         </div>
         <ApplySidebar />
-      </div>
+      </div>*/}
     </div>
   )
 }

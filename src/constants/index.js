@@ -19,6 +19,7 @@ import {
   jls2,
   ikno,
   octb,
+  blank,
 } from "../assets";
 
 export const SERVICE_ID = 'service_tb837kj';
@@ -180,7 +181,7 @@ export const contacts = [
     id: 'c-2',
     title: 'Contact',
     img: contact,
-    data: '+91-9999999999',
+    data: '+91-7037972600',
   },
   {
     id: 'c-3',
@@ -213,10 +214,10 @@ export const affiliatedInstitutions = [
   },
   {
     id: 'inst-3',
-    logo: '',
+    logo: blank,
     name: 'Nihon Digital College',
     details: '',
-    link: '',
+    link: '#',
   },
   {
     id: 'inst-4',

@@ -51,10 +51,10 @@ const Contact = () => {
         <div className='absolute z-[0] w-[40%] h-[30%] rounded-full bottom-40 white__gradient' />
         <div className='sm:flex hidden absolute z-[0] w-[50%] h-[40%] right-20 bottom-20 blue__gradient' />
         <div className='flex sm:flex-row flex-col'>
-            <div className="sm:w-1/2 w-full py-1 lg:py-8 px-10 sm:mx-auto mx-0 max-w-screen-md items-start justify-start rounded z-[10]">
+            <div className="sm:w-1/2 w-full py-1 lg:py-8 sm:px-10 px-2 sm:mx-auto mx-0 max-w-screen-md items-start justify-start rounded z-[10]">
                 <h2 className="mb-4 sm:text-3xl text-2xl font-poppins tracking-tight font-semibold text-center text-white">Get In Touch With Us</h2>
                 <Formik initialValues={defaultValues} validationSchema={validationSchema} onSubmit={sendEmail} >
-                    <Form ref={form} className="space-y-8">
+                    <Form ref={form} className="space-y-6">
                         <div>
                             <label htmlFor="email" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">
                                 <div className='flex flex-row justify-between'>
@@ -98,22 +98,22 @@ const Contact = () => {
                 </Formik>
             </div>
             <div className='flex flex-1 mt-10 mb-10 m-2 justify-center flex-col z-[10]'>
-                <div className=' bg-[#0087E0] right-0 top-0 sm:w-96 w-[350px] h-5'></div>
+                <div className='sm:flex hidden bg-[#0087E0] right-0 top-0 sm:w-96 w-[350px] h-5'></div>
                 <div className='flex flex-row'>
-                    <div className='bg-[#0087E0] right-0 top-0 w-[60px] h-[250px]'></div>
+                    <div className='sm:flex hidden bg-[#0087E0] right-0 top-0 w-[60px] h-[250px]'></div>
                     {/* <Map location={location} zoomLevel={zoomLevel} /> */}
                     <iframe defer className='z-[10] h-[450px] bg-[#0087E0] w-full border-2' src="https://maps.google.com/maps?q=durga%20chowk,%20bhaniyawala,%20dehradun,%20uttarakhand,%20india&t=m&z=15&ie=UTF8&iwloc=&output=embed&mrt=kmlkmz" frameBorder="1" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
-                    <div className='flex flex-col-reverse'>
+                    <div className='sm:flex hidden flex-col-reverse'>
                         <div className='bg-[#0087E0] right-0 top-0 sm:w-[60px] w-[35px] h-[250px]'></div>
                     </div>
                 </div>
-                <div className='flex flex-row-reverse'>
+                <div className='sm:flex hidden flex-row-reverse'>
                     <div className=' bg-[#0087E0] left-0 top-0 sm:w-96 w-[350px] h-5'></div>
                 </div>
             </div>
         </div>
         <hr className='text-blue h-1 bg-[#0087E0] mt-5' />
-        <div className='w-full sm:flex grid grid-cols-2 gap-1 rounded'>
+        <div className='w-full lg:flex grid grid-cols-2 gap-1 rounded'>
             {contacts.map(contact => (
                 <div key={contact.id} className='flex flex-1 sm:flex-row flex-col justify-center items-center sm:px-5 px-5 sm:py-10 py-4 rounded'>
                     <div className='bg-[#0087E0] p-2 rounded-full mr-2'>
@@ -129,14 +129,15 @@ const Contact = () => {
             ))}
         </div>
         <hr className='text-blue h-1 bg-[#0087E0] mt-5 sm:mb-10' />
-        <div className='flex sm:flex-row flex-col max-full justify-between sm:space-x-3 sm:space-y-0 space-y-3 group p-8 mx-8'>
+        <div className='flex msm:flex-row flex-col ustify-between msm:space-x-3 msm:space-y-0 space-y-3 group msm:p-6 p-2 msm:mx-8'>
             <div className='h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 rounded-xl cursor-pointer'>
                 <div className='flex flex-1 flex-col h-1/4 items-center justify-center '>
                     <img src={indianOffice} alt='' className='flex h-[200px] w-[200px] bg-cover justify-center mb-2 rounded-full border-none' />
                     <h5 className='text-xl font-bold text-white opacity-70'>Our Office In India</h5>
-                    <h6 className='text-[15px] text-gray-500'>Telephone- +91-7037972600, +91-8077063794</h6>
+                    <h6 className='text-[15px] text-gray-500 xs:inline hidden'>Telephone- +91-7037972600, +91-8077063794</h6>
+                    <h6 className='text-[15px] text-gray-500 xs:hidden inline'>Telephone- +91-8077063794</h6>
                 </div>
-                <div className='text-start h-1/4 mt-2'>
+                <div className='text-start h-1/4 mt-2 sm:py-1 py-2'>
                     <p className='text-[14px] text-white leading-[20px] font-bold opacity-40 text-center'>
                         Ranipokhari-Donali, Dehradun,<br/>
                         Uttarakhand INDIA – 248145
@@ -149,7 +150,7 @@ const Contact = () => {
                     <h5 className='text-xl font-bold text-white opacity-70'>Our Office In Japan</h5>
                     <h6 className='text-[15px] text-gray-500'>Telephone- +81-7084488810</h6>
                 </div>
-                <div className='text-start h-1/4 mt-2'>
+                <div className='text-start h-1/4 mt-2 sm:py-1 py-2'>
                     <p className='text-[14px] text-white leading-[20px] font-bold opacity-40 text-center'>
                         Osaka Fu Osaka Shi,<br/>
                         Suminoe ku Nanko Nana 3-3, Japan
