@@ -1,14 +1,15 @@
-import React from 'react';
-import { founder, director, teacher } from '../assets';
+import React, { useEffect } from 'react';
+import { founder, director, teacher, aboutus } from '../assets';
 import { Top } from '../components';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
     <div className='mt-[100px]'>
       <Top image='https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg' text='About' />
-      <div className='sm:p-10 p-5'>
-        <p className='text-white font-poppins sm:text-[18px] text-[14px] sm:text-center text-start p-2'>
-          We are delighted to welcome you to <br className='sm:hidden flex'></br><b className='text-gradient sm:text-[20px] text[18px]'>Mirai International Education</b>.<br className='sm:block hidden'/><br/>
+      <div className='flex sm:flex-row flex-col sm:p-10 p-5 justify-center space-x-20'>
+        <motion.p initial={{x: '-100vw'}} animate={{x: 0}} transition={{type:'spring', duration:1.2, bounce:0.25}} className='text-white font-poppins sm:text-[18px] text-[14px] sm:text-center text-start p-2'>
+          We are delighted to welcome you to <br className='sm:hidden flex'></br><b className='text-gradient sm:text-[20px] text[18px] z-[2]'>Mirai International Education</b>.<br className='sm:block hidden'/><br/>
           First of all being a student, we all know how study is very crucial to an individual’s <br className='sm:flex hidden'/>
           future, so nowadays students are migrating and planning to overseas for better <br className='sm:flex hidden'/>
           future/studies and open up their ways towards a brighter future, work opportunity <br className='sm:flex hidden'/>
@@ -19,13 +20,14 @@ const About = () => {
           settled in Japan. And also included encompasses everything that’s needed to reach <br className='sm:flex hidden'/>
           the Japanese school/college/University and other educational institute of your <br className='sm:flex hidden'/>
           choice, with the minimum time, effort and expenditure.
-        </p>
+        </motion.p>
+        <motion.img initial={{x: '100vw'}} animate={{x: 0}} transition={{type:'spring', duration:1.2, bounce:0.25}} src={aboutus} className='sm:inline hidden w-1/3 p-2 bg-opacity-[0.5] bg-gray-400 rounded-[180px] z-[2]' />
       </div>
-      <div className='absolute z-[1] w-[80%] h-[42%] left-20 top-0 pink__gradient' />
-      <div className='absolute z-[0] w-[40%] h-[30%] rounded-full bottom-40 white__gradient' />
+      <div className='absolute sm:flex hidden z-[1] w-[80%] h-[42%] left-20 top-0 pink__gradient' />
+      <div className='absolute sm:flex hideen z-[0] w-[40%] h-[30%] rounded-full bottom-40 white__gradient' />
       <div className='sm:flex hidden absolute z-[0] w-[50%] h-[40%] right-20 bottom-10 blue__gradient' />
       <div className='flex flex-col flex-1 sm:pl-5 sm:pr-5 sm:ml-5 ml-1 sm:mr-5 mr-1 bg-white/10 z-10'>
-        <div className='font-poppins font-extrabold text-gray-500 text-center text-[25px] pt-1 z-10'>FOUNDER</div>
+        <div className='font-poppins font-extrabold text-white text-center text-[25px] pt-1 z-10'>FOUNDER</div>
         <div className='flex sm:flex-row flex-col flex-1 justify-center items-center text-center sm:px-10 px-2 sm:py-10 py-5 rounded z-10'>
           <div className='flex rounded-full sm:w-1/3 justify-center z-10'>
               <img src={founder} alt='name' className='object-cover sm:w-[240px] w-[100px] sm:h-[240px] h-[100px] justify-center bg-[#64C0FF] rounded-full p-1'/>
@@ -48,7 +50,7 @@ const About = () => {
         </div>
       </div>
       <div className='flex flex-col flex-1 sm:my-10 my-5 sm:pl-5 sm:pr-5 sm:ml-5 ml-1 sm:mr-5 mr-1 bg-white/10 '>
-        <div className='font-poppins font-extrabold text-gray-500 text-center text-[25px] pt-1'>DIRECTOR</div>
+        <div className='font-poppins font-extrabold text-white text-center text-[25px] pt-1'>DIRECTOR</div>
         <div className='flex sm:flex-row flex-col-reverse flex-1 justify-center items-center text-center sm:px-10 px-2 sm:py-10 py-5 rounded'>
           <div className='flex flex-col sm:w-2/3'>
             <h6 className="font-poppins font-semibold xs:text-[22px] text-[15px] xs:leading-[53px] leading-[40px] text-white">Junichi Nishite</h6>
@@ -75,7 +77,7 @@ const About = () => {
         </div>
       </div>
       <div className='flex flex-col flex-1 sm:my-10 my-5 sm:pl-5 sm:pr-5 sm:ml-5 ml-1 sm:mr-5 mr-1 bg-white/10'>
-        <div className='font-poppins font-extrabold text-gray-500 text-center text-[25px] pt-1'>LEAD EDUCATOR</div>
+        <div className='font-poppins font-extrabold text-white text-center text-[25px] pt-1'>LEAD EDUCATOR</div>
         <div className='flex sm:flex-row flex-col flex-1 justify-center items-center text-center sm:px-10 px-2 sm:py-10 py-5 rounded'>
           <div className='flex rounded-full justify-center sm:w-1/3'>
               <img src={teacher} alt='name' className='flex object-cover object-bottom sm:w-[240px] w-[100px] sm:h-[240px] h-[100px] justify-center bg-[#64C0FF] rounded-full p-1'/>

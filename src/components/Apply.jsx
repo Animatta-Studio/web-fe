@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
+import { motion } from 'framer-motion';
 import { SERVICE_ID, FORM_TEMPLATE_ID, PUBLIC_KEY } from '../constants';
 
 const Apply = () => {
@@ -49,8 +50,8 @@ const Apply = () => {
 
   return (
     <section className="bg-gray-900 rounded mt-20">
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-            <p className="mb-8 lg:mb-16 text-center font-bold text-gray-400 sm:text-xl">ONLINE APPLICATION FORM</p>
+        <motion.div initial={{y: '100vw'}} animate={{y: 0}} transition={{type:'spring', duration:1.5, bounce:0.3}} className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <p className="mb-8 lg:mb-16 text-center font-bold text-white sm:text-xl">ONLINE APPLICATION FORM</p>
             <Formik initialValues={defaultValues} validationSchema={validationSchema} onSubmit={sendEmail}> 
                 <Form ref={form} className="space-y-8">
                     <div className='flex flex-wrap -mx-3 mb-6'>
@@ -161,9 +162,9 @@ const Apply = () => {
                             <Field component='select' name="course" id="course" className='block p-3 w-full text-sm rounded-lg border bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light'>
                                 <option value="" disabled>--</option>
                                 <option value="Study Abroad">Study Abroad</option>
-                                <option value="Learn Japanese">Learn Japanese</option>
-                                <option value="Learn Korean">Learn Korean</option>
-                                <option value="Learn English">Learn English</option>
+                                <option value="Japanese Language">Learn Japanese</option>
+                                <option value="Korean Language">Learn Korean</option>
+                                <option value="English Language">Learn English</option>
                                 <option value="Work Abroad">Work Abroad</option>
                             </Field>
                         </div>
@@ -180,7 +181,7 @@ const Apply = () => {
                     </div>
                 </Form>
             </Formik>
-        </div>
+        </motion.div>
     </section>
   );
 }

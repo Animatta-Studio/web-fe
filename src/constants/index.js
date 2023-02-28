@@ -175,7 +175,7 @@ export const contacts = [
     id: 'c-1',
     title: 'Location',
     img: location,
-    data: 'Dehradun, Uttarakhand, India',
+    data: 'Dehradun, India',
   },
   {
     id: 'c-2',

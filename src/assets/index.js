@@ -40,6 +40,9 @@ import japaneseOffice from './japaneseOffice.jpg';
 import blank from './blank.png';
 import worldMap from './worldMap.png';
 import heroGif from './hero.gif';
+import courses from './courses.svg';
+import contactus from './contact.svg';
+import aboutus from './about.svg';
 
 export {
   logo,
@@ -84,4 +87,7 @@ export {
   blank,
   worldMap,
   heroGif,
+  courses,
+  contactus,
+  aboutus,
 };

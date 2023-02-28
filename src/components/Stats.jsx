@@ -1,14 +1,31 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import "react-typed/dist/animatedCursor.css";
+import { motion, useInView, useAnimation } from 'framer-motion';
 import { stats } from "../constants";
 import styles from "../style";
 
 const Stats = () => {
   const [trigOn, setTrigOn] = useState(false);
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: '-15%' });
+  const animation = useAnimation();
+  useEffect(() => {
+    if(inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: 'spring', duration: 1.6, bounce: 0.5,
+        },
+      });
+    } else {
+      animation.start({ x: '100vh' });
+    }
+  }, [inView]);
+
   return (
-    <section className={`${styles.flexCenter} max-w-[1400px] flex-row rounded select-none`}>
+    <motion.section ref={ref} animate={animation} className={`${styles.flexCenter} max-w-[1400px] flex-row rounded select-none`}>
       <ScrollTrigger onEnter={() => setTrigOn(true)} onExit={() => setTrigOn(false)}>
         <div className='grid sm:grid-cols-4 grid-cols-2 gap-2 rounded group'>
           {stats.map((stat) => (
@@ -28,7 +45,7 @@ const Stats = () => {
           ))}
         </div>
       </ScrollTrigger>
-    </section>
+    </motion.section>
   );
 };
 
