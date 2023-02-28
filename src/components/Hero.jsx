@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section id='home' className={`flex md:flex-row flex-col select-none sm:mt-[55px] mt-[30px] mb-20`} >
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-14 px-6`}>
-        <div className='absolute h-1/2 w-full msm:bg-none opacity-80 bg-worldmap bg-contain bg-center bg-no-repeat' />
+        <div className='xs:hidden absolute h-1/2 w-full msm:bg-none opacity-80 bg-worldmap bg-contain bg-center bg-no-repeat' />
         <div className='flex flex-row items-center py-0 bg-discount-gradient rounded-[10px] mb-2'>
           {/* <img src={discount} alt='discount' className='w-[28px] h-[28px]'/>
           <p className={`${styles.paragraph} ml-2`}>
