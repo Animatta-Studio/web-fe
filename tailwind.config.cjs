@@ -26,6 +26,9 @@ module.exports = {
         myShadow1: "4.1px -5px rgb(17,24,39)",
         myShadow2: "-4.1px -5px 0 0 rgb(17,24,39)",
       },
+      backgroundImage: {
+        worldmap: "url('./src/assets/worldMap.png')",
+      }
     },
     screens: {
       xs: "480px",
@@ -36,6 +39,9 @@ module.exports = {
       lg: "1200px",
       xl: "1700px",
     },
+  },
+  future: {
+    hoverOnlyWhenSupported: true,
   },
   plugins: [],
 };

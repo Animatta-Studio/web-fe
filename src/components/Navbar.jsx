@@ -64,7 +64,7 @@ const Navbar = () => {
         <img src={toggle ? close : menu} alt='menu' className={`${toggle ? 'w-[20px] h-[20px] hidden' : 'w-[24px] h-[24px]'} object-contain mr-2 duration-500`} onClick={() => setToggle((val) => !val)} />
       </div>
 
-      <div ref={ref} className={`sm:hidden ${toggle ? 'flex' : '-translate-x-[520px] overflow-hidden ease-in-out'} z-[50] flex-col fixed left-0 top-0 w-[67%] h-full border-r border-r-gray-900 bg-primary-0 duration-500`}>
+      <div ref={ref} className={`msm:hidden ${toggle ? 'flex' : '-translate-x-[640px] overflow-hidden ease-in-out'} z-[50] flex-col fixed left-0 top-0 w-[67%] h-full border-r border-r-gray-900 bg-primary-0 duration-500`}>
         <div className='flex flex-row mt-2'>
           <img src={logo} alt="mirai" className='w-[80px] h-[80px] ml-2 mr-2'/>
           <div className='flex flex-1 items-center justify-center'>

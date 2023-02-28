@@ -4,7 +4,7 @@ import styles from "../style";
 
 const Home = () => {
   return (
-    <div className='mt-[120px]'>
+    <div className='sm:mt-[120px] mt-[100px]'>
       <LinkBar />
       <div className={`bg-primary-0 ${styles.flexStart} relative`}>
         <div className={`${styles.boxWidth}`}>

@@ -38,6 +38,8 @@ import octb from './octb.jpg';
 import indianOffice from './indianOffice.jpg';
 import japaneseOffice from './japaneseOffice.jpg';
 import blank from './blank.png';
+import worldMap from './worldMap.png';
+import heroGif from './hero.gif';
 
 export {
   logo,
@@ -80,4 +82,6 @@ export {
   indianOffice,
   japaneseOffice,
   blank,
+  worldMap,
+  heroGif,
 };

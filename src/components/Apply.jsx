@@ -160,10 +160,11 @@ const Apply = () => {
                             </label>
                             <Field component='select' name="course" id="course" className='block p-3 w-full text-sm rounded-lg border bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light'>
                                 <option value="" disabled>--</option>
-                                <option value="NAT">NAT</option>
-                                <option value="JLPT">JLPT</option>
-                                <option value="TOP-J">TOP-J</option>
-                                <option value="Japanese">Japanese</option>
+                                <option value="Study Abroad">Study Abroad</option>
+                                <option value="Learn Japanese">Learn Japanese</option>
+                                <option value="Learn Korean">Learn Korean</option>
+                                <option value="Learn English">Learn English</option>
+                                <option value="Work Abroad">Work Abroad</option>
                             </Field>
                         </div>
                     </div>

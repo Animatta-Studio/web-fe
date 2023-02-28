@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import parse from 'html-react-parser';
 import { Top, ApplySidebar } from '../components';
 import { abroadHeader, affiliatedInstitutions, aboutJapan } from '../constants';
+import { worldMap } from '../assets';
 
 const StudyAbroad = () => {
   const [selected, setSelected] = useState(0);

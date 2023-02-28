@@ -1,13 +1,14 @@
 import styles from '../style';
-import { discount, heroImage } from '../assets';
+import { discount, heroImage, heroGif } from '../assets';
 import { GetStarted } from '../components';
 import Typed from 'react-typed';
 import 'react-typed/dist/animatedCursor.css';
 
 const Hero = () => {
   return (
-    <section id='home' className={`flex md:flex-row flex-col select-none sm:mt-[55px] mb-20`} >
+    <section id='home' className={`flex md:flex-row flex-col select-none sm:mt-[55px] mt-[30px] mb-20`} >
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-14 px-6`}>
+        <div className='absolute h-1/2 w-full msm:bg-none opacity-80 bg-worldmap bg-contain bg-center bg-no-repeat' />
         <div className='flex flex-row items-center py-0 bg-discount-gradient rounded-[10px] mb-2'>
           {/* <img src={discount} alt='discount' className='w-[28px] h-[28px]'/>
           <p className={`${styles.paragraph} ml-2`}>
@@ -34,7 +35,7 @@ const Hero = () => {
           <p className='font-poppins sm:text-[22px] text-[17px] font-bold text-white sm:leading-[30px] leading-[23px]'>
             We Offer You
           </p>
-          <Typed className='font-poppins sm:text-[24px] text-[17px] font-bold sm:pl-2 text-gradient ss:leading-[30px] leading-[23px]'
+          <Typed className='font-poppins msm:text-[24px] sm:text-[17px] text-[15px] font-bold sm:pl-2 text-gradient ss:leading-[30px] leading-[23px]'
             strings={['free consultation', 'help in studying and working abroad', 'free interview preparation', 'foreign language classes', 'skill development', 'easy documentation and translation', 'cultural program', 'special japanese classes', 'online seminars directly from Japan']}
             typeSpeed={70}
             backSpeed={40}
@@ -50,9 +51,9 @@ const Hero = () => {
       </div>
 
       <div className={`flex flex-1 ${styles.flexCenter} md:my-0 my-5`}>
-        <img src={heroImage} alt='illustration' className='w-[100%] h-[100%] relative z-[2]' />
+        <img src={heroGif} alt='illustration' className='w-[100%] h-[100%] relative z-[2]' />
         <div className='absolute z-[0] w-[40%] h-[40%] top-0 pink__gradient' />
-        <div className='absolute z-[1] w-[40%] h-[80%] rounded-full bottom-40 white__gradient' />
+        <div className='absolute z-[1] w-[30%] h-[60%] rounded-full bottom-40 white__gradient' />
         <div className='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient' />
       </div>
     </section>
