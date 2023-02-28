@@ -1,26 +1,8 @@
-import React, { useEffect, useRef } from 'react';
 import { feedbacks } from '../constants';
-import { motion, useInView, useAnimation } from 'framer-motion';
 
 const Testimonials = () => {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: '-30%' });
-  const animation = useAnimation();
-  useEffect(() => {
-    if(inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: 'spring', duration: 1.6, bounce: 0.5,
-        },
-      });
-    } else {
-      animation.start({ x: '-100vh' });
-    }
-  }, [inView]);
-
   return (
-    <motion.div ref={ref} animate={animation} className='flex flex-col text-center py-10 select-none w-full pl-4 pr-4'>
+    <div className='flex flex-col text-center py-10 select-none w-full pl-4 pr-4'>
       <h1 className='sm:mb-4 mb-2 sm:text-4xl text-2xl font-poppins tracking-tight font-extrabold text-center text-white'>Read What Others Have To Say</h1>
       <hr className='w-80 mx-auto h-1 bg-[#0087E0] mb-10 rounded' />
       <div className='flex sm:flex-row flex-col max-full justify-between sm:space-x-3 sm:space-y-0 space-y-3 group'>
@@ -39,7 +21,7 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-    </motion.div>
+    </div>
   )
 }
 

@@ -1,27 +1,7 @@
-import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion, useInView, useAnimation } from 'framer-motion';
 import { offerGrid } from "../constants";
 
 const Offer = () => {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-30%" });
-  const animation = useAnimation();
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 1.6,
-          bounce: 0.5,
-        },
-      });
-    } else {
-      animation.start({ x: "-100vh" });
-    }
-  }, [inView]);
-
   return (
     <section className="bg-primary-0 rounded mt-10">
       <div className="pt-8 lg:pt-16 px-4 mx-auto max-w-screen-md">
@@ -33,7 +13,7 @@ const Offer = () => {
           We provide you quality service in very affordable fee
         </p>
       </div>
-      <motion.div ref={ref} animate={animation} className="grid sm:grid-cols-3 grid-cols-1 gap-2 rounded group select-none">
+      <div className="grid sm:grid-cols-3 grid-cols-1 gap-2 rounded group select-none">
         {offerGrid.map((offer) => (
           <div
             key={offer.id}
@@ -54,7 +34,7 @@ const Offer = () => {
             </p>
           </div>
         ))}
-      </motion.div>
+      </div>
       <div className="flex flex-1 items-center justify-center pt-10 pb-5">
         <button
           type="submit"

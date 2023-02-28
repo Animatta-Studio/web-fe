@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
@@ -10,14 +10,12 @@ import {
 } from "../constants";
 import { Top, Map, ContactLinkBar } from "../components";
 import { contactus, indianOffice, japaneseOffice } from "../assets";
-import { motion, useInView, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const form = useRef();
-  const ref = useRef();
   const [loading, setLoading] = useState(false);
-  const inView = useInView(ref, { once: true, margin: "-30%" });
-  const animation = useAnimation();
+
 
   const location = {
     address: "Mirai International Education",
@@ -61,22 +59,6 @@ const Contact = () => {
       );
     form.current.reset();
   };
-
-  useEffect(() => {
-    console.log('haha1')
-    if (inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: "spring",
-          duration: 1.6,
-          bounce: 0.5,
-        },
-      });
-    } else {
-      animation.start({ x: "100vh" });
-    }
-  }, [inView]);
 
   return (
     <section className="mt-[100px]">
@@ -186,7 +168,7 @@ const Contact = () => {
           className="sm:inline hidden w-1/3 bg-gray-400 bg-opacity-[0.5] rounded-[180px] z-[3] mr-20 p-4"
         />
       </div>
-      <motion.div ref={ref} animate={animation} className="flex flex-1 sm:flex-row flex-col justify-center">
+      <div className="flex flex-1 sm:flex-row flex-col justify-center">
         <div className="flex flex-1 w-4/7 mt-10 mb-10 m-2 justify-center flex-col z-[10]">
           <div className="sm:flex hidden bg-[#0087E0] right-0 top-0 sm:w-96 w-[350px] h-5"></div>
           <div className="flex flex-row">
@@ -231,7 +213,7 @@ const Contact = () => {
             </div>
           ))}
         </div>
-      </motion.div>
+      </div>
       {/* <hr className='text-blue h-1 bg-[#0087E0] mt-5 sm:mb-10' /> */}
       <div className="flex msm:flex-row flex-col ustify-between msm:space-x-3 msm:space-y-0 space-y-3 group msm:p-6 p-2 msm:mx-8">
         <div className="h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 rounded-xl cursor-pointer">
