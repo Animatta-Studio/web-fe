@@ -3,7 +3,7 @@ import { feedbacks } from '../constants';
 const Testimonials = () => {
   return (
     <div className='flex flex-col text-center py-10 select-none w-full pl-4 pr-4'>
-      <h1 className='sm:mb-4 mb-2 sm:text-4xl text-2xl font-poppins tracking-tight font-extrabold text-center text-white'>Read What Others Have To Say</h1>
+      <h1 className='sm:mb-4 mb-2 sm:text-4xl text-2xl font-poppins tracking-tight font-extrabold text-center text-white'>Testimonials by Our Students</h1>
       <hr className='w-80 mx-auto h-1 bg-[#0087E0] mb-10 rounded' />
       <div className='flex sm:flex-row flex-col max-full justify-between sm:space-x-3 sm:space-y-0 space-y-3 group'>
         {feedbacks.map(feedback => (

@@ -42,7 +42,7 @@ const Navbar = () => {
         >
         </span>
         {navLinks.map((nav, idx) => (
-          <li key={idx} className="w-[124px]">
+          <li key={idx} className="w-[124px] select-none">
             <Link
               to={nav.path}
               className="flex flex-col text-center pt-6"

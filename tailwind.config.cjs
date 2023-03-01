@@ -28,6 +28,7 @@ module.exports = {
       },
       backgroundImage: {
         worldmap: "url('./assets/worldMap.png')",
+        topimage: "url('./assets/topImage.jpg')",
       }
     },
     screens: {

@@ -26,11 +26,11 @@ const Footer = () => {
           </div>
           <div className='flex flex-col sm:space-y-2 space-y-1'>
             <h1 className='sm:text-xl text-[15px] font-bold'>Services</h1>
-            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="/">Study Abroad</a>
-            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="/">Document Translation</a>
-            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="/">Work in Japan</a>
-            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="/">Free Consultation</a>
-            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="/">Japanese Classes</a>
+            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1' href="/">Study Abroad</span>
+            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1' href="/">Document Translation</span>
+            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1' href="/">Work in Japan</span>
+            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1' href="/">Free Consultation</span>
+            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1' href="/">Japanese Classes</span>
           </div>
         </div>
         <div className='md:flex hidden mr-20 mt-10'>

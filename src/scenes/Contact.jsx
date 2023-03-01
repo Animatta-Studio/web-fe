@@ -63,13 +63,9 @@ const Contact = () => {
   return (
     <section className="mt-[100px]">
       <Top
-        image="https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg"
         text="Contact Us"
       />
       <ContactLinkBar />
-      <div className="absolute z-[1] w-[80%] h-[42%] left-20 top-0 pink__gradient" />
-      <div className="absolute z-[0] w-[40%] h-[30%] rounded-full bottom-40 white__gradient" />
-      <div className="sm:flex hidden absolute z-[0] w-[50%] h-[40%] right-20 bottom-20 blue__gradient" />
       <div className="flex sm:flex-row flex-col justify-center items-center">
         <motion.div
           initial={{ x: "-100vw" }}
@@ -89,7 +85,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="email"
-                  className="block mb-2 text-sm font-medium text-white dark:text-gray-300"
+                  className="block mb-2 text-sm font-medium text-gray-300"
                 >
                   <div className="flex flex-row justify-between">
                     Your email
@@ -102,14 +98,14 @@ const Contact = () => {
                   type="text"
                   name="email"
                   id="email"
-                  className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                  className="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                   placeholder="Enter your email"
                 />
               </div>
               <div>
                 <label
                   htmlFor="name"
-                  className="block mb-2 text-sm font-medium text-white dark:text-gray-300"
+                  className="block mb-2 text-sm font-medium text-gray-300"
                 >
                   <div className="flex flex-row justify-between">
                     Your Name
@@ -122,14 +118,14 @@ const Contact = () => {
                   type="text"
                   name="name"
                   id="name"
-                  className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                  className="block p-3 w-full text-sm rounded-lg border bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                   placeholder="Enter your name"
                 />
               </div>
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
-                  className="block mb-2 text-sm font-medium text-white dark:text-gray-400"
+                  className="block mb-2 text-sm font-medium text-gray-400"
                 >
                   <div className="flex flex-row justify-between">
                     Your message
@@ -143,7 +139,7 @@ const Contact = () => {
                   id="message"
                   name="message"
                   rows="6"
-                  className="block p-2.5 w-full text-sm resize-none text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  className="block p-2.5 w-full text-sm resize-none rounded-lg border bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
                   placeholder="Let us know how can we help you"
                 />
               </div>
@@ -151,7 +147,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="font-semibold py-4 text-lg text-center text-white rounded-lg bg-primary-700 w-full hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  className="font-semibold py-4 text-lg text-center text-white rounded-lg w-full bg-primary-600 hover:bg-primary-700 focus:ring-primary-800"
                 >
                   {loading && <span>Sending...</span>}
                   {!loading && <span>Send Message</span>}
@@ -168,51 +164,48 @@ const Contact = () => {
           className="sm:inline hidden w-1/3 bg-gray-400 bg-opacity-[0.5] rounded-[180px] z-[3] mr-20 p-4"
         />
       </div>
-      <div className="flex flex-1 sm:flex-row flex-col justify-center">
-        <div className="flex flex-1 w-4/7 mt-10 mb-10 m-2 justify-center flex-col z-[10]">
-          <div className="sm:flex hidden bg-[#0087E0] right-0 top-0 sm:w-96 w-[350px] h-5"></div>
-          <div className="flex flex-row">
-            <div className="sm:flex hidden bg-[#0087E0] right-0 top-0 w-[60px] h-[250px]"></div>
-            {/* <Map location={location} zoomLevel={zoomLevel} /> */}
-            <iframe
-              defer
-              className="z-[10] h-[450px] bg-[#0087E0] w-full border-2"
-              src="https://maps.google.com/maps?q=durga%20chowk,%20bhaniyawala,%20dehradun,%20uttarakhand,%20india&t=m&z=15&ie=UTF8&iwloc=&output=embed&mrt=kmlkmz"
-              frameBorder="1"
-              scrolling="no"
-              marginHeight="0"
-              marginWidth="0"
-            ></iframe>
-            <div className="sm:flex hidden flex-col-reverse">
-              <div className="bg-[#0087E0] right-0 top-0 sm:w-[60px] w-[35px] h-[250px]"></div>
-            </div>
-          </div>
-          <div className="sm:flex hidden flex-row-reverse">
-            <div className=" bg-[#0087E0] left-0 top-0 sm:w-96 w-[350px] h-5"></div>
+      <div className="flex flex-1 sm:w-4/7 mt-10 mb-10 m-2 justify-center flex-col z-[10]">
+        <div className="sm:flex hidden bg-white/10 right-0 top-0 sm:w-96 w-[350px] h-5"></div>
+        <div className="flex flex-row">
+          <div className="sm:flex hidden bg-white/10 right-0 top-0 w-[60px] h-[250px]"></div>
+          {/* <Map location={location} zoomLevel={zoomLevel} /> */}
+          <iframe
+            className="z-[10] h-[450px] bg-white/10 w-full border-2"
+            src="https://maps.google.com/maps?q=30.174187,78.209379&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            frameBorder="1"
+            scrolling="no"
+            marginHeight="0"
+            marginWidth="0"
+          ></iframe>
+          <div className="sm:flex hidden flex-col-reverse">
+            <div className="bg-white/10 right-0 top-0 sm:w-[60px] w-[35px] h-[250px]"></div>
           </div>
         </div>
-        <div className="grid grid-cols-2 w-2/5 gap-1 rounded">
-          {contacts.map((contact) => (
-            <div
-              key={contact.id}
-              className="flex flex-1 flex-col justify-center items-center py-4 rounded"
-            >
-              <div className="bg-[#0087E0] p-2 rounded-full mr-2">
-                <img
-                  src={contact.img}
-                  alt="icon"
-                  className="flex h-[40px] w-[40px] justify-center"
-                />
-              </div>
-              <div className="flex flex-col items-center">
-                <h6 className="text-gray-500">{contact.title}</h6>
-                <p className="flex flex-1 font-poppins font-normal text-center items-center justify-center sm:text-[14px] text-[10px] xs:leading-[26px] leading-[21px] text-gradient">
-                  {contact.data}
-                </p>
-              </div>
-            </div>
-          ))}
+        <div className="sm:flex hidden flex-row-reverse">
+          <div className="bg-white/10 left-0 top-0 sm:w-96 w-[350px] h-5"></div>
         </div>
+      </div>
+      <div className="sm:flex flex-1 grid grid-cols-2 w-full gap-1 rounded justify-between items-center">
+        {contacts.map((contact) => (
+          <div
+            key={contact.id}
+            className="flex flex-1 flex-col justify-center items-center py-4 rounded"
+          >
+            <div className="bg-[#0087E0] p-2 rounded-full mr-2">
+              <img
+                src={contact.img}
+                alt="icon"
+                className="flex h-[40px] w-[40px] justify-center"
+              />
+            </div>
+            <div className="flex flex-col items-center">
+              <h6 className="text-gray-500">{contact.title}</h6>
+              <p className="flex flex-1 font-poppins font-normal text-center items-center justify-center sm:text-[14px] text-[10px] xs:leading-[26px] leading-[21px] text-gradient">
+                {contact.data}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
       {/* <hr className='text-blue h-1 bg-[#0087E0] mt-5 sm:mb-10' /> */}
       <div className="flex msm:flex-row flex-col ustify-between msm:space-x-3 msm:space-y-0 space-y-3 group msm:p-6 p-2 msm:mx-8">

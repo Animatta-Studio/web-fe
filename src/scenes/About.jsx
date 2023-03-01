@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <div className='mt-[100px]'>
-      <Top image='https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg' text='About' />
+      <Top text='About Us' />
       <div className='flex sm:flex-row flex-col sm:p-10 p-5 justify-center space-x-20'>
-        <motion.p initial={{x: '-100vw'}} animate={{x: 0}} transition={{type:'spring', duration:1.2, bounce:0.25}} className='text-white font-poppins sm:text-[18px] text-[14px] sm:text-center text-start p-2'>
+        <motion.p initial={{x: '-100vw'}} animate={{x: 0}} transition={{type:'spring', duration:1.2, bounce:0.25}} className='text-white font-poppins sm:text-[18px] text-[14px] text-start p-2'>
           We are delighted to welcome you to <br className='sm:hidden flex'></br><b className='text-gradient sm:text-[20px] text[18px] z-[2]'>Mirai International Education</b>.<br className='sm:block hidden'/><br/>
           First of all being a student, we all know how study is very crucial to an individual’s <br className='sm:flex hidden'/>
           future, so nowadays students are migrating and planning to overseas for better <br className='sm:flex hidden'/>
@@ -23,9 +23,6 @@ const About = () => {
         </motion.p>
         <motion.img initial={{x: '100vw'}} animate={{x: 0}} transition={{type:'spring', duration:1.2, bounce:0.25}} src={aboutus} className='sm:inline hidden w-1/3 p-2 bg-opacity-[0.5] bg-gray-400 rounded-[180px] z-[2]' />
       </div>
-      <div className='absolute sm:flex hidden z-[1] w-[80%] h-[42%] left-20 top-0 pink__gradient' />
-      <div className='absolute sm:flex hideen z-[0] w-[40%] h-[30%] rounded-full bottom-40 white__gradient' />
-      <div className='sm:flex hidden absolute z-[0] w-[50%] h-[40%] right-20 bottom-10 blue__gradient' />
       <div className='flex flex-col flex-1 sm:pl-5 sm:pr-5 sm:ml-5 ml-1 sm:mr-5 mr-1 bg-white/10 z-10'>
         <div className='font-poppins font-extrabold text-white text-center text-[25px] pt-1 z-10'>FOUNDER</div>
         <div className='flex sm:flex-row flex-col flex-1 justify-center items-center text-center sm:px-10 px-2 sm:py-10 py-5 rounded z-10'>

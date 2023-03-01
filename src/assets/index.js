@@ -43,6 +43,7 @@ import heroGif from './hero.gif';
 import courses from './courses.svg';
 import contactus from './contact.svg';
 import aboutus from './about.svg';
+import topImage from './topImage.jpg';
 
 export {
   logo,
@@ -90,4 +91,5 @@ export {
   courses,
   contactus,
   aboutus,
+  topImage,
 };
