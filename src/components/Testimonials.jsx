@@ -3,8 +3,8 @@ import { feedbacks } from '../constants';
 const Testimonials = () => {
   return (
     <div className='flex flex-col text-center py-10 select-none w-full pl-4 pr-4'>
-      <h1 className='sm:mb-4 mb-2 sm:text-4xl text-2xl font-poppins tracking-tight font-extrabold text-center text-white'>Testimonials by Our Students</h1>
-      <hr className='w-80 mx-auto h-1 bg-[#0087E0] mb-10 rounded' />
+      <h1 className='sm:mb-4 mb-2 sm:text-4xl text-2xl font-poppins tracking-tight font-bold text-center text-white'>Testimonials By Our Students</h1>
+      <hr className='w-[380px] mx-auto h-1 bg-[#0087E0] mb-10 rounded' />
       <div className='flex sm:flex-row flex-col max-full justify-between sm:space-x-3 sm:space-y-0 space-y-3 group'>
         {feedbacks.map(feedback => (
           <div key={feedback.id} className='sm:h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 pb-8 rounded-xl cursor-pointer'>

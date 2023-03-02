@@ -124,51 +124,65 @@ export const abroadHeader = [
   },
 ];
 
-export const courses = {
-  'NAT': {
-    id: 'co-1',
-    title: 'NAT',
-    content: `
-      The Japanese Language NAT-TEST is an examination that measures the Japanese language ability of students who are not native Japanese speakers. The tests are separated by difficulty (five levels) and general ability is measured in three categories: Grammar/Vocabulary, Listening and Reading Comprehension. The format of the exam and the types of questions are equivalent to those that appear on the Japanese Language Ability Test (JLPT).
-
-      The Japanese Language NAT-TEST has five levels. The easiest level is 5 and the most difficult level is 1. Each level corresponds to its respective level on the Japanese Language Proficiency Test (N5 to N1).
-
-      Levels 1 and 2 of the exam contain the following sections: Language Knowledge (reading/vocabulary/grammar) and Listening. Levels 3, 4 and 5 of the exam contain the following sections: Language Knowledge (reading/vocabulary), a second Language Knowledge (grammar, reading comprehension) and Listening.
-    `,
-  },
-  'JLPT': {
-    id: 'co-2',
+export const courses = [
+  {
+    id: 'a',
     title: 'JLPT',
+    dis: 'msm:translate-x-0',
+    sd: 'translate-x-0',
     content: `
-      The Japanese-Language Proficiency Test (JLPT) under joint organization of the Japan Foundation and Japan Educational Exchanges and Services (previously Association of International Education, Japan) started in 1984 as a test to measure and certify the Japanese-language proficiency of those whose native language is not Japanese. In the first year the JLPT was conducted in 15 countries, and approximately 7,000 examinees took the test. Since then, the JLPT has become the largest Japanese-language test in the world, with approximately 610,000 examinees in 62 countries and areas worldwide in 2011. This success is entirely due to the support and cooperation of all involved.
-
-      JLPT certificates offer various advantages, ranging from recognition as academic credit and graduation certification at schools to preferential treatment at companies and acknowledgement of qualification in society.
+    The Japanese Language Proficiency Test (JLPT) cosponsored by the Japan Foundation and the Japan Educational Exchanges and Services(formerly the Japan International Education Association). It started as a test to measure and certify language ability whose native Language is not Japanese. The JLPT was administered in 15 countries in its first year and was taken by approximately 7,000 candidates. Since then, the Japanese-Language Proficiency Test has grown into the world's largest Japanese-Language Proficiency Test, with approximately 610,000 people taking the test in 62 countries and regions around the world in 2011. This success is entirely due to the support and cooperation of everyone involved.
+    
+    Japanese Language Proficiency Test (JLPT) qualifications have various merits, such as academic certification and completion certificates at schools, preferential treatment at companies, and dependability in society.
     `,
   },
-  'TOP-J': {
-    id: 'co-3',
-    title: 'TOP-J',
+  {
+    id: 'b',
+    title: 'NAT',
+    dis: 'msm:translate-x-[180px]',
+    sd: 'translate-x-[90px]',
     content: `
-      TOP-J Practical Japanese Proficiency Test is a test developed by experts and professors who are active in the Japanese language education field in Japan and abroad. For learners who are studying Japanese as a foreign language, it is better to measure the basic abilities such as vocabulary, grammar, sentence patterns, etc. from the exam, communication from foreigners living in Japan, such as living and work etc. We also aim at measuring the ability to understand Japanese society and Japanese companies' customs and culture through doubts.
-
-      Therefore, it is thought that learners can grasp the foundation of the language and deepen the adaptability to the whole Japanese society.
-      TOPJ The practical Japanese proficiency test is divided into elementary, intermediate, advanced. When applying for study abroad in Japan, the results of this exam will be the proof of the language ability as well as the Japanese Language Proficiency Test.
-      
-      For example, if you acquire Elementary A, you will be deemed to have sufficient ability to study abroad at Japanese language institution in Japan, and if you acquire Advanced A you will be accepted in Japanese society or Japanese company You can admit that you have a certain adaptive capacity, and you can be in charge of interpreter etc for Japanese companies.
+    The Japanese language NAT-TEST is a test that measures the Japanese language proficiency of students whose native language is not Japanese. The tests are divided by difficulty (5 levels) and general skills is measured in 3 group are Grammar/vocabulary, listening and reading comprehension. The test format and question format are the same as the Japanese Language Proficiency Test (JLPT).
+    
+    The Japanese language NAT TEST has 5 levels. The easiest level is 5Q and the hardest level is 1Q. Each level corresponds to the corresponding level (N5 to N1) of the Japanese language proficiency test.
+    
+    Level 1 and 2 (1Q & 2Q) exams include the following sections: Language skills (reading/ vocabulary/ grammar) and listening. Exam levels 3, 4, and 5 (3Q,4Q & 5Q) include the following sections: Language skills (reading/vocabulary), second language (grammar, reading), and listening comprehension
     `,
   },
-  'Japanese': {
-    id: 'co-4',
+  {
+    id: 'c',
     title: 'Japanese',
+    dis: 'msm:translate-x-[360px]',
+    sd: 'translate-x-[180px]',
     content: `
-      Japanese language course designed for the entry level learners who have no  knowledge of Japanese language and aim of this course is  to develop their ability to communicate in simple Japanese language and understand the Japanese culture. 
+    As you know japan has the third largest economy in the world and has gone Very far in science and technology so learning Japanese will open your doors to the new era, advanced technologies, futuristic environment and many more such things that we can’t get in developing countries.
+    
+    Opportunities and Benefits-
+    
+    Japan offers people the opportunity to learn about their culture and gain a deeper knowledge of the country, facilitating employment and work in Japan.
+    
+    Benefits are-
 
-      Benefits & Scope of Japanese Language.
-      
-      Language is only a way of communication in any circumstances. It is quite difficult to survive in a new environment until and unless you know the language, culture, manners and tradition of them. They say, “When in Rom do as Romans do.” If you are thinking of going to Japan for work or study, obviously you need Japanese to make yourself comfortable and get rid of unwanted problems. If you are not capable of understanding Japanese and its culture you will probably find yourself in trouble.
+    Job opportunity
+    Be more disciplined
+    Peaceful mind-set
+    Get smarter
+    high pay-outs
+    It opens more doors and better job opportunities.
+    `,
+  },
+  {
+    id: 'd',
+    title: 'English',
+    dis: 'msm:translate-x-[540px]',
+    sd: 'translate-x-[270px]',
+    content: `
+    Now a day English language is very important because it’s a international language and many countries work with this language. Learning to speak English can be tough, but don't give up! With enough practice and the right guidance and resources, you can start speaking English confidently and often. The two major English tests accepted by universities around the world are TOEFL (Test of English as a Foreign Language) and IELTS (International English Language Testing System).
+    
+    IELTS and TOEFL tests measure all four language skills important to effective communication: - speak, listen, read, write.
     `,
   }
-};
+];
 
 export const contacts = [
   {
@@ -187,7 +201,7 @@ export const contacts = [
     id: 'c-3',
     title: 'Email',
     img: email,
-    data: 'miraieducational@gmail.com',
+    data: 'miraiinternationaleducation@gmail.com',
   },
   {
     id: 'c-4',

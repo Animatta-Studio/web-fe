@@ -75,9 +75,9 @@ const Navbar = () => {
           </div>
         </div>
         <ul className='uppercase p-1 mt-10'>
-          {navLinks.map((nav, idx) => (
-            <li key={nav.id} className='group p-4 cursor-pointer text-white border-b border-gray-800 group hover:bg-gray-800 hover:rounded-lg hover:text-black rounded-sm duration-50' onClick={() => setToggle(val => !val)}>
-              <Link to={nav.path} key={`${nav.id}-linking`} className='p-0 flex transition duration-400'>
+          {[...navLinks, { id: 999, path: 'events', title: 'News & Events'}].map((nav, idx) => (
+            <li key={nav.id} className='group cursor-pointer text-white border-b border-gray-800 group hover:bg-gray-800 hover:rounded-lg hover:text-black rounded-sm duration-50' onClick={() => setToggle(val => !val)}>
+              <Link to={nav.path} key={`${nav.id}-linking`} className='flex transition duration-400 p-4'>
                 {nav.title}
               </Link>
             </li>

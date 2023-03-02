@@ -20,28 +20,38 @@ const LinkBar = () => {
         duration: 1
       }
     },
-  }
+    apply: {
+      scale: [1, 1.1, 1],
+      opacity: 1,
+      padding: [4, 3.5, 4],
+      backgroundColor: ['#ff0000', '#00ff00', '#0000ff'],
+      transition: {
+        repeat: Infinity,
+        ease: 'easeInOut',
+        duration: 0.5,
+      }
+    }
+  };
+
   return (
-    <nav className='fixed sm:flex w-full text-white justify-center items-center text-center bg-[#64C0FF] z-[40] p-1'>
+    <nav className='fixed sm:flex w-full text-white justify-center items-center text-center bg-[#64C0FF] z-[40] sm:p-1'>
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
-        <motion.li variants={linkVariants} initial="initial" whileInView="visible" key='linkbar-1' className='font-poppins cursor-pointer text-[14px] text-white mr-10 font-bold rounded-[17px] p-2' >
-          <Link to='/events' className="group text-white hover:text-gray-800">
-            News & Events
+          <Link to='/events' className="text-white">
+            <motion.li variants={linkVariants} initial="initial" whileInView="visible" key='linkbar-1' className='font-poppins cursor-pointer text-[14px] text-white mr-10 font-bold rounded-[17px] p-2' >
+                News & Events
+            </motion.li>
           </Link>
-        </motion.li>
-        <div className='group rounded-3xl bg-black p-2 hover:bg-gray-200 transition duration-500'>
-          <li key='linkbar-2' className='font-poppins cursor-pointer text-[14px] font-bold rounded' >
-            <Link to='/apply' className='text-white group-hover:text-black transition duration-50'>
-              Online Application
-            </Link>
-          </li>
-        </div>
+          <Link to='/apply' className='text-white'>
+            <motion.li initial={{scale: 1,backgroundColor: '#000000' }} whileHover={{scale:1.1, backgroundColor: '#00aa00'}} key='linkbar-2' className='font-poppins cursor-pointer text-[14px] font-bold rounded-[17px] p-2' >
+                Online Application
+            </motion.li>
+          </Link>
       </ul>
-      <span className='sm:hidden inline'>
-        <Link to='/apply' className='text-black font-extrabold group-hover:text-black transition duration-50'>
+      <Link to='/apply' className='text-white font-extrabold sm:hidden'>
+        <motion.div variants={linkVariants} initial="initial" whileInView="apply" className="sm:hidden w-full h-full p-1 cursor-pointer">
           Apply Now
-        </Link>
-      </span>
+        </motion.div>
+      </Link>
     </nav>
   );
 }

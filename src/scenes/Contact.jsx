@@ -88,7 +88,7 @@ const Contact = () => {
                   className="block mb-2 text-sm font-medium text-gray-300"
                 >
                   <div className="flex flex-row justify-between">
-                    Your email
+                    Your Email
                     <p className="text-[#ff0000] justify-end">
                       <ErrorMessage name="email" />
                     </p>
@@ -128,7 +128,7 @@ const Contact = () => {
                   className="block mb-2 text-sm font-medium text-gray-400"
                 >
                   <div className="flex flex-row justify-between">
-                    Your message
+                    Your Message
                     <p className="text-[#ff0000] justify-end">
                       <ErrorMessage name="message" />
                     </p>
@@ -147,7 +147,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="font-semibold py-4 text-lg text-center text-white rounded-lg w-full bg-primary-600 hover:bg-primary-700 focus:ring-primary-800"
+                  className="font-semibold py-2 text-lg text-center text-white rounded-lg w-full bg-primary-600 hover:bg-primary-700 focus:ring-primary-800"
                 >
                   {loading && <span>Sending...</span>}
                   {!loading && <span>Send Message</span>}
@@ -161,7 +161,7 @@ const Contact = () => {
           animate={{ x: 0 }}
           transition={{ type: "spring", duration: 1.2, bounce: 0.3 }}
           src={contactus}
-          className="sm:inline hidden w-1/3 bg-gray-400 bg-opacity-[0.5] rounded-[180px] z-[3] mr-20 p-4"
+          className="sm:inline hidden w-1/3 bg-opacity-[0.5] z-[3] mr-20 p-4"
         />
       </div>
       <div className="flex flex-1 sm:w-4/7 mt-10 mb-10 m-2 justify-center flex-col z-[10]">

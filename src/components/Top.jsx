@@ -31,14 +31,14 @@ const Top = ({ text, image }) => {
     <motion.div
       initial={{y: '-50vh', opacity: 0}}
       animate={{y: 0, opacity: 1}}
-      className={`inline-block sm:text-start text-center sm:h-[120px] h-[130px] w-full text-white sm:pt-[10px] rounded-none z-[4] bg-topimage msm:bg-contain bg-cover bg-between bg-no-repeat border-1 border-gray-500 p-6 select-none`}
+      className={`inline-block sm:text-start text-center sm:h-[120px] h-[130px] w-full text-white sm:pt-[10px] rounded-none z-[4] bg-topimage msm:bg-fit bg-cover bg-no-repeat border-1 border-gray-500 p-6 select-none`}
     >
       <motion.h2 variants={letterContainerVariants} initial="before" animate="after" className="font-poppins sm:mt-8 mt-4">
         {text.split('').map((c, id) => (
           <motion.span
             key={id}
             variants={letterVariants}
-            className="text-5xl w-auto text-[#33bbcf] font-semibold relative inline-block"
+            className="sm:text-5xl text-4xl w-auto text-[#33bbcf] font-semibold relative inline-block"
           >
             {c === " " ? "\u00A0" : c}
           </motion.span>
