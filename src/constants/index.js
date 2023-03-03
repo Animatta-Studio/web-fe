@@ -209,7 +209,7 @@ export const abroadHeader = [
   },
   {
     id: 'h-2',
-    title: 'Korea',
+    title: 'S. Korea',
     dis: 'msm:translate-x-[180px]',
     sd: 'translate-x-[90px]',
     content: `
