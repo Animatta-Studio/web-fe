@@ -68,58 +68,278 @@ export const navLinks = [
 export const abroadHeader = [
   {
     id: 'h-1',
-    title: 'Introduction',
-    content: "<p>Japan's education system had been playing a central part in the country's recovery and rapid economic growth in the decades. Japan having a very vast and strong educational background has greatly improved the likelihood of finding a job and earning enough money to support oneself making much easier to live life. In Japan highly educated individuals are less affected by unemployment trends as higher levels of educational attainment make an individual more attractive in the workforce.<br />The most attractive thing that International Students choose Japan for their abroad study is their academic environment where one can study state of the art technology and acquire the knowledge that enabled Japan’s phenomenal postwar economic growth. In Japan many universities and colleges are well equipped with fine research, computer, and library facile. And since the Japan has the second highest number of Nobel Prize winners of all countries in the world, it shows the extra ordinary academic dedication. And also the great thing about the Choosing the Japan for abroad study is it is much cheaper than studying in America or any other European Countries. </p>",
+    title: 'Japan',
+    dis: 'msm:translate-x-0',
+    sd: 'translate-x-0',
+    content: `
+    Japan is a famous and appealing vacation spot for students. As of May 1, 2010, there are
+    approximately 140,000 international students in Japan. The Japanese government expects that
+    number to reach 400,000 by the year 2023. Whether your aim is simply to learn the Japanese
+    language because you are deeply curious about Japanese culture, and tradition or whether you
+    intend to study and/or work in Japan, it is a great idea to come here and learn this Japanese
+    language.
+
+    Here are some good reasons for studying in Japan
+    An excellent education system What you’ll have learned in Japan – Academic and other
+
+    skills alike will have you ready for indeed the most competitive job markets. Learning the
+    Japanese language will allow you to enrol in a university and obtain a highly respected
+    degree, should you decide to do so.
+
+    Once you have completed your Japanese language courses and achieved a
+    good JLPT score, you will be in a good situation to seek a job at a Japanese company.
+    If you decide to stay in Japan, you have many options. Japan's labour market is very
+    dynamic and Japan's economy is the third largest in the world. Last but not least, high
+    profits can be expected from Japanese companies.
+  
+    If you decide to leave Japan after you have finished your language courses, your
+    experience and skills will be variably considered by potential employers, be it in your
+    country or anywhere else in the world. The Japanese language will surely open many ways.
+    The Japanese government is ready to open its doors to more immigration than ever before.
+    Now is the time to come in Japan.
+    You can analyze Japanese quicker by staying in Japan than by certainly reading abroad.
+    Normally, it is said that it takes six months to a year to study Japanese in Japan and pass
+    Level 2 of the Japanese Language Proficiency Test.
+    Discover a wealthy and fascinating culture. Japan is also a country of innovation and
+    creativity. There are many things to learn in Japan other than Japanese.
+    Enjoy a non-violent life. Japan is one of the safest developed countries in the world. Walk
+    in the middle of the night in a vacated street with no fear. indeed, if you forget your wallet
+    at a bar, there's a veritably good chance it will remain there until you pick it up.
+    Great life conditions: healthcare, transportation system, affordable, tasty and healthy food,
+    great services, exciting nightlife, and modern accommodations with all the comfort you
+    need.
+    Despite those great living conditions, you will find that the cost of living is not so high.
+    Daily challenges and sense of “adventure” as a foreigner in Japan. Alongside Japan, the
+    opportunities for amazing experiences and discoveries are endless.
+    JAPANESE EDUCATION SYSTEM
+    The Japanese education system in Japan is quite different to the Indian system. Here is an
+    overview.
+    6 years of primary education.
+    6 years of secondary education.
+    3 years of junior high school.
+    3 years of senior high school or technical school.
+    COLLEGE (HIGHER) EDUCATION
+    Technical colleges.
+    University of applies science.
+    Junior colleges.
+    Master’s degree universities.
+    FOR INTERNATIONAL STUDENTS
+    LANGUAGE SCHOOLS
+    Japanese language schools offer different types of programs to students. Types of programs are
+    Standard Japanese courses, Conversation focused courses, Preparation for Higher Education
+    and Language plus Cultural Activity course.
+    MANAGEMENT SCHOOLS
+    After completing your Japanese language school, students can enter a different types of higher
+    education schools. management Schools teach practical knowledge and techniques in different
+    fields such as Education, Medicine, Agriculture, Business etc. Upon graduation (2 years),
+    foreign students can seek a job position in Japan.
+    COLLEGES
+    Junior colleges provide specialized studies that prepare students to be fully operative in the job
+    market once they have graduated (2 to 3 years). The course that can be taken for 4 years will
+    be shortened and compressed into two years.
+    Graduates receive an associate degree, which enables foreign scholars to work in Japan.
+    UNIVERSITIES
+    Daily challenges and sense of “adventure” as a foreigner in Japan. Universities provide
+    advanced learning to students. Graduates receive a bachelor's degree. They can work in Japan.
+    If students still wish to continue their education, they can do so by attending the Master's
+    program (an additional two years) and the PhD. After graduation, students can look for full-
+    time jobs in Japan.
+    There are many research fields in Japan. Most universities have departments in medicine,
+    engineering, law, sociology, education, and business. There is no public ranking for Japanese
+    universities.
+    APPLY FOR A JAPANESE STUDENT VISA
+    Prospective applicants must be at least 18 years of age or more and have graduated from
+    high school or above.
+    aspirants from these countries’ high school graduates as their final educational background,
+    can not apply for a student visa or higher education in Japan.
+    Besides the above, there are a few other requirements which applicants need to comply with
+    and submit to the school for consideration of their application for a student visa. Following
+    is the list of documents:
+    Passport copy.
+    2 pics photos (4X 3cm).
+    Highest education certificate.
+    A latter of why you want to study in Japan.
+    JLPT/NAT/Japanese language certificate.
+    Sponsor documents.
+    Bank balance certificate.
+    Employment certificate.
+    Tax certificate/Pay slips.
+    GET A COE
+    To obtain a student visa, you must first obtain a COE in Japan. The language school of your
+    choice will apply for the COE on your behalf to the Japanese Immigration Bureau. The
+    above documents are the same as the documents that must be submitted to the Immigration
+    Bureau. COE result dates are not fixed and are subject to change. If your and your sponsor's
+    documentation is good, your girlfriend's COE is more likely to be approved. Therefore, it is
+    advantageous to have a school agent. We can review your documents to ensure they are
+    clear, easy to understand, and likely to be approved.
+     GETTING YOUR STUDENT VISA
+    Once your COE results have been issued (usually 5-6 weeks before the course start), the
+    school will send you a copy of your COE, an invoice for tuition and other fees (if requested
+    in your acceptance letter) will be Payment must be made by the due date to receive the
+    original COE in the mail.
+    Once you have received your original COE, you will need to apply for a student visa at the
+    nearest Japanese Embassy in your country. To apply for a student visa, you must submit the
+    original COE
+    approval decision
+    valid passport
+    The passport photo was taken within the last 6 months
+    Applying for a student visa depends on where you apply, the visa process may take him 3-
+    7 days, but we recommend that he apply at least two weeks in advance of his travel plans.
+    If your COE is rejected, the immigration office will usually provide a brief reason why your
+    application was rejected. If you wish to apply again, please contact us first. If you apply
+    again, you cannot reuse the documents you have already submitted. You will need to submit
+    new copies of your sponsor's documents and a new signed application. Your preferred
+    school (the school that processed your application) may not accept re-applications. So if you
+    have a history of COE rejections, expect fewer school options.
+    PERIOD OF VISA
+    The duration of Japanese student visas varies, but usually from 6 months up to 2 years.
+    Study time is pre-set. Such as
+    Course Duration
+    April intake 2 years
+    July intake 1 year and 9 months
+    October intake 1 year and 6 months
+    January intake 1 year and 3 months
+    Student can renew their Student Visas and extend the period of stay depending on their
+    enrollment period.
+    After completion of their Japanese language course, the students can proceed to study at a
+    higher educational institute (such as a vocational school, Junior college, or university) or
+    look for employment opportunities if they meet the criteria.
+    `,
     icon: '',
   },
   {
     id: 'h-2',
-    title: 'Places',
-    content: `<ul class='list-disc'>
-      <li>TOKYO </li>
-      <li>YOKOHAMA</li>
-      <li>CHIBA</li>
-      <li>SAITANA</li>
-      <li>NAGOYA</li>
-      <li>OSAKA</li>
-      <li>ISHIKAWA</li>
-      <li>FUKUOKA</li>
-      <li>HOKKAIDO</li>
-      <li>NAGANO</li>
-      <li>TOCHIGI KEN</li>
-    </ul>`,
+    title: 'Korea',
+    dis: 'msm:translate-x-[180px]',
+    sd: 'translate-x-[90px]',
+    content: `
+    The most important thing when studying in Korea is to clarify the purpose
+    of your goal. They should be clear, concise and solid. That means
+    understanding what Korean schools specialize in and being honest with
+    yourself about how it suits you. Go to the school that best suits your
+    aspirations. This greatly influences costs, school types, admission
+    requirements, and other relevant living circumstances.
+
+    Basics about Korea
+
+    South Korea is spoken by Kugo, the main language spoken in both North
+    and South Korea, and by ethnic Koreans living in northeastern China. They
+    call their alphabet "Hangul" and it is one of the most logical and scientific
+    alphabets ever devised, dating back to the 15th century. There are 10 vowels
+    and 14 consonants, for a total of 24 letters. However, it is a figurative
+    language meaning that both vowels and consonants form multiple syllable
+    groups. It sounds complicated, but it's actually pretty easy to learn. By
+    mastering the alphabet, you will be able to understand Korean even if you
+    don't know the words.
+
+    How to Learn Korean
+
+    There are many options for learning Korean. You can study at home or in
+    parallel with your studies. However, it is better to know before going so as
+    not to get lost. This will affect how long you want to stay in Korea and what
+    you want to study.
+    For example, if you are only studying for one or two semesters, you can go
+    to Korean Language Institute (KLI). However, if you plan to study in South
+    Korea, you will need to find a university that will fund your student visa.
+    Mirai International Education provides full support for students in searching
+    for schools and colleges in Korea, completing visa process paperwork, and
+    more.
+    `,
     icon: '',
   },
   {
     id: 'h-3',
-    title: 'Education',
-    content: "<p>Japan has more than 700 universities to choose from and 10 of them are ranked in the top 200 worldwide. And since the Japan has the second highest number of Nobel Prize winners of all countries in the world, it shows the extra ordinary academic dedication. The greatest perk is it is much cheaper than studying in America or any other European Countries. Since the teaching quality is very high studying in Japan will definitely lead to the higher path.</p>",
+    title: 'Singapore',
+    dis: 'msm:translate-x-[360px]',
+    sd: 'translate-x-[180px]',
+    content: `
+    Singapore is one of the quickest developing economies in Southeast Asia. The
+    country is known for its low tax rates and minimal cost of living. For these reasons,
+    people often refer to Singapore as the "commercial capital of Asia". Getting a
+    well-paying job in this country is the dream of every young graduate. Also,
+    Singapore have our official languages are English, Mandarin, Malay, Tamil.
+    Since the 1970s, English has been the primary language of instruction in schools
+    for most Singaporeans, so for the most part, English-speaking visitors get along
+    just fine.
+
+    WHY SINGAPORE
+
+    Everyone has their own reasons for choosing a particular country to explore
+    career opportunities, and they need their own reasons, but as far as the global
+    economic scenario is concerned, Singapore is one of the fastest growing
+    economies on the Asia continent. For this reason, thousands of young people
+    apply for study visas and jobs in the country each year. Some of the main
+    reasons for this madness of Singaporean youth are:
+
+    Better standard of living
+
+    Today, our ambitious youth are all looking for a better standard of living, and
+    Singapore is one of the closest Asian countries to provide quality living. For this
+    reason, thousands of young people seek Singapore student visas every year. It is
+    one of the few countries in Asia that offers all the conveniences and technology
+    that only European and American countries have.
+
+    Huge opportunities of the job market
+
+    We all know that the Asian economy has been on an upward trend for the past
+    decade. The same scenario will continue for the next 20-30 years, according to
+    large speculators. other Southeast Asian countries. For this reason, people prefer
+    Singapore to any other country when looking for better study and work
+    opportunities.
+  
+    Low tax rates
+  
+    Another important reason many talented young people seek study and work
+    support in Singapore is the country's low tax rate compared to other similarly
+    developed economies in the world.
+    If you are also looking for student visas, visa paperwork and procedures, only
+    MIRAI International Education can give you the right advice.
+    `,
     icon: '',
   },
   {
     id: 'h-4',
-    title: 'Why?',
-    content: `<p><strong>Economic Growth</strong></p><br/>
-    <p>Studying in Japan will give you opportunities that you may have never thought since Japan is the second largest developed economy in the world with the 3rd largest automobile manufacturing country, and the largest electronics goods industry. Therefore, if anyone wants to go with electric goods designing or high quality fashion products, Japan will be the best place for it.</p><br />
-    <p><strong>Amazing Culture</strong></p><br/>
-    <p>With thousands of years of history of Japan and the way of shaping their culture until today will lead you to experience the whole new fascinating way of life since the combination of traditions and modern technology is one of the uniquenesses of Japan. There will be great chances to taste diverse cuisine from sushi to ramen, from soba to tempura – a whole variety of unfamiliar delicious foods to try. And a best thing is Japanese food are very tasty and healthy.<br />And also the Japanese martial arts which are mostly offered at universities like Judo, Kendo, Kyudo or Karate or taking part in Japanese culture like Japanese calligraphy, taiko drumming and shamisen (Japanese musical instrument) will make you feel amazed to whole new level</p><br/>
-    <p><strong>High Standard of Life</strong></p><br/>
-    <p>Japan is the country having one of the world’s best health care systems with a very high life-expectancy which is safest and most peaceful places to visit. Their exclusive transport systems help travel around the country conveniently and it is known that public transport is more punctual than in any other country. You can experience the four seasons with breathtaking nature on the temples and shrines.</p>`,
-    icon: '',
-  },
-  {
-    id: 'h-5',
-    title: 'Language',
-    content: `<p>Generally, a prospective student first enrolls in a Japanese language institution after arrival in Japan. In many cases, he or she studies Japanese and other related subjects at the language institution for between one and two years and then takes the entrance examination for a university, etc. For this reason, the choice of the Japanese language institution is very important for the prospective student. There are two types of Japanese language institutions for foreign students who wish to go on to a Japanese university for either undergraduate or postgraduate studies.</p><br/>
-    <p><strong>Preparatory Japanese language courses for foreign students offered by private universities</strong></p><br/>
-    <ul class='list-disc'>
-    <li>The preparatory Japanese language courses for foreign students offered by private universities are regular courses within the university curriculum as defined by the School Education Law. The objective of these courses is to offer preparatory education in the Japanese language, Japanese society and culture, and other necessary subjects to foreign students who wish to enter junior colleges or undergraduate or postgraduate programs at universities, either as students or researchers.</li>
-    </ul><br/>
-    <p><strong>Japanese language institutions providing Japanese language courses to foreigners who come to Japan</strong></p><br/>
-    <ul class='list-disc'>
-    <li>Foreigners who wish to study at universities or similar educational institutes in Japan may first consider entering a Japanese language institution providing Japanese language courses as a preparation prior to their undergraduate/graduate work. Types of such language institutions include senshu gakko (specialized training schools) or senmon gakko (vocational colleges), educational institutions categorized as kakushu gakko (various schools), and other establishments similar to kakushu gakko. If this is the case, prospective foreign students are advised to visit the official website of the Ministry of Justice below and confirm that the language school of their choice is a Japanese language institute that is officially designated by the Ministry of Justice and is listed in the Ministry’s relevant announcement.</li>
-    <li>Foreign students studying at such a designated Japanese language institute may enter Japan under the status of residence of “exchange student.”</li>
-    </ul>`,
+    title: 'Australia',
+    dis: 'msm:translate-x-[540px]',
+    sd: 'translate-x-[270px]',
+    content: `
+    Australia is well known for being one of the top choices for students wishing to
+    continue their studies. Australia is a very popular study and travel destination.
+    Australian hospitality and scenic beauty are truly amazing. Australia is also
+    known as a relatively safe country given the ever-growing number of
+    international students. Australia has a vibrant culture and the diversity we see is
+    quite amazing. Home to thousands of international students and immigrants from
+    different cultures and backgrounds, students find it easy to understand and get
+    along with others. Australia is home to people of diverse ethnic and cultural
+    backgrounds, it offers both immigrants and students the freedom to practice their
+    faith as the country values individual liberty.
+  
+    Benefits of Studying in Australia
+
+    Australia is considered to be a premier educational destination for students around
+    the world. Australia is known for having one of the best education systems in the
+    world. Here are 6 of the world's top 100 universities ranked in the Times Higher
+    Education World University Rankings 2020. Australia is not only the best when
+    it comes to education, but it is also known for its amazing standard of living.
+    International students are required to have health insurance before they arrive in
+    Australia, so they can get good medical care if they need it.
+
+    Australia is considered a top choice for international students due to all the
+    advantages students can enjoy. It provides international student rights known as
+    ESOS ACT (Educational Services for overseas Students). Australia also provides
+    international students with Student Support Centers that support international
+    students, provide necessary advice on a range of issues and help students connect
+    with other students and locals.
+
+    Australian degrees are highly regarded and this qualification will help students
+    find employment opportunities to pursue their dreams. The Australian education
+    system prepares students to face the global world of work. Having said that,
+    having the opportunity to study with like-minded people from all over the world
+    helps me become familiar with other cultures and grow as a person.
+    MIRAI INTERNATIONAL EDUCATION will provide you right guidance to
+    find out right colleges/universities/institutes and also visa documentations &
+    processing.
+    `,
     icon: '',
   },
 ];

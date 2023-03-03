@@ -1,36 +1,112 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { Top } from "../components";
 import parse from 'html-react-parser';
-import { Top, ApplySidebar } from '../components';
-import { abroadHeader, affiliatedInstitutions, aboutJapan } from '../constants';
-import { worldMap } from '../assets';
+import { abroadHeader } from "../constants";
+import { motion, AnimatePresence } from "framer-motion";
 
-const StudyAbroad = () => {
+const Courses = () => {
   const [selected, setSelected] = useState(0);
-  return (
-    <div className='mt-[100px]'>
-      <Top text='Study Abroad' />
-      {/* <div className='font-poppins font-normal border border-gray-500 p-2 text-white sm:px-10 sm:text-[15px] text-[13px] sm:leading-[25px] leading-[24px] text-center'>
-        {parse(aboutJapan)}
-      </div>
-      <div className='flex flex-1 sm:flex-row flex-col'>
-        <div className='flex flex-col sm:w-4/5 w-full'>
-          <div className='m-4'>
-            <ul className='list-none flex justify-center items-center flex-1'>
-              {Object.keys(abroadHeader).map((key, idx) => (
-                <li key={idx} className={`${selected === idx ? 'bg-[#0087E0]' : 'bg-gray-500'} justify-between font-poppins cursor-pointer sm:text-[20px] text-[10px] text-white ${ idx !== abroadHeader.length-1 ? 'sm:mr-10 mr-4' : ''} font-bold hover:bg-[#0087E0] sm:px-4 px-2 sm:py-4 py-2 mt-10 rounded-[20px]`} onClick={() => setSelected(idx)} >
-                    {abroadHeader[key].title}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className='font-poppins font-normal border border-gray-500 p-2 pt-8 pb-8 m-4 text-white sm:px-10 sm:text-[15px] text-[13px] sm:leading-[25px] leading-[24px]'>
-              {parse(abroadHeader[selected].content)}
-          </div> 
-        </div>
-        <ApplySidebar />
-      </div>*/}
-    </div>
-  )
-}
+  const [direction, setDirection] = useState(0);
 
-export default StudyAbroad;
+  const moveItem = (cur) => {
+    if (cur === selected) return;
+    let val = cur < selected ? -1 : 1;
+    setDirection(val);
+    setSelected(cur);
+  };
+
+  const variants = {
+    hidden: (direction) => {
+      return {
+        x: direction < 0 ? "60vw" : "-60vw",
+        opacity: 0,
+      };
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        x: { type: "spring", stiffness: 300, damping: 30 },
+        opacity: { duration: 0.2 },
+        delay: 0.5,
+      },
+    },
+    exit: (direction) => {
+      return {
+        x: direction < 0 ? "-60vw" : "60vw",
+        opacity: 0,
+        duration: 0.3,
+      };
+    },
+  };
+
+  return (
+    <div className="h-full flex flex-col mt-[100px] items-center">
+      <Top text="Courses" />
+      <div 
+        className="flex bg-[#64C0FF] msm:max-w-[720px] max-w-[360px] max-h-[80px] items-center justify-center px-6 msm:mt-[40px] rounded-t-[15px] msm:border-t-4 border-t-2 border-gray-900"
+      >
+        <ul className="flex relative">
+          <span
+            className={`bg-[#0087E0] duration-500 ${abroadHeader[selected].dis} ${abroadHeader[selected].sd} msm:border-t-4 border-t-2 msm:border-l-4 border-l-2 msm:border-r-4 border-r-2 border-gray-900 msm:h-[95px] h-[75px] msm:w-[180px] w-[90px] absolute msm:-top-5 -top-6 msm:rounded-t-[30px] rounded-t-[25px] msm:z-0 z-[10]`}
+          >
+            <span className="bg-[#0087E0] absolute h-1/4 -bottom-1 msm:w-[172px] w-[86px] z-[11]" />
+            <span
+              className={`${(selected === 0) && 'msm:hidden hidden'} w-3.5 h-3.5 bg-transparent msm:inline hidden absolute msm:top-[16px] top-[20px] msm:-left-[18px] -left-[16px]
+            msm:rounded-tr-[9px] rounded-tr-[7px] shadow-myShadow1`}
+            ></span>
+            <span
+              className={`${(selected === abroadHeader.length-1) && 'msm:hidden hidden'} w-3.5 h-3.5 msm:inline hidden bg-transparent absolute msm:top-[16px] top-[20px] msm:-right-[18px] -right-[16px]
+            msm:rounded-tl-[9px] rounded-tl-[7px] shadow-myShadow2`}
+            ></span>
+          </span>
+          {abroadHeader.map((country, idx) => (
+            <li
+              key={idx}
+              className={`duration-[800ms] msm:w-[180px] w-[90px] ${idx !== 0 && 'msm:border-l-[2px] border-l-[1px]'} ${idx !== abroadHeader.length-1 && 'msm:border-r-[2px] border-r-[1px]'} border-gray-900 pb-2`}
+            >
+              <a 
+                className="flex flex-col text-center pt-4"
+                onClick={() => moveItem(idx)}
+              >
+                <span
+                  className={`msm:text-2xl text-[17px] font-bold cursor-pointer duration-500 msm:py-2 ${
+                  idx === selected && "sm:-mt-6 -mt-4 text-white z-[11]"
+                  }`}
+                >
+                  {country.title}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div
+        className="h-full w-max-[1200px] msm:border-4 border-2 border-gray-900 msm:ml-20 msm:mr-20 msm:mb-20 msm:rounded-t-[20px]">
+        <div className="border-t-[24px] border-b-[8px] border-l-[8px] border-r-[8px] border-[#0087E0] msm:rounded-t-[18px] overflow-auto">
+          <div className="m-4">
+            <AnimatePresence initial={false} custom={direction}>
+              <motion.div
+                key={abroadHeader[selected].id}
+                custom={direction}
+                variants={variants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                className="msm:p-4 p-1 h-[400px] mb-8 msm:ml-32 ml-1 msm:mr-32 mr-1 mt-0"
+              >
+                <div className="flex flex-1 justify-center items-center msm:px-4 pt-4 msm:mb-10 mb-4">
+                  <p className="text-white font-poppins msm:text-[18px] text-[14px] text-start msm:p-2 p-1 msm:leading-[40px]">
+                    {abroadHeader[selected].content}
+                  </p>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Courses;
