@@ -38,6 +38,7 @@ module.exports = {
       msm: "960px",
       md: "1060px",
       lg: "1200px",
+      mxl: "1360px",
       xl: "1700px",
     },
   },

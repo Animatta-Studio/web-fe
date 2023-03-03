@@ -31,6 +31,7 @@ const Top = ({ text, image }) => {
     <motion.div
       initial={{y: '-50vh', opacity: 0}}
       animate={{y: 0, opacity: 1}}
+      transition={{type: 'spring', duration: 1 }}
       className={`inline-block sm:text-start text-center sm:h-[120px] h-[130px] w-full text-white sm:pt-[10px] rounded-none z-[4] bg-topimage msm:bg-fit bg-cover bg-no-repeat border-1 border-gray-500 p-6 select-none`}
     >
       <motion.h2 variants={letterContainerVariants} initial="before" animate="after" className="font-poppins sm:mt-8 mt-4">

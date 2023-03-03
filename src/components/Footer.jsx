@@ -60,9 +60,6 @@ const Footer = () => {
           <div className='bg-none p-1 rounded-full hover:bg-gray-700'>
             <AiFillInstagram size={'20px'}/>
           </div>
-          <div className='bg-none p-1 rounded-full hover:bg-gray-700'>
-            <AiFillTwitterCircle size={'20px'}/>
-          </div>
         </div>
       </div>
       <div className='flex items-center justify-center'>

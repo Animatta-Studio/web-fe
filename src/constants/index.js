@@ -172,7 +172,7 @@ export const abroadHeader = [
     documentation is good, your girlfriend's COE is more likely to be approved. Therefore, it is
     advantageous to have a school agent. We can review your documents to ensure they are
     clear, easy to understand, and likely to be approved.
-     GETTING YOUR STUDENT VISA
+    GETTING YOUR STUDENT VISA
     Once your COE results have been issued (usually 5-6 weeks before the course start), the
     school will send you a copy of your COE, an invoice for tuition and other fees (if requested
     in your acceptance letter) will be Payment must be made by the due date to receive the
@@ -211,7 +211,7 @@ export const abroadHeader = [
     id: 'h-2',
     title: 'S. Korea',
     dis: 'msm:translate-x-[180px]',
-    sd: 'translate-x-[90px]',
+    sd: 'translate-x-[72px]',
     content: `
     The most important thing when studying in Korea is to clarify the purpose
     of your goal. They should be clear, concise and solid. That means
@@ -251,7 +251,7 @@ export const abroadHeader = [
     id: 'h-3',
     title: 'Singapore',
     dis: 'msm:translate-x-[360px]',
-    sd: 'translate-x-[180px]',
+    sd: 'translate-x-[144px]',
     content: `
     Singapore is one of the quickest developing economies in Southeast Asia. The
     country is known for its low tax rates and minimal cost of living. For these reasons,
@@ -301,7 +301,7 @@ export const abroadHeader = [
     id: 'h-4',
     title: 'Australia',
     dis: 'msm:translate-x-[540px]',
-    sd: 'translate-x-[270px]',
+    sd: 'translate-x-[216px]',
     content: `
     Australia is well known for being one of the top choices for students wishing to
     continue their studies. Australia is a very popular study and travel destination.
@@ -342,6 +342,26 @@ export const abroadHeader = [
     `,
     icon: '',
   },
+  {
+    id: 'h-5',
+    title: 'Canada',
+    dis: 'msm:translate-x-[720px]',
+    sd: 'translate-x-[288px]',
+    content: `
+    If you want to study in Canada as an international student, you must first apply to
+    and be accepted by a designated study institution. Canada has come to be one of the
+    maximum famous observe locations for Indian students. In recent years, the number
+    of students traveling to Canada for higher education has increased dramatically.
+    Canada's education system is well developed and offers degrees and diplomas in a
+    wide variety of subjects. Education in Canada is cheaper than in the US. International
+    students have access to more scholarships as well as opportunities to work part-time
+    off campus. A study permit allows you to work in parallel with your studies under
+    certain conditions.
+    MIRAI INTERNATIONAL EDUCATION will help you to find
+    university/institutes and also visa documentation and processing.
+    `,
+    icon: '',
+  }
 ];
 
 export const courses = [
