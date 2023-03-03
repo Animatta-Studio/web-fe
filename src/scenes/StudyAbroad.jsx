@@ -42,7 +42,7 @@ const Courses = () => {
 
   return (
     <div className="h-full flex flex-col mt-[100px] items-center">
-      <Top text="Courses" />
+      <Top text="Study Abroad" />
       <div 
         className="flex bg-[#64C0FF] msm:max-w-[720px] max-w-[360px] max-h-[80px] items-center justify-center px-6 msm:mt-[40px] rounded-t-[15px] msm:border-t-4 border-t-2 border-gray-900"
       >
