@@ -7,8 +7,8 @@ const About = () => {
   return (
     <div className='mt-[100px] flex flex-col items-center'>
       <Top text='About Us' />
-      <div className='flex sm:flex-row flex-col sm:p-10 p-5 justify-center space-x-20'>
-        <motion.p initial={{x: '-100vw'}} animate={{x: 0}} transition={{type:'spring', duration:1.2, bounce:0.25}} className='text-white sm:w-2/3 font-poppins sm:text-[18px] text-[14px] text-start p-2'>
+      <div className='flex sm:flex-row flex-col pl-[30px] pt-5 pb-10 justify-center'>
+        <motion.p initial={{x: '-100vw'}} animate={{x: 0}} transition={{type:'spring', duration:1.2, bounce:0.3}} className='text-white sm:w-2/3 font-poppins sm:text-[18px] text-[14px] text-start p-2'>
           We are delighted to welcome you to <br className='sm:hidden flex'></br><b className='text-gradient mxl:text-[20px] text[18px] z-[2]'>Mirai International Education</b>.<br className='mxl:block hidden'/><br/>
           First of all being a student, we all know how study is very crucial to an individual’s <br className='mxl:flex hidden'/>
           future, so nowadays students are migrating and planning to overseas for better <br className='mxl:flex hidden'/>
@@ -21,7 +21,7 @@ const About = () => {
           the Japanese school/college/University and other educational institute of your <br className='mxl:flex hidden'/>
           choice, with the minimum time, effort and expenditure.
         </motion.p>
-        <motion.img initial={{x: '100vw'}} animate={{x: 0}} transition={{type:'spring', duration:1.2, bounce:0.25}} src={aboutus} className='md:inline hidden w-1/3 p-2 bg-opacity-[0.5] z-[2]' />
+        <motion.img initial={{x: '100vw'}} animate={{x: 0}} transition={{type:'spring', duration:1.2, bounce:0.3}} src={aboutus} className='md:inline hidden w-1/3 bg-opacity-[0.5] z-[2]' />
       </div>
       <div className='flex flex-col xl:max-w-[1400px] w-full bg-center space-y-5 mb-5'>
         <div className='flex flex-col flex-1 sm:pl-5 sm:pr-5 sm:ml-5 ml-1 sm:mr-5 mr-1 rounded-lg bg-white/10 z-10'>

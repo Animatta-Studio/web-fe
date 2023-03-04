@@ -31,18 +31,18 @@ const Footer = () => {
           </div>
           <div className='sm:flex hidden flex-col space-y-2'>
             <h1 className='sm:text-xl text-[15px] font-bold'>Connect</h1>
-            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="/">Facebook</a>
-            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="/">Instagram</a>
-            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="/">LinkedIn</a>
-            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="/">Youtube</a>
+            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="https://www.facebook.com/profile.php?id=100090497542897" target="_blank">Facebook</a>
+            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="https://www.instagram.com/miraiinternationaleducation" target="_blank">Instagram</a>
+            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="/" target="_blank">LinkedIn</a>
+            <a className='sm:text-xs text-[10px] text-white font-bold hover:text-gray-700 pl-1' href="https://www.youtube.com/channel/UCbPzIWEGeYu8RBjDuWXnebQ" target="_blank">Youtube</a>
           </div>
           <div className='flex flex-col space-y-2'>
             <h1 className='sm:text-xl text-[15px] font-bold'>Services</h1>
-            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1' href="/">Study Abroad</span>
-            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1' href="/">Document Translation</span>
-            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1' href="/">Work in Japan</span>
-            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1' href="/">Free Consultation</span>
-            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1' href="/">Japanese Classes</span>
+            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1'>Study Abroad</span>
+            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1'>Document Translation</span>
+            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1'>Work in Japan</span>
+            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1'>Free Consultation</span>
+            <span className='sm:text-xs text-[10px] text-white font-bold cursor-pointer pl-1'>Japanese Classes</span>
           </div>
         </div>
         <div className='md:flex hidden mr-20 mt-10'>
@@ -52,13 +52,19 @@ const Footer = () => {
       <div className='flex'>
         <div className='w-1/2 m-auto sm:p-5 p-1 flex justify-center sm:space-x-10 space-x-5 text-white cursor-pointer'>
           <div className='bg-none p-1 rounded-full hover:bg-gray-700'>
-            <BsFacebook size={'20px'}/>
+            <a href="https://www.facebook.com/profile.php?id=100090497542897" target="_blank">
+              <BsFacebook size={'20px'}/>
+            </a>
           </div>
           <div className='bg-none p-1 rounded-full hover:bg-gray-700'>
-            <BsYoutube size={'20px'}/>
+            <a href="https://www.youtube.com/channel/UCbPzIWEGeYu8RBjDuWXnebQ" target="_blank">
+              <BsYoutube size={'20px'}/>
+            </a>
           </div>
           <div className='bg-none p-1 rounded-full hover:bg-gray-700'>
-            <AiFillInstagram size={'20px'}/>
+            <a href="https://www.instagram.com/miraiinternationaleducation" target="_blank">
+              <AiFillInstagram size={'20px'}/>
+            </a>
           </div>
         </div>
       </div>

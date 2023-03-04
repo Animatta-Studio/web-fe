@@ -37,8 +37,8 @@ const Navbar = () => {
 
       <ul className="msm:flex hidden relative justify-end space-x-0">
         <span
-          className={`bg-black duration-500 ${navLinks.find(nl => nl.path === selected).dist} border-[3px] border-gray-400 h-[40px] ${selected === 'abroad' ? 'w-[150px]' : 'w-[100px]'} absolute
-         top-3 rounded-[40px]`}
+          className={`bg-[#2A2220] duration-500 ${navLinks.find(nl => nl.path === selected).dist} border-[3px] border-gray-500 h-[40px] ${selected === 'abroad' ? 'w-[150px]' : 'w-[100px]'} absolute
+         top-[10px] rounded-[40px]`}
         >
         </span>
         {navLinks.map((nav, idx) => (
@@ -49,8 +49,8 @@ const Navbar = () => {
               onClick={() => setSelected(nav.path)}
             >
               <span
-                className={`text-lg font-extrabold cursor-pointer duration-500 z-[1] ${
-                  nav.path === selected && "-mt-2 text-white"
+                className={`text-md font-extrabold cursor-pointer duration-500 z-[1] ${
+                  nav.path === selected ? "-mt-2 text-white" : "text-[#2A2220]"
                 }`}
               >
                 {nav.title}

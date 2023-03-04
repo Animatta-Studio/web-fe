@@ -43,7 +43,7 @@ const Courses = () => {
   return (
     <div className="h-full flex flex-col mt-[100px] items-center">
       <Top text="Courses" />
-      <motion.div initial={{y: '100vw'}} animate={{y: 0}} transition={{type:'spring', duration:1.5, bounce:0.2}} className='flex flex-col items-center z-[8]'>
+      <motion.div initial={{y: '70vh'}} animate={{y: 0}} transition={{type:'spring', duration:1.3, bounce:0.3}} className='flex flex-col items-center z-[8]'>
         <div 
           className="flex bg-[#64C0FF] msm:max-w-[720px] max-w-[360px] max-h-[80px] items-center justify-center px-6 msm:mt-[40px] rounded-t-[15px] msm:border-t-4 border-t-2 border-gray-900"
         >

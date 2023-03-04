@@ -31,14 +31,14 @@ const Contact = () => {
   };
 
   const validationSchema = yup.object().shape({
-    email: yup.string().required("required").email("Invalid Email"),
+    email: yup.string().required("*").email("Invalid Email"),
     name: yup
       .string()
-      .required("required")
+      .required("*")
       .matches(/^[a-zA-Z\s]+$/, "Invalid Name"),
     message: yup
       .string()
-      .required("required")
+      .required("*")
       .min("10", "Message is too short"),
   });
 
@@ -71,7 +71,7 @@ const Contact = () => {
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
           transition={{ type: "spring", duration: 1.2, bounce: 0.3 }}
-          className="sm:w-1/2 w-full py-1 lg:py-8 sm:px-10 px-2 sm:mx-auto mx-0 max-w-screen-md items-start justify-start rounded z-[10]"
+          className="sm:w-1/2 w-full py-1 lg:py-6 sm:px-10 px-2 sm:mx-auto mx-0 max-w-screen-md items-start justify-start rounded z-[10]"
         >
           <h2 className="mb-4 sm:text-3xl text-2xl font-poppins tracking-tight font-semibold text-center text-white">
             Get In Touch With Us
@@ -81,7 +81,7 @@ const Contact = () => {
             validationSchema={validationSchema}
             onSubmit={sendEmail}
           >
-            <Form ref={form} className="space-y-6">
+            <Form ref={form} className="space-y-4">
               <div>
                 <label
                   htmlFor="email"
@@ -89,7 +89,7 @@ const Contact = () => {
                 >
                   <div className="flex flex-row justify-between">
                     Your Email
-                    <p className="text-[#ff0000] justify-end">
+                    <p className="text-[#ff0000] justify-end pr-4">
                       <ErrorMessage name="email" />
                     </p>
                   </div>
@@ -109,7 +109,7 @@ const Contact = () => {
                 >
                   <div className="flex flex-row justify-between">
                     Your Name
-                    <p className="text-[#ff0000] justify-end">
+                    <p className="text-[#ff0000] justify-end pr-4">
                       <ErrorMessage name="name" />
                     </p>
                   </div>
@@ -129,7 +129,7 @@ const Contact = () => {
                 >
                   <div className="flex flex-row justify-between">
                     Your Message
-                    <p className="text-[#ff0000] justify-end">
+                    <p className="text-[#ff0000] justify-end pr-4">
                       <ErrorMessage name="message" />
                     </p>
                   </div>
@@ -161,7 +161,7 @@ const Contact = () => {
           animate={{ x: 0 }}
           transition={{ type: "spring", duration: 1.2, bounce: 0.3 }}
           src={contactus}
-          className="sm:inline hidden w-1/3 bg-opacity-[0.5] z-[3] mr-20 p-4"
+          className="sm:inline hidden w-2/5 bg-opacity-[0.5] z-[3] mr-10"
         />
       </div>
       <div className="flex flex-1 sm:w-4/7 mt-10 mb-10 m-2 justify-center flex-col z-[10]">

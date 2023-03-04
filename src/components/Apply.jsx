@@ -23,15 +23,15 @@ const Apply = () => {
     };
 
     const validationSchema = yup.object().shape({
-        name: yup.string().required('required').matches(/^[a-zA-Z\s]+$/, 'Invalid Name'),
-        gender: yup.string().required('required'),
-        dob: yup.string().required('required'),
-        address: yup.string().required('required').min('10', 'Address must be of atleast 10 characters'),
-        mobile: yup.string().required('required').matches(/^[0-9]{10}$/, 'Invalid mobile number'),
-        mobile2: yup.string().matches(/^[0-9]{10}$/, 'Invalid mobile number'),
-        email: yup.string().required('required').email('Invalid email'),
-        qualification: yup.string().required('required'),
-        course: yup.string().required('required'),
+        name: yup.string().required('*').matches(/^[a-zA-Z\s]+$/, 'Invalid Name'),
+        gender: yup.string().required('*'),
+        dob: yup.string().required('*'),
+        address: yup.string().required('*').min('10', 'Address must be of atleast 10 characters'),
+        mobile: yup.string().required('*'),
+        mobile2: yup.string(),
+        email: yup.string().required('*').email('Invalid email'),
+        qualification: yup.string().required('*'),
+        course: yup.string().required('*'),
     });
 
     const sendEmail = (values, actions) => {

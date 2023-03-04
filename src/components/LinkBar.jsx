@@ -34,15 +34,15 @@ const LinkBar = () => {
   };
 
   return (
-    <nav className='fixed sm:flex w-full text-white justify-center items-center text-center bg-[#64C0FF] z-[40] sm:p-1'>
-      <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
+    <nav className='fixed sm:flex w-full text-white text-center bg-[#64C0FF] z-[40] sm:p-1'>
+      <ul className='list-none sm:flex hidden justify-end flex-1'>
           <Link to='/events' className="text-white">
-            <motion.li variants={linkVariants} initial="initial" whileInView="visible" key='linkbar-1' className='font-poppins cursor-pointer text-[14px] text-white mr-10 font-bold rounded-[17px] p-2' >
+            <motion.li variants={linkVariants} initial="initial" whileInView="visible" key='linkbar-1' className='font-poppins cursor-pointer text-[13px] text-white mr-10 font-bold rounded-[17px] p-2' >
                 News & Events
             </motion.li>
           </Link>
           <Link to='/apply' className='text-white'>
-            <motion.li initial={{scale: 1,backgroundColor: '#000000' }} whileHover={{scale:1.1, backgroundColor: '#00aa00'}} key='linkbar-2' className='font-poppins cursor-pointer text-[14px] font-bold rounded-[17px] p-2' >
+            <motion.li initial={{scale: 1,backgroundColor: '#2A2220' }} whileHover={{scale:1.1, backgroundColor: '#F6BE00'}} key='linkbar-2' className='font-poppins cursor-pointer text-[13px] font-bold rounded-[17px] p-2 hover:text-black' >
                 Online Application
             </motion.li>
           </Link>

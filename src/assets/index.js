@@ -41,8 +41,8 @@ import blank from './blank.png';
 import worldMap from './worldMap.png';
 import heroGif from './hero.gif';
 import courses from './courses.svg';
-import contactus from './contact.svg';
-import aboutus from './about.svg';
+import contactus from './contactus.png';
+import aboutus from './about.png';
 import topImage from './topImage.jpg';
 
 export {
