@@ -59,7 +59,7 @@ const Apply = () => {
                             <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-300">
                                 <div className='flex flex-row justify-between'>
                                     Full Name
-                                    <p className='text-[#ff0000] justify-end'>
+                                    <p className='text-[#ff0000] justify-end pr-2'>
                                         <ErrorMessage name='name'/>
                                     </p>
                                 </div> 
@@ -70,7 +70,7 @@ const Apply = () => {
                             <label htmlFor="gender" className="block mb-2 text-sm font-medium text-gray-300">
                                 <div className='flex flex-row justify-between'>
                                     Gender
-                                    <p className='text-[#ff0000]'>
+                                    <p className='text-[#ff0000] justify-end pr-2'>
                                         <ErrorMessage name='gender'/>
                                     </p>
                                 </div>
@@ -85,7 +85,7 @@ const Apply = () => {
                             <label htmlFor="dob" className="block mb-2 text-sm font-medium text-gray-300">
                                 <div className='flex flex-row justify-between'>
                                     Date of Birth
-                                    <p className='text-[#ff0000]'>
+                                    <p className='text-[#ff0000] justify-end pr-2'>
                                         <ErrorMessage name='dob'/>
                                     </p>
                                 </div>
@@ -98,7 +98,7 @@ const Apply = () => {
                             <label htmlFor="address" className="block mb-2 text-sm font-medium text-gray-300">
                                 <div className='flex flex-row justify-between'>
                                     Address
-                                    <p className='text-[#ff0000]'>
+                                    <p className='text-[#ff0000] justify-end pr-2'>
                                         <ErrorMessage name='address'/>
                                     </p>
                                 </div>
@@ -109,7 +109,7 @@ const Apply = () => {
                             <label htmlFor="mobile" className="block mb-2 text-sm font-medium text-gray-300">
                                 <div className='flex flex-row justify-between'>
                                     Mobile Number
-                                    <p className='text-[#ff0000]'>
+                                    <p className='text-[#ff0000] justify-end pr-2'>
                                         <ErrorMessage name='mobile'/>
                                     </p>
                                 </div>
@@ -130,7 +130,7 @@ const Apply = () => {
                             <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-300">
                                 <div className='flex flex-row justify-between'>
                                     Email
-                                    <p className='text-[#ff0000]'>
+                                    <p className='text-[#ff0000] justify-end pr-2'>
                                         <ErrorMessage name='email'/>
                                     </p>
                                 </div>
@@ -143,7 +143,7 @@ const Apply = () => {
                             <label htmlFor="qualification" className="block mb-2 text-sm font-medium text-gray-300">
                                 <div className='flex flex-row justify-between'>
                                     Qualification
-                                    <p className='text-[#ff0000]'>
+                                    <p className='text-[#ff0000] justify-end pr-2'>
                                         <ErrorMessage name='qualification'/>
                                     </p>
                                 </div>
@@ -154,7 +154,7 @@ const Apply = () => {
                             <label htmlFor="course" className="block mb-2 text-sm font-medium text-gray-300">
                                 <div className='flex flex-row justify-between'>
                                     Applying For
-                                    <p className='text-[#ff0000]'>
+                                    <p className='text-[#ff0000] justify-end pr-2'>
                                         <ErrorMessage name='course'/>
                                     </p>
                                 </div>

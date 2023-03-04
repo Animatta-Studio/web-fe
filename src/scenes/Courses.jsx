@@ -96,8 +96,8 @@ const Courses = () => {
                   exit="exit"
                   className="msm:p-4 p-1 h-[400px] mb-8 msm:ml-32 ml-1 msm:mr-32 mr-1 mt-0"
                 >
-                  <div className="flex flex-1 justify-center items-center msm:px-4 pt-4 msm:mb-10 mb-4">
-                    <p className="text-white font-poppins msm:text-[18px] text-[14px] text-start msm:p-2 p-1 msm:leading-[40px]">
+                  <div className="flex flex-1 justify-center items-center msm:px-4 pt-2 msm:mb-10 mb-4">
+                    <p className="text-white font-poppins msm:text-[18px] text-[14px] text-start msm:leading-[40px]">
                       {courses[selected].content}
                     </p>
                   </div>
