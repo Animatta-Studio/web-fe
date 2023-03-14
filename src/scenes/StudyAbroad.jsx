@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Top } from "../components";
-import { contact } from '../assets';
 import parse from 'html-react-parser';
 import { abroadHeader } from "../constants";
 import { motion, AnimatePresence } from "framer-motion";
@@ -57,11 +56,11 @@ const Courses = () => {
                 <span
                   className={`${(selected === 0) && 'msm:hidden hidden'} w-3.5 h-3.5 bg-transparent msm:inline hidden absolute msm:top-[16px] top-[20px] msm:-left-[18px] -left-[16px]
                 msm:rounded-tr-[9px] rounded-tr-[7px] shadow-myShadow1`}
-                ></span>
+                />
                 <span
                   className={`${(selected === abroadHeader.length-1) && 'msm:hidden hidden'} w-3.5 h-3.5 msm:inline hidden bg-transparent absolute msm:top-[16px] top-[20px] msm:-right-[18px] -right-[16px]
                 msm:rounded-tl-[9px] rounded-tl-[7px] shadow-myShadow2`}
-                ></span>
+                />
               </span>
               {abroadHeader.map((country, idx) => (
                 <li

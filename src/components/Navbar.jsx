@@ -35,14 +35,14 @@ const Navbar = () => {
         </h1>
       </div>
 
-      <ul className="md:flex hidden relative justify-end space-x-[40px] mr-5">
+      <ul className="md:flex hidden relative justify-end mr-5">
         <span
           className={`bg-[#2A2220] duration-500 ${navLinks.find(nl => nl.path === selected).dist} border-[3px] border-gray-500 h-[40px] ${selected === 'abroad' ? 'w-[140px]' : 'w-[90px]'} absolute
          top-[10px] rounded-[40px]`}
         >
         </span>
         {navLinks.map((nav, idx) => (
-          <li key={idx} className="select-none">
+          <li key={idx} className={`select-none ${idx !== 0 ? 'ml-[40px]' : ''}`}>
             <Link
               to={nav.path}
               className="flex flex-col text-center pt-6"

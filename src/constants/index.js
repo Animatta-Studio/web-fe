@@ -657,13 +657,13 @@ export const events = [
     content: `
     Now accepting applications for October 2023 intake.
     If you want a student visa to study in Japan for the long term, it is not too late
-    to prepare now. 
-    【Deadline for Application march 30】
+    to prepare now.<br/>
+    <b className='text-[#ff0000]'>【Deadline for Application: March 30】</b><br/>
     students, who want to seek higher education in Japan, those who want to find
     a job, those who want to experience Japanese culture first-hand those who
     want to communicate in Japanese, and those who want to live in Japan we will
-    help you. “let’s achieve your dreams with us”
-    so, if you are interested in applying for a student visa, please contact us.
+    help you. <b className='text-[#00ff00]'>“let’s achieve your dreams with us”</b><br/>
+    So, if you are interested in applying for a student visa, please contact us.<br/>
     `,
   },
   {
@@ -673,8 +673,8 @@ export const events = [
     topic: 'Our collaboration partner Osaka College of Tourism and Business...',
     content: `
     Our collaboration partner Osaka College of Tourism and Business held the graduation
-    ceremony in 2023.3.3 Congratulations to all the 283 students who graduate from the school
-    and get jobs in various fields.
+    ceremony on <b className='text-[#00ff00]'>2023/03/03</b>. Congratulations to all the <b className='text-[21px] text-[#0087E0]'>283</b> students who graduated from the school
+    and got jobs in various fields.<br/>
     Congratulation guys and enjoy your life in Japan.
     Osaka College of Tourism and Business and we will always support you.
     `,

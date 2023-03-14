@@ -39,7 +39,7 @@ const Offer = () => {
       <div className="flex flex-1 items-center justify-center pt-10 pb-5">
         <button
           type="submit"
-          className="font-poppins py-3 px-8 text-sm text-[20px] text-extrabold text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+          className="font-poppins py-3 px-8 text-sm text-[20px] font-extrabold text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
         >
           <Link to="/courses">Know More</Link>
         </button>
