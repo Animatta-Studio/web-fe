@@ -12,13 +12,13 @@ const EventList = () => {
         initial={{ x: "-100vw" }}
         animate={{ x: 0 }}
         transition={{ type: "spring", duration: 1.3, bounce: 0.3 }}
-        className="flex flex-row items-start mt-5 mb-10 ml-5 cursor-pointer"
+        className="flex sm:flex-row flex-col items-start my-10 ml-5 sm:space-y-0 space-y-4 cursor-pointer"
       >
         {events.map((event) => (
-          <div key={event.id} className="flex flex-col w-[300px] h-[370px] max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 mr-5">
+          <div key={event.id} className="flex flex-col w-[300px] h-[400px] max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 mr-5">
             <a href="#!">
               <img
-                className="rounded-t-lg w-[400px] h-[200px]"
+                className="rounded-t-lg w-[400px] h-[220px]"
                 src={event.icon}
                 loading='lazy'
                 alt="" />
@@ -33,7 +33,7 @@ const EventList = () => {
               <Link to={`/events/${event.id}`}>
                 <button
                   type="button"
-                  className="font-poppins py-2 px-8 text-sm text-extrabold text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  className="font-poppins mt-[16px] py-2 px-8 text-sm text-extrabold text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                 >
                   View More
                 </button>

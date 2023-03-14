@@ -107,23 +107,6 @@
   }
 }
 
-.feature-card:hover {
-  background: var(--black-gradient);
-  box-shadow: var(--card-shadow);
-}
-
-.feedback-container .feedback-card:last-child {
-  margin-right: 0px;
-}
-
-.feedback-card {
-  background: transparent;
-}
-
-.feedback-card:hover {
-  background: var(--black-gradient);
-}
-
 .blue__gradient {
   background: linear-gradient(180deg, rgba(189, 169, 248, 0) 0%, #183f63 100%);
   filter: blur(123px);

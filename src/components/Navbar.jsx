@@ -49,7 +49,7 @@ const Navbar = () => {
               onClick={() => setSelected(nav.path)}
             >
               <span
-                className={`text-md font-extrabold cursor-pointer duration-500 z-[1] ${
+                className={`text-md font-extrabold cursor-pointer duration-500 z-[1] text-[16px] ${
                   nav.path === selected ? "-mt-2 text-white" : "text-[#2A2220]"
                 }`}
               >
