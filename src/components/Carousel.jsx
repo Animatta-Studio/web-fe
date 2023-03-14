@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
-import { EffectCoverflow, Pagination, Navigation, Autoplay, Lazy } from "swiper";
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper";
 
 const Carousel = () => {
   return (
@@ -20,7 +20,6 @@ const Carousel = () => {
         centeredSlides={true}
         loop={true}
         slidesPerView={"auto"}
-        lazy={true}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -33,13 +32,13 @@ const Carousel = () => {
           prevEl: ".swiper-button-prev",
           clickable: true,
         }}
-        modules={[Lazy, Autoplay, EffectCoverflow, Pagination, Navigation]}
+        modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
         autoplay={{ delay: 1000, disableOnInteraction: true }}
         className="swiper_container"
       >
         {slides.map((slide, idx) => (
             <SwiperSlide key={idx}>
-                <img src={slide} alt="slide_image" loading="lazy"/>
+                <img src={slide} alt="slide_image" loading='eager'/>
             </SwiperSlide>
         ))}
 
