@@ -14,6 +14,7 @@ import Affliation from './Affliation';
 import Map from './Map';
 import LocationPin from "./LocationPin";
 import ContactLinkBar from './ContactLinkBar';
+import Carousel from './Carousel';
 
 export {
   Footer,
@@ -32,4 +33,5 @@ export {
   Map,
   LocationPin,
   ContactLinkBar,
+  Carousel,
 };

@@ -12,20 +12,20 @@ const Footer = () => {
           <div className='flex flex-col cursor-pointer'>
             <h1 className='sm:text-xl text-[15px] font-bold ml-2'>Get in touch</h1>
             <div className='flex items-center'>
-              <img src={location} className='flex h-[30px] w-[30px] justify-center'/>
+              <img src={location} loading="lazy" className='flex h-[30px] w-[30px] justify-center'/>
               <span className='sm:text-[12px] text-[10px] text-white font-bold' >Dehradun, India</span>
             </div>
             <div className='flex items-center'>
-              <img src={contact} className='flex h-[30px] w-[30px] justify-center'/>
+              <img src={contact} loading="lazy" className='flex h-[30px] w-[30px] justify-center'/>
               <span className='sm:text-[12px] text-[10px] text-white font-bold' >+91-7037972600</span>
             </div>
             <br className='sm:mt-2 mt-1 sm:mb-2 mb-1'/>
             <div className='flex items-center'>
-              <img src={location} className='flex h-[30px] w-[30px] justify-center'/>
+              <img src={location} loading="lazy" className='flex h-[30px] w-[30px] justify-center'/>
               <span className='sm:text-[12px] text-[10px] text-white font-bold' >Osaka, Japan</span>
             </div>
             <div className='flex items-center'>
-              <img src={contact} className='flex h-[30px] w-[30px] justify-center'/>
+              <img src={contact} loading="lazy" className='flex h-[30px] w-[30px] justify-center'/>
               <span className='sm:text-[12px] text-[10px] text-white font-bold' >+81-7084488810</span>
             </div>
           </div>

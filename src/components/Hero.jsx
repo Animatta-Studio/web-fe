@@ -1,5 +1,5 @@
 import styles from '../style';
-import { discount, heroImage, heroGif } from '../assets';
+import { discount, heroGif } from '../assets';
 import { GetStarted } from '../components';
 import Typed from 'react-typed';
 import { motion } from 'framer-motion';
@@ -52,7 +52,7 @@ const Hero = () => {
       </motion.div>
 
       <motion.div initial={{x: '100vw'}} animate={{x: 0}} transition={{type:'spring', duration:1.3, bounce:0.3}} className={`flex flex-1 ${styles.flexCenter} md:my-0 my-5`}>
-        <img src={heroGif} alt='illustration' className='w-[100%] h-[100%] relative z-[2]' />
+        <img src={heroGif} loading='eager' alt='illustration' className='w-[100%] h-[100%] relative z-[2]' />
       </motion.div>
     </section>
   );

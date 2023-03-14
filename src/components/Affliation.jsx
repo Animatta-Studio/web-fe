@@ -9,7 +9,7 @@ const Affliation = () => {
             {affiliatedInstitutions.map(ai => (
               <div className='flex flex-col text-white space-between mx-auto cursor-pointer mb-2' key={ai.id}>
                   <a href={ai.link} target='_blank' className='flex flex-col items-center justify-center'>
-                    <img src={ai.logo} href={ai.link} className='object-cover bg-gray-800 rounded-full sm:h-[100px] h-[70px] sm:w-[100px] w-[70px] p-1 mb-2' />
+                    <img src={ai.logo} loading="lazy" href={ai.link} className='object-cover bg-gray-800 rounded-full sm:h-[100px] h-[70px] sm:w-[100px] w-[70px] p-1 mb-2' />
                     <span className='font-bold sm:w-[200px] w-[150px] sm:text-[14px] text-[11px]'>{ai.name}</span>
                   </a>
               </div>

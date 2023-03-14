@@ -1,5 +1,4 @@
 import logo from "./logo.png";
-import heroImage from './heroImage.png';
 import menu from "./menu.svg";
 import close from "./close.svg";
 import arrowUp from "./arrow-up.svg";
@@ -44,6 +43,30 @@ import courses from './courses.svg';
 import contactus from './contactus.png';
 import aboutus from './about.png';
 import topImage from './topImage.jpg';
+import slide01 from './slide01.jpeg';
+import slide02 from './slide02.jpeg';
+import slide03 from './slide03.jpeg';
+import slide04 from './slide04.jpeg';
+import slide05 from './slide05.jpeg';
+import slide06 from './slide06.jpg';
+import slide07 from './slide07.jpg';
+import slide08 from './slide08.jpg';
+import slide09 from './slide09.jpg';
+import slide10 from './slide10.jpeg';
+import slide11 from './slide11.jpeg';
+import slide12 from './slide12.jpeg';
+import slide13 from './slide13.jpeg';
+import slide14 from './slide14.jpeg';
+import slide15 from './slide15.jpeg';
+import slide16 from './slide16.jpeg';
+import slide17 from './slide17.jpeg';
+import slide18 from './slide18.jpeg';
+import slide19 from './slide19.jpeg';
+import slide20 from './slide20.jpeg';
+import slide21 from './slide21.jpeg';
+import studyInJapan from './studyInJapan.png';
+import studyInKorea from './studyInKorea.png';
+
 
 export {
   logo,
@@ -72,7 +95,6 @@ export {
   culturalProgram,
   specialJapaneseClasses,
   seminarsDirectlyFromJapan,
-  heroImage,
   contact,
   website,
   email,
@@ -92,4 +114,27 @@ export {
   contactus,
   aboutus,
   topImage,
+  slide01,
+  slide02,
+  slide03,
+  slide04,
+  slide05,
+  slide06,
+  slide07,
+  slide08,
+  slide09,
+  slide10,
+  slide11,
+  slide12,
+  slide13,
+  slide14,
+  slide15,
+  slide16,
+  slide17,
+  slide18,
+  slide19,
+  slide20,
+  slide21,
+  studyInJapan,
+  studyInKorea,
 };

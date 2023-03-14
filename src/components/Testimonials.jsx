@@ -9,7 +9,11 @@ const Testimonials = () => {
         {feedbacks.map(feedback => (
           <div key={feedback.id} className='sm:h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 pb-8 rounded-xl cursor-pointer'>
             <div className='flex flex-1 flex-col h-1/5 items-center justify-center '>
-              <img src={feedback.img} alt='' className='object-fit h-[100px] w-[100px] bg-cover justify-center mb-2 rounded-full border-none' />
+              <div className='flex bg-[#0087E0] rounded-full p-[2px]'>
+                <div className='flex bg-black rounded-full p-[2px]'>
+                  <img src={feedback.img} loading='lazy' alt='' className='object-fit h-[100px] w-[100px] bg-cover justify-center rounded-full border-none' />
+                </div>
+              </div>
               <h5 className='text-xl font-bold text-white opacity-70'>{feedback.name}</h5>
               <h6 className='text-[15px] text-gray-500'>{feedback.title}</h6>
             </div>

@@ -22,6 +22,7 @@ const Offer = () => {
             <div className="bg-gray-400 rounded-full">
               <img
                 src={offer.img}
+                loading='lazy'
                 alt="name"
                 className="flex sm:w-[100px] w-[60px] sm:h-[100px] h-[60px] justify-center bg-[#64C0FF] rounded-full sm:p-3 p-1"
               />

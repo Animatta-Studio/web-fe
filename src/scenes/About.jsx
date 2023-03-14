@@ -21,14 +21,14 @@ const About = () => {
           the Japanese school/college/University and other educational institute of your <br className='mxl:flex hidden'/>
           choice, with the minimum time, effort and expenditure.
         </motion.p>
-        <motion.img initial={{x: '100vw'}} animate={{x: 0}} transition={{type:'spring', duration:1.2, bounce:0.3}} src={aboutus} className='md:inline hidden w-1/3 bg-opacity-[0.5] z-[2]' />
+        <motion.img initial={{x: '100vw'}} animate={{x: 0}} transition={{type:'spring', duration:1.2, bounce:0.3}} src={aboutus} loading='eager' className='md:inline hidden w-1/3 bg-opacity-[0.5] z-[2]' />
       </div>
       <div className='flex flex-col xl:max-w-[1400px] w-full bg-center space-y-5 mb-5'>
         <div className='flex flex-col flex-1 sm:pl-5 sm:pr-5 sm:ml-5 ml-1 sm:mr-5 mr-1 rounded-lg bg-white/10 z-10'>
           <div className='font-poppins font-extrabold text-white text-center text-[25px] sm:pt-4 pt-2 z-10'>FOUNDER</div>
           <div className='flex sm:flex-row flex-col flex-1 justify-center items-center text-center sm:px-10 px-2 sm:py-10 py-5 rounded z-10'>
             <div className='flex rounded-full sm:w-1/3 justify-center z-10'>
-                <img src={founder} alt='name' className='object-cover sm:w-[240px] w-[100px] sm:h-[240px] h-[100px] justify-center bg-[#64C0FF] rounded-full p-1'/>
+                <img src={founder} loading='lazy' alt='name' className='object-cover sm:w-[240px] w-[100px] sm:h-[240px] h-[100px] justify-center bg-[#64C0FF] rounded-full p-1'/>
             </div>
             <div className='flex flex-col sm:w-2/3 z-[10]'>
               <h6 className="font-poppins font-semibold xs:text-[22px] text-[15px] xs:leading-[53px] leading-[40px] text-white">Naveen Chauhan</h6>
@@ -70,7 +70,7 @@ const About = () => {
               </div>
             </div>
             <div className='flex rounded-full sm:w-1/3 justify-center'>
-                <img src={director} alt='name' className='object-cover object-top-1 sm:w-[240px] w-[100px] sm:h-[240px] h-[100px] bg-[#64C0FF] rounded-full p-1'/>
+                <img src={director} loading='lazy' alt='name' className='object-cover object-top-1 sm:w-[240px] w-[100px] sm:h-[240px] h-[100px] bg-[#64C0FF] rounded-full p-1'/>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ const About = () => {
           <div className='font-poppins font-extrabold text-white text-center text-[25px] sm:pt-4 pt-2'>LEAD EDUCATOR</div>
           <div className='flex sm:flex-row flex-col flex-1 justify-center items-center text-center sm:px-10 px-2 sm:py-10 py-5 rounded'>
             <div className='flex rounded-full justify-center sm:w-1/3'>
-                <img src={teacher} alt='name' className='flex object-cover object-bottom sm:w-[240px] w-[100px] sm:h-[240px] h-[100px] justify-center bg-[#64C0FF] rounded-full p-1'/>
+                <img src={teacher} loading='lazy' alt='name' className='flex object-cover object-bottom sm:w-[240px] w-[100px] sm:h-[240px] h-[100px] justify-center bg-[#64C0FF] rounded-full p-1'/>
             </div>
             <div className='flex flex-col sm:w-2/3'>
               <h6 className="font-poppins font-semibold xs:text-[22px] text-[15px] xs:leading-[53px] leading-[40px] text-white">Asano</h6>

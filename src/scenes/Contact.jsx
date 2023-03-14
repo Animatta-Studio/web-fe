@@ -9,7 +9,7 @@ import {
   PUBLIC_KEY,
 } from "../constants";
 import { Top, Map, ContactLinkBar } from "../components";
-import { contactus, indianOffice, japaneseOffice } from "../assets";
+import { contactus, indianOffice, japaneseOffice, contact, location } from "../assets";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -17,7 +17,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
 
-  const location = {
+  const loc = {
     address: "Mirai International Education",
     lat: 37.42216,
     lng: -122.08427,
@@ -161,6 +161,7 @@ const Contact = () => {
           animate={{ x: 0 }}
           transition={{ type: "spring", duration: 1.2, bounce: 0.3 }}
           src={contactus}
+          loading='eager'
           className="sm:inline hidden w-2/5 bg-opacity-[0.5] z-[3] mr-10"
         />
       </div>
@@ -168,10 +169,10 @@ const Contact = () => {
         <div className="sm:flex hidden bg-white/10 right-0 top-0 sm:w-96 w-[350px] h-5"></div>
         <div className="flex flex-row">
           <div className="sm:flex hidden bg-white/10 right-0 top-0 w-[60px] h-[250px]"></div>
-          {/* <Map location={location} zoomLevel={zoomLevel} /> */}
+          {/* <Map location={loc} zoomLevel={zoomLevel} /> */}
           <iframe
             className="z-[10] h-[450px] bg-white/10 w-full border-2"
-            src="https://maps.google.com/maps?q=30.174187,78.209379&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Mirai international education, donali, Dehradun, Uttarakhand&t=&z=15&ie=UTF8&iwloc=&output=embed"
             frameBorder="1"
             scrolling="no"
             marginHeight="0"
@@ -189,18 +190,19 @@ const Contact = () => {
         {contacts.map((contact) => (
           <div
             key={contact.id}
-            className="flex flex-1 flex-col justify-center items-center py-4 rounded"
+            className="flex sm:flex-1 flex-col justify-center items-center py-4 rounded"
           >
-            <div className="bg-[#0087E0] p-2 rounded-full mr-2">
+            <div className="bg-[#0087E0] p-2 rounded-full sm:mr-2 mr-0">
               <img
                 src={contact.img}
+                loading='lazy'
                 alt="icon"
                 className="flex h-[40px] w-[40px] justify-center"
               />
             </div>
             <div className="flex flex-col items-center">
               <h6 className="text-gray-500">{contact.title}</h6>
-              <p className="flex flex-1 font-poppins font-normal text-center items-center justify-center sm:text-[14px] text-[10px] xs:leading-[26px] leading-[21px] text-gradient">
+              <p className="flex flex-1 font-poppins font-normal text-center items-center justify-center sm:text-[14px] text-[9px] xs:leading-[26px] leading-[21px] text-gradient">
                 {contact.data}
               </p>
             </div>
@@ -209,47 +211,60 @@ const Contact = () => {
       </div>
       {/* <hr className='text-blue h-1 bg-[#0087E0] mt-5 sm:mb-10' /> */}
       <div className="flex msm:flex-row flex-col ustify-between msm:space-x-3 msm:space-y-0 space-y-3 group msm:p-6 p-2 msm:mx-8">
-        <div className="h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 rounded-xl cursor-pointer">
-          <div className="flex flex-1 flex-col h-1/4 items-center justify-center ">
+        <div className="h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-0 hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 rounded-xl cursor-pointer">
+          <div className="flex flex-1 flex-col h-1/2 items-center justify-center ">
             <img
               src={indianOffice}
+              loading='lazy'
               alt=""
               className="flex sm:h-[200px] h-[100px] sm:w-[200px] w-[100px] bg-cover justify-center mb-2 rounded-full border-none"
             />
             <h5 className="text-xl font-bold text-white opacity-70">
               Our Office In India
             </h5>
-            <h6 className="text-[15px] text-gray-500 xs:inline hidden">
-              Telephone- +91-7037972600, +91-8077063794
-            </h6>
-            <h6 className="text-[15px] text-gray-500 xs:hidden inline">
-              Telephone- +91-8077063794
+            <h4 className="text-[15px] text-white xs:flex hidden pt-1">
+              <img src={contact} loading='lazy' className="h-[30px] w-[30px]"/>
+              <span>
+                +91-7037972600, +91-8077063794
+              </span>
+            </h4>
+            <h6 className="flex flex-row text-[15px] text-white xs:hidden">
+              <img src={contact} loading='lazy' className="h-[30px] w-[30px]"/>
+              <span>
+                +91-8077063794
+              </span>
             </h6>
           </div>
-          <div className="text-start h-1/4 mt-2 sm:py-1 py-2">
-            <p className="text-[14px] text-white leading-[20px] font-bold opacity-40 text-center">
+          <div className="flex flex-col text-start h-1/4 justify-center items-center p-1">
+            <img src={location} loading='lazy' className="h-[30px] w-[30px] items-center"/>
+            <p className="text-[14px] text-white leading-[20px] font-bold opacity-80 text-center">
               Ranipokhari-Donali, Dehradun,
               <br />
               Uttarakhand INDIA – 248145
             </p>
           </div>
         </div>
-        <div className="h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-[1px] hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 rounded-xl cursor-pointer">
-          <div className="flex flex-1 flex-col h-1/4 items-center justify-center ">
+        <div className="h-[400px] flex flex-1 flex-col justify-start bg-white/10 duration-500 group-hover:blur-0 hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 pl-4 pr-4 pt-8 rounded-xl cursor-pointer">
+          <div className="flex flex-1 flex-col h-1/2 items-center justify-center ">
             <img
               src={japaneseOffice}
+              loading='lazy'
               alt=""
               className="flex sm:h-[200px] h-[100px] sm:w-[200px] w-[100px] bg-cover justify-center mb-2 rounded-full border-none"
             />
             <h5 className="text-xl font-bold text-white opacity-70">
               Our Office In Japan
             </h5>
-            <h6 className="text-[15px] text-gray-500">
-              Telephone- +81-7084488810
-            </h6>
+            <h4 className="flex text-[15px] text-white pt-1">
+              <img src={contact} loading='lazy' className="h-[30px] w-[30px] justify-center"/>
+              <span>
+                +81-7084488810
+              </span>
+            </h4>
           </div>
-          <div className="text-start h-1/4 mt-2 sm:py-1 py-2">
-            <p className="text-[14px] text-white leading-[20px] font-bold opacity-40 text-center">
+          <div className="flex flex-col text-start h-1/4 justify-center items-center p-1">
+            <img src={location} loading='lazy' className="h-[30px] w-[30px] items-center"/>
+            <p className="text-[14px] text-white leading-[20px] font-bold opacity-80 text-center">
               Osaka Fu Osaka Shi,
               <br />
               Suminoe ku Nanko Nana 3-3, Japan

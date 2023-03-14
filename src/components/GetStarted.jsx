@@ -13,7 +13,7 @@ const GetStarted = () => {
             <p className='font-poppins font-medium text-[18px] leading-[23px]'>
               <span className='text-gradient'>Apply</span>
             </p>
-            <img src={arrowUp} alt='arrow' className='w-[23px] h-[23px] object-contain' />
+            <img src={arrowUp} loading='eager' alt='arrow' className='w-[23px] h-[23px] object-contain' />
           </div>
           <p className='font-poppins font-medium text-[18px] leading-[23px] ml-2'>
             <span className='text-gradient'>Now</span>

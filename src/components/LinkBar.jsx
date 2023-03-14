@@ -24,11 +24,11 @@ const LinkBar = () => {
       scale: [1, 1.1, 1],
       opacity: 1,
       padding: [4, 3.5, 4],
-      backgroundColor: ['#ff0000', '#00ff00', '#0000ff'],
+      backgroundColor: ['#F6BE00', '#ff0000', '#F6BE00'],
       transition: {
         repeat: Infinity,
         ease: 'easeInOut',
-        duration: 0.5,
+        duration: 1,
       }
     }
   };
@@ -36,7 +36,7 @@ const LinkBar = () => {
   return (
     <nav className='fixed sm:flex w-full text-white text-center bg-[#64C0FF] z-[40] sm:p-1'>
       <ul className='list-none sm:flex hidden justify-end flex-1'>
-          <Link to='/events' className="text-white">
+          <Link to='/event-list' className="text-white">
             <motion.li variants={linkVariants} initial="initial" whileInView="visible" key='linkbar-1' className='font-poppins cursor-pointer text-[13px] text-white mr-10 font-bold rounded-[17px] p-2' >
                 News & Events
             </motion.li>

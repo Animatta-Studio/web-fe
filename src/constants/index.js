@@ -20,6 +20,29 @@ import {
   ikno,
   octb,
   blank,
+  slide01,
+  slide02,
+  slide03,
+  slide04,
+  slide05,
+  slide06,
+  slide07,
+  slide08,
+  slide09,
+  slide10,
+  slide11,
+  slide12,
+  slide13,
+  slide14,
+  slide15,
+  slide16,
+  slide17,
+  slide18,
+  slide19,
+  slide20,
+  slide21,
+  studyInJapan,
+  studyInKorea,
 } from "../assets";
 
 export const SERVICE_ID = 'service_tb837kj';
@@ -32,37 +55,38 @@ export const navLinks = [
     id: "home",
     title: "Home",
     path: 'home',
-    dist: '-translate-x-[510px]',
-    icon: 'home-outline',
+    dist: '-translate-x-[500px]',
   },
   {
     id: "stuy-abroad",
     title: "Study Abroad",
     path: 'abroad',
     dist: '-translate-x-[360px]',
-    icon: 'person-outline',
   },
   {
     id: "about",
     title: "About",
     path: 'about',
-    dist: '-translate-x-[260px]',
-    icon: 'chatbubble-outline',
+    dist: '-translate-x-[272px]',
   },
   {
     id: "language-course",
     title: "Courses",
     path: 'courses',
-    dist: '-translate-x-[135px]',
-    icon: 'camera-outline',
+    dist: '-translate-x-[180px]',
   },
   {
     id: "contact",
     title: "Contact",
     path: 'contact',
-    dist: '-translate-x-3',
-    icon: 'settings-outline',
+    dist: '-translate-x-[80px]',
   },
+  {
+    id: "gallery",
+    title: "Gallery",
+    path: "gallery",
+    dist: "translate-x-4",
+  }
 ];
 
 export const abroadHeader = [
@@ -205,12 +229,12 @@ export const abroadHeader = [
     higher educational institute (such as a vocational school, Junior college, or university) or
     look for employment opportunities if they meet the criteria.
     `,
-    icon: '',
+    icon: studyInJapan,
   },
   {
     id: 'h-2',
     title: 'S. Korea',
-    dis: 'msm:translate-x-[180px]',
+    dis: 'msm:translate-x-[160px]',
     sd: 'translate-x-[72px]',
     content: `
     The most important thing when studying in Korea is to clarify the purpose
@@ -245,12 +269,12 @@ export const abroadHeader = [
     for schools and colleges in Korea, completing visa process paperwork, and
     more.
     `,
-    icon: '',
+    icon: studyInKorea,
   },
   {
     id: 'h-3',
     title: 'Singapore',
-    dis: 'msm:translate-x-[360px]',
+    dis: 'msm:translate-x-[320px]',
     sd: 'translate-x-[144px]',
     content: `
     Singapore is one of the quickest developing economies in Southeast Asia. The
@@ -300,7 +324,7 @@ export const abroadHeader = [
   {
     id: 'h-4',
     title: 'Australia',
-    dis: 'msm:translate-x-[540px]',
+    dis: 'msm:translate-x-[480px]',
     sd: 'translate-x-[216px]',
     content: `
     Australia is well known for being one of the top choices for students wishing to
@@ -345,7 +369,7 @@ export const abroadHeader = [
   {
     id: 'h-5',
     title: 'Canada',
-    dis: 'msm:translate-x-[720px]',
+    dis: 'msm:translate-x-[640px]',
     sd: 'translate-x-[288px]',
     content: `
     If you want to study in Canada as an international student, you must first apply to
@@ -624,6 +648,62 @@ export const socialMedia = [
   },
 ];
 
+export const events = [
+  {
+    id: 1,
+    icon: people01,
+    title: 'Study in Japan',
+    topic: 'Now accepting applications for October 2023 intake. If you...',
+    content: `
+    Now accepting applications for October 2023 intake.
+    If you want a student visa to study in Japan for the long term, it is not too late
+    to prepare now. 
+    【Deadline for Application march 30】
+    students, who want to seek higher education in Japan, those who want to find
+    a job, those who want to experience Japanese culture first-hand those who
+    want to communicate in Japanese, and those who want to live in Japan we will
+    help you. “let’s achieve your dreams with us”
+    so, if you are interested in applying for a student visa, please contact us.
+    `,
+  },
+  {
+    id: 2,
+    icon: people01,
+    title: 'second',
+    topic: 'Our collaboration partner Osaka College of Tourism and Business...',
+    content: `
+    Our collaboration partner Osaka College of Tourism and Business held the graduation
+    ceremony in 2023.3.3 Congratulations to all the 283 students who graduate from the school
+    and get jobs in various fields.
+    Congratulation guys and enjoy your life in Japan.
+    Osaka College of Tourism and Business and we will always support you.
+    `,
+  }
+];
+
+export const slides = [
+  slide06,
+  slide07,
+  slide08,
+  slide09,
+  slide10,
+  slide11,
+  slide12,
+  slide13,
+  slide14,
+  slide15,
+  slide16,
+  slide17,
+  slide18,
+  slide19,
+  slide20,
+  slide21,
+  slide01,
+  slide02,
+  slide03,
+  slide04,
+  slide05,
+];
 
 export const aboutJapan = `
   <p>
