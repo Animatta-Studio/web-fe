@@ -15,6 +15,7 @@ import Map from './Map';
 import LocationPin from "./LocationPin";
 import ContactLinkBar from './ContactLinkBar';
 import Carousel from './Carousel';
+import Fallback from './Fallback';
 
 export {
   Footer,
@@ -34,4 +35,5 @@ export {
   LocationPin,
   ContactLinkBar,
   Carousel,
+  Fallback,
 };
