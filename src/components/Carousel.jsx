@@ -39,7 +39,7 @@ const Carousel = () => {
         {slides.map((slide, idx) => (
             <SwiperSlide key={idx}>
                 <img src={slide} loading='lazy'/>
-                <div className="swiper-lazy-preloader-white" />
+                <div className="swiper-lazy-preloader swiper-lazy-preloader-white" />
             </SwiperSlide>
         ))}
 
