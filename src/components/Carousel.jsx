@@ -15,11 +15,11 @@ const Carousel = () => {
   return (
     <motion.div initial={{y: '70vh'}} animate={{y: 0}} transition={{type:'spring', duration:1.3, bounce:0.3}} className="container select-none">
       <Swiper
-        effect={"coverflow"}
+        effect='coverflow'
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={"auto"}
+        slidesPerView='auto'
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
