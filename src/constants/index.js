@@ -651,7 +651,7 @@ export const socialMedia = [
 export const events = [
   {
     id: 1,
-    icon: people01,
+    icon: slide08,
     title: 'Study in Japan',
     topic: 'Now accepting applications for October 2023 intake. If you...',
     content: `
@@ -668,8 +668,8 @@ export const events = [
   },
   {
     id: 2,
-    icon: people01,
-    title: 'second',
+    icon: slide07,
+    title: 'Graduation Ceremony',
     topic: 'Our collaboration partner Osaka College of Tourism and Business...',
     content: `
     Our collaboration partner Osaka College of Tourism and Business held the graduation
