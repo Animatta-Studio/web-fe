@@ -35,21 +35,21 @@ const Navbar = () => {
         </h1>
       </div>
 
-      <ul className="md:flex hidden relative justify-end mr-5">
+      <ul className="md:flex hidden relative justify-end">
         <span
-          className={`bg-[#2A2220] duration-500 ${navLinks.find(nl => nl.path === selected).dist} border-[3px] border-gray-500 h-[40px] ${selected === 'abroad' ? 'w-[140px]' : 'w-[90px]'} absolute
+          className={`bg-[#2A2220] duration-500 ${navLinks.find(nl => nl.path === selected).dist} border-[3px] border-gray-500 h-[37px] ${selected === 'abroad' ? 'w-[130px]' : 'w-[85px]'} absolute
          top-[10px] rounded-[40px]`}
         >
         </span>
         {navLinks.map((nav, idx) => (
-          <li key={idx} className={`select-none ${idx !== 0 ? 'ml-[40px]' : ''}`}>
+          <li key={idx} className={`${idx == 1 ? 'w-[105px]' : ([0, 2].includes(idx) ? 'w-[68px]' : 'w-[80px]')} } select-none mr-4`}>
             <Link
               to={nav.path}
               className="flex flex-col text-center pt-6"
               onClick={() => setSelected(nav.path)}
             >
               <span
-                className={`text-md font-extrabold cursor-pointer duration-500 z-[1] text-[16px] ${
+                className={`${idx < 1 ? 'text-start': 'text-end'} text-md font-extrabold cursor-pointer duration-500 z-[1] text-[16px] ${
                   nav.path === selected ? "-mt-2 text-white" : "text-[#2A2220]"
                 }`}
               >

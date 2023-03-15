@@ -97,8 +97,8 @@ const Courses = () => {
                     className="h-[400px] mb-8 mt-0"
                   >
                     <div className="flex flex-1 justify-center items-center msm:mb-10 mb-4">
-                      <p className="text-white font-poppins msm:text-[18px] text-[14px] text-start msm:leading-[40px]">
-                        {abroadHeader[selected].content}
+                      <p className="text-white font-poppins msm:text-[18px] text-[14px] text-start msm:leading-[40px] msm:px-[1px] px-0">
+                        {parse(abroadHeader[selected].content)}
                       </p>
                     </div>
                   </motion.div>
