@@ -42,7 +42,7 @@ const Navbar = () => {
         >
         </span>
         {navLinks.map((nav, idx) => (
-          <li key={idx} className={`${idx == 1 ? 'w-[110px]' : ([0, 2].includes(idx) ? 'w-[68px]' : 'w-[80px]')} } select-none mr-4`}>
+          <li key={idx} className={`${idx == 1 ? 'w-[112px] px-[1px]' : ([0, 2].includes(idx) ? 'w-[68px]' : 'w-[80px]')} } select-none mr-4`}>
             <Link
               to={nav.path}
               className="flex flex-col text-center pt-6"
