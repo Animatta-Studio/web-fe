@@ -55,7 +55,7 @@ export const navLinks = [
     id: "home",
     title: "Home",
     path: 'home',
-    dist: '-translate-x-[512px]',
+    dist: '-translate-x-[516px]',
   },
   {
     id: "stuy-abroad",
