@@ -70,7 +70,7 @@ const Contact = () => {
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
-          transition={{ type: "spring", duration: 1.2, bounce: 0.3 }}
+          transition={{ type: "spring", durat7037972600ion: 1.2, bounce: 0.3 }}
           className="sm:w-1/2 w-full py-1 lg:py-6 sm:px-10 px-2 sm:mx-auto mx-0 max-w-screen-md items-start justify-start rounded z-[10]"
         >
           <h2 className="mb-4 sm:text-3xl text-2xl font-poppins tracking-tight font-semibold text-center text-white">
@@ -202,9 +202,9 @@ const Contact = () => {
             </div>
             <div className="flex flex-col items-center">
               <h6 className="text-gray-500">{contact.title}</h6>
-              <p className="flex flex-1 font-poppins font-normal text-center items-center justify-center sm:text-[14px] text-[9px] xs:leading-[26px] leading-[21px] text-gradient">
+              <a href={contact.ref} className="flex flex-1 font-poppins font-normal text-center items-center justify-center sm:text-[14px] text-[9px] xs:leading-[26px] leading-[21px] text-gradient" target="_blank">
                 {contact.data}
-              </p>
+              </a>
             </div>
           </div>
         ))}

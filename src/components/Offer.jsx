@@ -41,7 +41,7 @@ const Offer = () => {
           type="submit"
           className="font-poppins py-3 px-8 text-sm text-[20px] font-extrabold text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
         >
-          <Link to="/courses">Know More</Link>
+          <Link to="/contact">Know More</Link>
         </button>
       </div>
     </section>

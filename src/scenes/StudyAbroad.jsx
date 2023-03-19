@@ -4,7 +4,7 @@ import parse from 'html-react-parser';
 import { abroadHeader } from "../constants";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Courses = () => {
+const StudyAbroad = () => {
   const [selected, setSelected] = useState(0);
   const [direction, setDirection] = useState(0);
 
@@ -113,4 +113,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default StudyAbroad;

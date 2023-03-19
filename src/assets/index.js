@@ -66,7 +66,13 @@ import slide20 from './slide20.jpg';
 import slide21 from './slide21.jpg';
 import studyInJapan from './studyInJapan.png';
 import studyInKorea from './studyInKorea.png';
-
+import studyInAustralia from './studyInAustralia.png';
+import studyInCanada from './studyInCanada.png';
+import studyInSingapore from './studyInSingapore.png';
+import nat from './nat.png';
+import jlpt from './jlpt.png';
+import japanese from './japanese.png';
+import english from './english.png';
 
 export {
   logo,
@@ -137,4 +143,11 @@ export {
   slide21,
   studyInJapan,
   studyInKorea,
+  studyInAustralia,
+  studyInCanada,
+  studyInSingapore,
+  nat,
+  jlpt,
+  japanese,
+  english,
 };

@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <h3 className='font-semibold ss:text-[24px] text-[20px] text-white sm:leading-[40px] leading-[35px] w-full z-[1]'>"Let's find your dreams with us."</h3>
+        <h3 className='font-semibold ss:text-[24px] text-[20px] text-white sm:leading-[40px] leading-[35px] w-full z-[1]'>"Let's achieve your dreams with us."</h3>
 
         <div className='flex sm:flex-row flex-col mt-[30px] z-[1]'>
           <p className='font-poppins sm:text-[22px] text-[17px] font-bold text-white sm:leading-[30px] leading-[23px]'>

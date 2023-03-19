@@ -43,6 +43,13 @@ import {
   slide21,
   studyInJapan,
   studyInKorea,
+  studyInSingapore,
+  studyInCanada,
+  studyInAustralia,
+  japanese,
+  nat,
+  jlpt,
+  english,
 } from "../assets";
 
 export const SERVICE_ID = 'service_tb837kj';
@@ -169,89 +176,7 @@ export const abroadHeader = [
     advanced learning to students. Graduates receive a bachelor's degree. They can work in Japan.
     If students still wish to continue their education, they can do so by attending the Master's
     program (an additional two years) and the PhD. After graduation, students can look for full-
-    time jobs in Japan.<br/><br/>
-    There are many research fields in Japan. Most universities have departments in medicine,
-    engineering, law, sociology, education, and business. There is no public ranking for Japanese
-    universities.<br className='mb-2'/>
-    <span className='font-bold text-[22px]'>APPLY FOR A JAPANESE STUDENT VISA</span><br/>
-    <ul className='list-disc'>
-    <li>Prospective applicants must be at least 18 years of age or more and have graduated from
-    high school or above.</li>
-    <li>Aspirants from these countries’ high school graduates as their final educational background,
-    can not apply for a student visa or higher education in Japan.</li>
-    <li>Besides the above, there are a few other requirements which applicants need to comply with
-    and submit to the school for consideration of their application for a student visa. Following
-    is the list of documents:<br/>
-    <ul className='list-inside list-decimal'>
-    <li>Passport copy.</li>
-    <li>2 pics photos (4X 3cm).</li>
-    <li>Highest education certificate.</li>
-    <li>A latter of why you want to study in Japan.</li>
-    <li>JLPT/NAT/Japanese language certificate.</li>
-    <li>Sponsor documents.</li>
-    <li>Bank balance certificate.</li>
-    <li>Employment certificate.</li>
-    <li>Tax certificate/Pay slips.</li>
-    </li><br/>
-    <span className='font-bold text-[22px]'>GET A COE</span><br/>
-    To obtain a student visa, you must first obtain a COE in Japan. The language school of your
-    choice will apply for the COE on your behalf to the Japanese Immigration Bureau. The
-    above documents are the same as the documents that must be submitted to the Immigration
-    Bureau. COE result dates are not fixed and are subject to change. If your and your sponsor's
-    documentation is good, your girlfriend's COE is more likely to be approved. Therefore, it is
-    advantageous to have a school agent. We can review your documents to ensure they are
-    clear, easy to understand, and likely to be approved.<br/>
-    <span className='font-bold text-[22px]'>GETTING YOUR STUDENT VISA</span><br/>
-    Once your COE results have been issued (usually 5-6 weeks before the course start), the
-    school will send you a copy of your COE, an invoice for tuition and other fees (if requested
-    in your acceptance letter) will be Payment must be made by the due date to receive the
-    original COE in the mail.<br/>
-    Once you have received your original COE, you will need to apply for a student visa at the
-    nearest Japanese Embassy in your country. To apply for a student visa, you must submit the<br/>
-    <ul className='list-inside list-disc'>
-    <li>original COE</li>
-    <li>approval decision</li>
-    <li>valid passport</li>
-    <li>The passport photo was taken within the last 6 months</li></ul>
-    Applying for a student visa depends on where you apply, the visa process may take him 3-
-    7 days, but we recommend that he apply at least two weeks in advance of his travel plans.
-    If your COE is rejected, the immigration office will usually provide a brief reason why your
-    application was rejected. If you wish to apply again, please contact us first. If you apply
-    again, you cannot reuse the documents you have already submitted. You will need to submit
-    new copies of your sponsor's documents and a new signed application. Your preferred
-    school (the school that processed your application) may not accept re-applications. So if you
-    have a history of COE rejections, expect fewer school options.<br/><br/>
-    <span className='font-bold text-[22px]'>PERIOD OF VISA</span><br/>
-    <ul className='list-disc'>
-    <li>The duration of Japanese student visas varies, but usually from 6 months up to 2 years.</li>
-    <li>Study time is pre-set. Such as:</li>
-    <table className='w-full text-center table-auto border border-slate-400 border-separate'>
-      <tr>
-        <th className='border border-slate-300'>Course</th>
-        <th className='border border-slate-300'>Duration</th>
-      </tr>
-      <tr>
-        <td className='border border-slate-300'>April intake</td>
-        <td className='border border-slate-300'>2 years</td>
-      </tr>
-      <tr>
-        <td className='border border-slate-300'>July intake</td>
-        <td className='border border-slate-300'>1 year and 9 months</td>
-      </tr>
-      <tr>
-        <td className='border border-slate-300'>October intake</td>
-        <td className='border border-slate-300'>1 year and 6 months</td>
-      </tr>
-      <tr>
-        <td className='border border-slate-300'>January intake</td>
-        <td className='border border-slate-300'>1 year and 3 months</td>
-      </tr>
-    </table>
-    <li>Student can renew their Student Visas and extend the period of stay depending on their
-    enrollment period.</li>
-    <li>After completion of their Japanese language course, the students can proceed to study at a
-    higher educational institute (such as a vocational school, Junior college, or university) or
-    look for employment opportunities if they meet the criteria.</li></ul>
+    time jobs in Japan.<br/>
     `,
     icon: studyInJapan,
   },
@@ -342,7 +267,7 @@ export const abroadHeader = [
     If you are also looking for student visas, visa paperwork and procedures, only
     MIRAI International Education can give you the right advice.<br/>
     `,
-    icon: '',
+    icon: studyInSingapore,
   },
   {
     id: 'h-4',
@@ -387,7 +312,7 @@ export const abroadHeader = [
     find out right colleges/universities/institutes and also visa documentations &
     processing.<br/>
     `,
-    icon: '',
+    icon: studyInAustralia,
   },
   {
     id: 'h-5',
@@ -407,7 +332,7 @@ export const abroadHeader = [
     <b>MIRAI INTERNATIONAL EDUCATION</b> will help you to find
     university/institutes and also visa documentation and processing.
     `,
-    icon: '',
+    icon: studyInCanada,
   }
 ];
 
@@ -422,12 +347,13 @@ export const courses = [
     
     Japanese Language Proficiency Test (JLPT) qualifications have various merits, such as academic certification and completion certificates at schools, preferential treatment at companies, and dependability in society.
     `,
+    icon: jlpt,
   },
   {
     id: 'b',
     title: 'NAT',
-    dis: 'msm:translate-x-[180px]',
-    sd: 'translate-x-[90px]',
+    dis: 'msm:translate-x-[160px]',
+    sd: 'translate-x-[72px]',
     content: `
     The Japanese language NAT-TEST is a test that measures the Japanese language proficiency of students whose native language is not Japanese. The tests are divided by difficulty (5 levels) and general skills is measured in 3 group are Grammar/vocabulary, listening and reading comprehension. The test format and question format are the same as the Japanese Language Proficiency Test (JLPT).
     
@@ -435,12 +361,13 @@ export const courses = [
     
     Level 1 and 2 (1Q & 2Q) exams include the following sections: Language skills (reading/ vocabulary/ grammar) and listening. Exam levels 3, 4, and 5 (3Q,4Q & 5Q) include the following sections: Language skills (reading/vocabulary), second language (grammar, reading), and listening comprehension
     `,
+    icon: nat,
   },
   {
     id: 'c',
     title: 'Japanese',
-    dis: 'msm:translate-x-[360px]',
-    sd: 'translate-x-[180px]',
+    dis: 'msm:translate-x-[320px]',
+    sd: 'translate-x-[144px]',
     content: `
     As you know japan has the third largest economy in the world and has gone Very far in science and technology so learning Japanese will open your doors to the new era, advanced technologies, futuristic environment and many more such things that we can’t get in developing countries.
     
@@ -457,17 +384,19 @@ export const courses = [
     high pay-outs
     It opens more doors and better job opportunities.
     `,
+    icon: japanese,
   },
   {
     id: 'd',
     title: 'English',
-    dis: 'msm:translate-x-[540px]',
-    sd: 'translate-x-[270px]',
+    dis: 'msm:translate-x-[480px]',
+    sd: 'translate-x-[216px]',
     content: `
     Now a day English language is very important because it’s a international language and many countries work with this language. Learning to speak English can be tough, but don't give up! With enough practice and the right guidance and resources, you can start speaking English confidently and often. The two major English tests accepted by universities around the world are TOEFL (Test of English as a Foreign Language) and IELTS (International English Language Testing System).
     
     IELTS and TOEFL tests measure all four language skills important to effective communication: - speak, listen, read, write.
     `,
+    icon: english,
   }
 ];
 
@@ -477,24 +406,28 @@ export const contacts = [
     title: 'Location',
     img: location,
     data: 'Dehradun, India',
+    ref: 'https://www.google.com/maps/place/Mirai+international+education/@30.174028,78.209572,15z/data=!4m6!3m5!1s0x39093d483346fb8b:0x11fb587b1beb20d2!8m2!3d30.1740283!4d78.2095719!16s%2Fg%2F11tt98q7r8?hl=en-US'
   },
   {
     id: 'c-2',
     title: 'Contact',
     img: contact,
     data: '+91-7037972600',
+    ref: 'tel:917037972600',
   },
   {
     id: 'c-3',
     title: 'Email',
     img: email,
     data: 'miraiinternationaleducation@gmail.com',
+    ref: 'mailto:miraiinternationaleducation@gmail.com',
   },
   {
     id: 'c-4',
     title: 'Website',
     img: website,
     data: 'www.miraiedu.in',
+    ref: 'https://www.miraiedu.in/home',
   },
 ];
 
@@ -736,3 +669,87 @@ export const aboutJapan = `
   to come here and learn this Japanese language.<br/><br/>
   </p>
 `;
+
+
+const extra = `There are many research fields in Japan. Most universities have departments in medicine,
+engineering, law, sociology, education, and business. There is no public ranking for Japanese
+universities.<br className='mb-2'/>
+<span className='font-bold text-[22px]'>APPLY FOR A JAPANESE STUDENT VISA</span><br/>
+<ul className='list-disc'>
+<li>Prospective applicants must be at least 18 years of age or more and have graduated from
+high school or above.</li>
+<li>Aspirants from these countries’ high school graduates as their final educational background,
+can not apply for a student visa or higher education in Japan.</li>
+<li>Besides the above, there are a few other requirements which applicants need to comply with
+and submit to the school for consideration of their application for a student visa. Following
+is the list of documents:<br/>
+<ul className='list-inside list-decimal'>
+<li>Passport copy.</li>
+<li>2 pics photos (4X 3cm).</li>
+<li>Highest education certificate.</li>
+<li>A latter of why you want to study in Japan.</li>
+<li>JLPT/NAT/Japanese language certificate.</li>
+<li>Sponsor documents.</li>
+<li>Bank balance certificate.</li>
+<li>Employment certificate.</li>
+<li>Tax certificate/Pay slips.</li>
+</li><br/>
+<span className='font-bold text-[22px]'>GET A COE</span><br/>
+To obtain a student visa, you must first obtain a COE in Japan. The language school of your
+choice will apply for the COE on your behalf to the Japanese Immigration Bureau. The
+above documents are the same as the documents that must be submitted to the Immigration
+Bureau. COE result dates are not fixed and are subject to change. If your and your sponsor's
+documentation is good, your girlfriend's COE is more likely to be approved. Therefore, it is
+advantageous to have a school agent. We can review your documents to ensure they are
+clear, easy to understand, and likely to be approved.<br/>
+<span className='font-bold text-[22px]'>GETTING YOUR STUDENT VISA</span><br/>
+Once your COE results have been issued (usually 5-6 weeks before the course start), the
+school will send you a copy of your COE, an invoice for tuition and other fees (if requested
+in your acceptance letter) will be Payment must be made by the due date to receive the
+original COE in the mail.<br/>
+Once you have received your original COE, you will need to apply for a student visa at the
+nearest Japanese Embassy in your country. To apply for a student visa, you must submit the<br/>
+<ul className='list-inside list-disc'>
+<li>original COE</li>
+<li>approval decision</li>
+<li>valid passport</li>
+<li>The passport photo was taken within the last 6 months</li></ul>
+Applying for a student visa depends on where you apply, the visa process may take him 3-
+7 days, but we recommend that he apply at least two weeks in advance of his travel plans.
+If your COE is rejected, the immigration office will usually provide a brief reason why your
+application was rejected. If you wish to apply again, please contact us first. If you apply
+again, you cannot reuse the documents you have already submitted. You will need to submit
+new copies of your sponsor's documents and a new signed application. Your preferred
+school (the school that processed your application) may not accept re-applications. So if you
+have a history of COE rejections, expect fewer school options.<br/><br/>
+<span className='font-bold text-[22px]'>PERIOD OF VISA</span><br/>
+<ul className='list-disc'>
+<li>The duration of Japanese student visas varies, but usually from 6 months up to 2 years.</li>
+<li>Study time is pre-set. Such as:</li>
+<table className='w-full text-center table-auto border border-slate-400 border-separate'>
+  <tr>
+    <th className='border border-slate-300'>Course</th>
+    <th className='border border-slate-300'>Duration</th>
+  </tr>
+  <tr>
+    <td className='border border-slate-300'>April intake</td>
+    <td className='border border-slate-300'>2 years</td>
+  </tr>
+  <tr>
+    <td className='border border-slate-300'>July intake</td>
+    <td className='border border-slate-300'>1 year and 9 months</td>
+  </tr>
+  <tr>
+    <td className='border border-slate-300'>October intake</td>
+    <td className='border border-slate-300'>1 year and 6 months</td>
+  </tr>
+  <tr>
+    <td className='border border-slate-300'>January intake</td>
+    <td className='border border-slate-300'>1 year and 3 months</td>
+  </tr>
+</table>
+<li>Student can renew their Student Visas and extend the period of stay depending on their
+enrollment period.</li>
+<li>After completion of their Japanese language course, the students can proceed to study at a
+higher educational institute (such as a vocational school, Junior college, or university) or
+look for employment opportunities if they meet the criteria.</li></ul>`;

@@ -17,7 +17,7 @@ const LinkBar = () => {
       transition: {
         repeat: Infinity,
         ease: 'easeInOut',
-        duration: 1
+        duration: 1.5
       }
     },
     apply: {

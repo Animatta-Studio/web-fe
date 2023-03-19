@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsFacebook, BsYoutube } from 'react-icons/bs';
+import { BsFacebook, BsYoutube, BsLinkedin, BsWhatsapp } from 'react-icons/bs';
 import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai';
 import { GetStarted } from '../components';
 import { contact, location } from '../assets';
@@ -16,8 +16,10 @@ const Footer = () => {
               <span className='sm:text-[12px] text-[10px] text-white font-bold' >Dehradun, India</span>
             </div>
             <div className='flex items-center'>
-              <img src={contact} loading="lazy" className='flex h-[30px] w-[30px] justify-center'/>
-              <span className='sm:text-[12px] text-[10px] text-white font-bold' >+91-7037972600</span>
+              <a href="tel:917037972600" className='flex items-center'>
+                <img src={contact} loading="lazy" className='flex h-[30px] w-[30px] justify-center'/>
+                <span className='sm:text-[12px] text-[10px] text-white font-bold' >+91-7037972600</span>
+              </a>
             </div>
             <br className='sm:mt-2 mt-1 sm:mb-2 mb-1'/>
             <div className='flex items-center'>
@@ -25,8 +27,10 @@ const Footer = () => {
               <span className='sm:text-[12px] text-[10px] text-white font-bold' >Osaka, Japan</span>
             </div>
             <div className='flex items-center'>
-              <img src={contact} loading="lazy" className='flex h-[30px] w-[30px] justify-center'/>
-              <span className='sm:text-[12px] text-[10px] text-white font-bold' >+81-7084488810</span>
+              <a href="tel:817084488810" className='flex items-center'>
+                <img src={contact} loading="lazy" className='flex h-[30px] w-[30px] justify-center'/>
+                <span className='sm:text-[12px] text-[10px] text-white font-bold' >+81-7084488810</span>
+              </a>
             </div>
           </div>
           <div className='sm:flex hidden flex-col space-y-2'>
@@ -63,7 +67,17 @@ const Footer = () => {
           </div>
           <div className='bg-none p-1 rounded-full hover:bg-gray-700'>
             <a href="https://www.instagram.com/miraiinternationaleducation" target="_blank">
-              <AiFillInstagram size={'20px'}/>
+              <AiFillInstagram size={'22px'}/>
+            </a>
+          </div>
+          <div className='bg-none p-1 rounded-full hover:bg-gray-700'>
+            <a href="https://www.linkedin.com/in/mirai-international-education-82587b268" target="_blank">
+              <BsLinkedin size={'20px'}/>
+            </a>
+          </div>
+          <div className='bg-none p-1 rounded-full hover:bg-gray-700'>
+            <a href="https://wa.me/7037972600" target="_blank" rel='noopener noreferrer'>
+              <BsWhatsapp size={'20px'}/>
             </a>
           </div>
         </div>
