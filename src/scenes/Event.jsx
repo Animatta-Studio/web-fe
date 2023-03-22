@@ -16,12 +16,12 @@ const Event = () => {
     return (
         <motion.div initial={{y: '70vh'}} animate={{y: 0}} transition={{type:'spring', duration:1.3, bounce:0.3}} className='mt-[100px] text-white'>
             <Top text="News & Events" />
-            <div className='flex sm:flex-row flex-col p-4 flex-1 sm:space-x-10 space-x-0 justify-center items-center text-center'>
+            <div className='flex sm:flex-row flex-col p-4 flex-1 sm:space-x-10 space-x-0'>
                 <div className='flex flex-1 flex-col py-4 sm:p-8'>
                     <h1 className='text-[30px] font-extrabold justify-center text-center mb-2'>{events[id].title}</h1>
-                    <p className='font-poppins sm:text-[18px] text-[14px] leading-[30px] text-start sm:p-4'>{parse(events[id].content)}</p>
+                    <p className='font-poppins sm:text-[18px] text-[14px] leading-[30px] sm:p-4 items-center text-start'>{parse(events[id].content)}</p>
                 </div>
-                <img src={events[id].icon} loading='lazy' className='sm:w-[500px] w-[100wh] sm:h-[400px] h-[300px]'/>
+                <img src={events[id].icon} loading='lazy' className='sm:w-[500px] w-[100wh] sm:h-[400px] h-[300px] sm:mt-[100px]'/>
             </div>
         </motion.div>
     );

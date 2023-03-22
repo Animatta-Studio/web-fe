@@ -44,10 +44,10 @@ const Carousel = () => {
         ))}
 
         <div className="slider-controller">
-          <div className="lg:inline hidden z-[50] swiper-button-prev slider-arrow w-[2.1875rem] h-[2.1875rem] translate-x-[-33%] rounded-[50%] left-[33%] after:content-['']">
+          <div className="lg:inline hidden z-[50] swiper-button-prev slider-arrow w-[2.1875rem] h-[2.1875rem] translate-x-[-33%] rounded-[50%] left-[28%] after:content-['']">
             <ion-icon name="arrow-back-outline" />
           </div>
-          <div className="lg:inline hidden z-[50] swiper-button-next slider-arrow w-[2.1875rem] h-[2.1875rem] translate-x-[-33%] rounded-[50%] right-[32%] after:content-['']">
+          <div className="lg:inline hidden z-[50] swiper-button-next slider-arrow w-[2.1875rem] h-[2.1875rem] translate-x-[-33%] rounded-[50%] right-[26%] after:content-['']">
             <ion-icon name="arrow-forward-outline" />
           </div>
           <div className="swiper-pagination"></div>

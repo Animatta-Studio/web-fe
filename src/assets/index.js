@@ -64,7 +64,18 @@ import slide18 from './slide18.jpg';
 import slide19 from './slide19.jpg';
 import slide20 from './slide20.jpg';
 import slide21 from './slide21.jpg';
-import studyInJapan from './studyInJapan.png';
+import slide22 from './slide22.jpg';
+import slide23 from './slide23.jpg';
+import slide24 from './slide24.jpg';
+import slide25 from './slide25.jpg';
+import slide26 from './slide26.jpg';
+import slide27 from './slide27.jpg';
+import slide28 from './slide28.jpg';
+import slide29 from './slide29.jpg';
+import slide30 from './slide30.jpg';
+import slide31 from './slide31.jpg';
+import slide32 from './slide32.jpg';
+import studyInJapan from './studyInJapan.gif';
 import studyInKorea from './studyInKorea.png';
 import studyInAustralia from './studyInAustralia.png';
 import studyInCanada from './studyInCanada.png';
@@ -141,6 +152,17 @@ export {
   slide19,
   slide20,
   slide21,
+  slide22,
+  slide23,
+  slide24,
+  slide25,
+  slide26,
+  slide27,
+  slide28,
+  slide29,
+  slide30,
+  slide31,
+  slide32,
   studyInJapan,
   studyInKorea,
   studyInAustralia,

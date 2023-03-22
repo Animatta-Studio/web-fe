@@ -41,6 +41,17 @@ import {
   slide19,
   slide20,
   slide21,
+  slide22,
+  slide23,
+  slide24,
+  slide25,
+  slide26,
+  slide27,
+  slide28,
+  slide29,
+  slide30,
+  slide31,
+  slide32,
   studyInJapan,
   studyInKorea,
   studyInSingapore,
@@ -110,7 +121,7 @@ export const abroadHeader = [
     intend to study and/or work in Japan, it is a great idea to come here and learn this Japanese
     language.<br className='mb-2'/>
 
-    <ul className='list-disc'><span className='text-[22px] font-bold mb-2 mt-4'>Here are some good reasons for studying in Japan</span><br/>
+    <ul className='list-disc list-inside'><span className='text-[22px] font-bold mb-2 mt-4'>Here are some good reasons for studying in Japan</span><br/>
     <li>An excellent education system What you’ll have learned in Japan – Academic and other
     skills alike will have you ready for indeed the most competitive job markets. Learning the
     Japanese language will allow you to enrol in a university and obtain a highly respected
@@ -611,15 +622,49 @@ export const events = [
     title: 'Study in Japan',
     topic: 'Now accepting applications for October 2023 intake. If you...',
     content: `
-    Now accepting applications for October 2023 intake.
-    If you want a student visa to study in Japan for the long term, it is not too late
-    to prepare now.<br/>
-    <b className='text-[#ff0000]'>【Deadline for Application: March 30】</b><br/>
-    students, who want to seek higher education in Japan, those who want to find
+    <p className='text-center'>
+      <b className='text-center'>Now accepting applications for October 2023 intake.</b><br/>
+      <span className='sm:text-[17px] text-[13px]'>If you want a student visa to study in Japan for the long term, it's not too late
+      to prepare now.</span><br/>
+      <b className='text-[#ff0000]'>【Deadline for Application: March 30】</b><br/><br/>
+    </p>
+
+    <p className='text-center'>
+      <b className='text-center'>Applications for January 2024 intake.</b><br/>
+
+      <span className='sm:text-[17px] text-[13px]'>If you want a student visa to study in Japan for the long term, it is the right time.</span><br/>
+
+      <b className='text-[#ff0000]'>【Deadline for Application: July 30】</b><br/><br/>
+    </p>
+
+    <p className='text-center'>
+      <b className='text-center'>Applications for April 2024 intake.</b><br/>
+
+      <span className='sm:text-[17px] text-[13px]'>If you want a student visa to study in Japan for the long term, it is the right time
+      because there are many applicants for the April intake hurry up.</span><br/>
+      <b className='text-[#ff0000]'>【Deadline for Application: September 30】</b><br/><br/>
+    </p>
+
+    <p className='text-center'>
+    <b className='text-center'>Applications for July 2024 intake.</b><br/>
+
+    <span className='sm:text-[17px] text-[13px]'>If you want a student visa to study in Japan for the long term, it is the right time
+    because there are many applicants for the July intake.</span><br/>
+
+    <b className='text-[#ff0000]'>【Deadline for Application: December 30】</b><br/><br/>
+    </p>
+
+    So, if you are interested in applying for a student visa, please contact us.<br/><br/>
+    Students, who want to seek higher education in Japan, those who want to find
     a job, those who want to experience Japanese culture first-hand those who
     want to communicate in Japanese, and those who want to live in Japan we will
-    help you. <b className='text-[#00ff00]'>“let’s achieve your dreams with us”</b><br/>
-    So, if you are interested in applying for a student visa, please contact us.<br/>
+    help you. <b className='text-[#00ff00]'>“let’s achieve your dreams with us”</b><br/><br/>
+
+      ◼ New basic Japanese language classes start on April 15, 2023 <br/>
+
+      ◼ New JLPT N4 classes starting from April 15, 2023<br/>
+
+      ◼ Interview preparation classes are going on
     `,
   },
   {
@@ -629,7 +674,7 @@ export const events = [
     topic: 'Our collaboration partner Osaka College of Tourism and Business...',
     content: `
     Our collaboration partner Osaka College of Tourism and Business held the graduation
-    ceremony on <b className='text-[#00ff00]'>2023/03/03</b>. Congratulations to all the <b className='text-[21px] text-[#0087E0]'>283</b> students who graduated from the school
+    ceremony on <b className='text-[#00ff00]'>2023/03/03</b>. Congratulations to all the <b className='text-[21px] text-[#0087E0]'>291</b> students who graduated from the school
     and got jobs in various fields.<br/>
     Congratulation guys and enjoy your life in Japan.
     Osaka College of Tourism and Business and we will always support you.
@@ -654,6 +699,17 @@ export const slides = [
   slide19,
   slide20,
   slide21,
+  slide22,
+  slide23,
+  slide24,
+  slide25,
+  slide26,
+  slide27,
+  slide28,
+  slide29,
+  slide30,
+  slide31,
+  slide32,
   slide01,
   slide02,
   slide03,

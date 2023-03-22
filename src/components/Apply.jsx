@@ -162,10 +162,10 @@ const Apply = () => {
                             <Field component='select' name="course" id="course" className='block p-3 w-full text-sm rounded-lg border bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light'>
                                 <option value="" disabled>--</option>
                                 <option value="Study Abroad">Study Abroad</option>
-                                <option value="Japanese Language">Learn Japanese</option>
-                                <option value="Korean Language">Learn Korean</option>
-                                <option value="English Language">Learn English</option>
                                 <option value="Work Abroad">Work Abroad</option>
+                                <option value="Japanese Language">Japanese Language</option>
+                                <option value="Korean Language">Korean Language</option>
+                                <option value="English Language">English Language</option>
                             </Field>
                         </div>
                     </div>
