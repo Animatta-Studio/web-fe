@@ -76,7 +76,7 @@ const Footer = () => {
             </a>
           </div>
           <div className='bg-none p-1 rounded-full hover:bg-gray-700'>
-            <a href="https://wa.me/7037972600" target="_blank" rel='noopener noreferrer'>
+            <a href="https://wa.me/917037972600" target="_blank" rel='noopener noreferrer'>
               <BsWhatsapp size={'20px'}/>
             </a>
           </div>

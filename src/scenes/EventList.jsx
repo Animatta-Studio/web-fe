@@ -12,10 +12,10 @@ const EventList = () => {
         initial={{ x: "-100vw" }}
         animate={{ x: 0 }}
         transition={{ type: "spring", duration: 1.3, bounce: 0.3 }}
-        className="flex sm:flex-row flex-col items-start my-10 ml-5 sm:space-y-0 space-y-4 cursor-pointer"
+        className="flex sm:flex-row flex-col sm:justify-start justify-center sm:items-start items-center my-10 sm:ml-5 sm:space-y-0 space-y-4 cursor-pointer"
       >
         {events.map((event) => (
-          <div key={event.id} className="flex flex-col w-[300px] h-[410px] max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 mr-5">
+          <div key={event.id} className="flex flex-col w-[300px] h-[410px] max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 sm:mr-5">
             <img
               className="rounded-t-lg w-[400px] h-[220px]"
               src={event.icon}
