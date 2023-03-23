@@ -84,6 +84,7 @@ import nat from './nat.png';
 import jlpt from './jlpt.png';
 import japanese from './japanese.png';
 import english from './english.png';
+import animatta from './animatta.png';
 
 export {
   logo,
@@ -172,4 +173,5 @@ export {
   jlpt,
   japanese,
   english,
+  animatta,
 };
