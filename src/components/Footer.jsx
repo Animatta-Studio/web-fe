@@ -83,13 +83,13 @@ const Footer = () => {
         </div>
       </div>
       <div className='flex sm:flex-row flex-col justify-center items-center overflow-hidden sm:h-[40px] relative'>
-        <a href="https://wa.me/918410356577" target='_blank' className='sm:absolute sm:left-0 sm:-bottom-[10px]'>
+        <div className='sm:absolute sm:left-0 sm:-bottom-[10px]'>
           <div className='flex items-center sm:w-[200px] w-full overflow-hidden sm:h-full h-[35px]'>
             <p className='font-poppins font-semibold text-black sm:text-[11px] text-[10px] leading-[15.8px] text-start pt-[20px]'>Designed By</p>
             <img src={animatta} className='flex h-[60px] w-[65px]' />
             <p className='font-poppins font-semibold text-black sm:text-[11px] text-[10px] leading-[15.8px] text-start pt-[20px]'>Studio</p>
           </div>
-        </a>
+        </div>
         <div className='flex items-center justify-center text-center'>
           <p className='font-poppins font-normal text-white sm:text-[12px] text-[10px] leading-[15.8px] pt-[16px]'>© 2023 Mirai International Education. All Rights Reserved.</p>
         </div>
