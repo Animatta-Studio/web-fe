@@ -430,8 +430,11 @@ export const contacts = [
     id: 'c-3',
     title: 'Email',
     img: email,
-    data: 'miraiinternationaleducation@gmail.com',
-    ref: 'mailto:miraiinternationaleducation@gmail.com',
+    data: [{
+      data: 'miraiinternationaleducation@gmail.com', ref: 'mailto:miraiinternationaleducation@gmail.com'
+    },{
+      data: 'miraiedu12@gmail.com', ref: 'mailto:miraiedu12@gmail.com'
+    }],
   },
   {
     id: 'c-4',

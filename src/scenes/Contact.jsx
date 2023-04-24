@@ -190,21 +190,29 @@ const Contact = () => {
         {contacts.map((contact) => (
           <div
             key={contact.id}
-            className="flex sm:flex-1 flex-col justify-center items-center py-4 rounded"
+            className="flex sm:flex-1 flex-col sm:h-[200px] h-[150px] items-center py-4 rounded"
           >
             <div className="bg-[#0087E0] p-2 rounded-full sm:mr-2 mr-0">
               <img
                 src={contact.img}
                 loading='lazy'
                 alt="icon"
-                className="flex h-[40px] w-[40px] justify-center"
+                className="flex h-[40px] w-[40px]"
               />
             </div>
-            <div className="flex flex-col items-center">
-              <h6 className="text-gray-500">{contact.title}</h6>
-              <a href={contact.ref} className="flex flex-1 font-poppins font-normal text-center items-center justify-center sm:text-[14px] text-[9px] xs:leading-[26px] leading-[21px] text-gradient" target="_blank">
-                {contact.data}
-              </a>
+            <div className="flex flex-col justify-center items-center">
+              <h6 className="text-gray-500 justify-center pt-1">{contact.title}</h6>
+              <div className="pt-1">
+                {
+                  typeof contact.data === 'object' ? 
+                  contact.data.map(val => 
+                    <a key={`some_${val.ref}`} href={val.ref} className="flex flex-1 font-poppins font-normal text-center items-center justify-center sm:text-[14px] text-[9px] xs:leading-[26px] leading-[21px] text-gradient" target="_blank">
+                    {val.data}
+                    </a>) : <a href={contact.ref} className="flex flex-1 font-poppins font-normal text-center items-center justify-center sm:text-[14px] text-[9px] xs:leading-[26px] leading-[21px] text-gradient" target="_blank">
+                  {contact.data}
+                </a>
+                }
+              </div>
             </div>
           </div>
         ))}
