@@ -51,10 +51,10 @@ const About = () => {
           <div className='font-poppins font-extrabold text-white text-center text-[25px] sm:pt-4 pt-2'>DIRECTOR</div>
           <div className='flex sm:flex-row flex-col-reverse flex-1 justify-center items-center text-center sm:px-10 px-2 sm:py-10 py-5 rounded'>
             <div className='flex flex-col sm:w-2/3'>
-              <h6 className="font-poppins font-semibold xs:text-[22px] text-[15px] xs:leading-[53px] leading-[40px] text-white">Junichi Nishite</h6>
+              <h6 className="font-poppins font-semibold xs:text-[22px] text-[15px] xs:leading-[53px] leading-[40px] text-white">Otsuji Hideki</h6>
               <div className='flex justify-center'>
                 <p className="font-poppins font-normal xs:text-[15px] text-[12px] xs:leading-[26px] leading-[21px] text-gradient text-start">
-                  Namaste, My name is Junichi Nishite, Director of Mirai International Education <br className='md:flex hidden'/>
+                  Namaste, My name is Otsuji Hideki, Director of Mirai International Education <br className='md:flex hidden'/>
                   Center. Japan is an island country surrounded by the sea on all sides, and <br className='md:flex hidden'/>
                   cultures that have been introduced from other countries have taken root in a <br className='md:flex hidden'/>
                   unique way. Because Japanese have a long tradition of not interacting with <br className='md:flex hidden'/>
